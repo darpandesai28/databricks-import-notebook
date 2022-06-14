@@ -1,0 +1,3667 @@
+{
+	"version": 1,
+	"collections": [
+		{
+			"id": "2229a7c6-0b1b-40a7-93ff-12ea86d5609f",
+			"uid": "0-2229a7c6-0b1b-40a7-93ff-12ea86d5609f",
+			"name": "Graph API",
+			"description": null,
+			"auth": null,
+			"events": null,
+			"variables": [],
+			"order": [
+				"014a46bf-4ac9-45ac-95de-9d673f7dcb30",
+				"03b50362-80a9-44dc-946b-7ad0c0063d8d",
+				"e6d53351-f54b-4132-9c86-b8a1ef85b2b6",
+				"019c41e9-58e8-4f8b-b4e6-1748162bb55f",
+				"74c70cac-90ec-4f19-9599-ed101c3c4787",
+				"809d148b-40ea-46ab-8222-bd02259ae5c9",
+				"e9abb43a-1579-4f46-9f8b-8394327c7160",
+				"bb868001-6716-4f33-87e6-af11bbac6d33",
+				"941ad36f-759d-4232-a69d-59f3960f62bb",
+				"d66cdb72-049c-417a-a38d-8516a1a6e93f",
+				"255f3d50-7830-4903-9ad4-4829394296c9",
+				"ba1184a0-1159-4e12-83dc-397377c3cf50",
+				"2917cd80-775d-4b04-a84f-80335ea97874"
+			],
+			"folders_order": [],
+			"protocolProfileBehavior": {},
+			"createdAt": "2021-05-11T16:14:37.232Z",
+			"folders": [],
+			"requests": [
+				{
+					"id": "014a46bf-4ac9-45ac-95de-9d673f7dcb30",
+					"uid": "0-014a46bf-4ac9-45ac-95de-9d673f7dcb30",
+					"name": "Bearer Token: Graph API",
+					"url": "https://login.microsoftonline.us/:TenantId/oauth2/v2.0/token",
+					"description": null,
+					"data": [
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"description": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "client_id",
+							"value": "f170da9d-224c-4127-87b4-c52b5446dabe",
+							"description": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "client_secret",
+							"value": "yHy0_cQPZiBv0aK_pjN4W~Ik_V0bS~d114",
+							"description": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "scope",
+							"value": "https://graph.microsoft.us/.default",
+							"description": "",
+							"type": "text",
+							"enabled": true
+						}
+					],
+					"dataOptions": null,
+					"dataMode": "params",
+					"headerData": null,
+					"method": "POST",
+					"pathVariableData": [
+						{
+							"key": "TenantId",
+							"value": "fae6d70f-954b-4811-92b6-0530d6f84c43"
+						}
+					],
+					"queryParams": [],
+					"auth": null,
+					"events": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "a59cb391-f233-4c98-9594-1287dbcd5838",
+								"exec": [
+									"var json = JSON.parse(responseBody);\r",
+									"pm.environment.set(\"bearerToken\", json.access_token)\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"folder": null,
+					"responses_order": [],
+					"preRequestScript": null,
+					"tests": "var json = JSON.parse(responseBody);\r\npm.environment.set(\"bearerToken\", json.access_token)\r\n\r\n",
+					"currentHelper": null,
+					"helperAttributes": null,
+					"collectionId": "2229a7c6-0b1b-40a7-93ff-12ea86d5609f",
+					"pathVariables": {
+						"TenantId": "fae6d70f-954b-4811-92b6-0530d6f84c43"
+					}
+				},
+				{
+					"id": "019c41e9-58e8-4f8b-b4e6-1748162bb55f",
+					"uid": "0-019c41e9-58e8-4f8b-b4e6-1748162bb55f",
+					"name": "managedDevices Copy",
+					"url": "https://dod-graph.microsoft.us/beta/deviceManagement/managedDevices/",
+					"description": "",
+					"data": null,
+					"dataOptions": null,
+					"dataMode": null,
+					"headerData": [],
+					"method": "GET",
+					"pathVariableData": [],
+					"queryParams": [],
+					"auth": {
+						"type": "bearer",
+						"bearer": [
+							{
+								"key": "token",
+								"value": "{{bearerToken}}"
+							}
+						]
+					},
+					"events": [],
+					"folder": null,
+					"responses_order": [],
+					"currentHelper": "bearerAuth",
+					"helperAttributes": {
+						"id": "bearer",
+						"token": "{{bearerToken}}"
+					},
+					"collectionId": "2229a7c6-0b1b-40a7-93ff-12ea86d5609f",
+					"headers": "",
+					"pathVariables": {}
+				},
+				{
+					"id": "03b50362-80a9-44dc-946b-7ad0c0063d8d",
+					"uid": "0-03b50362-80a9-44dc-946b-7ad0c0063d8d",
+					"name": "A365 Copy",
+					"url": "https://graph.microsoft.us/v1.0/reports/getSharePointActivityFileCounts(period='D30')",
+					"description": "",
+					"data": null,
+					"dataOptions": null,
+					"dataMode": null,
+					"headerData": [],
+					"method": "GET",
+					"pathVariableData": [],
+					"queryParams": [],
+					"auth": {
+						"type": "bearer",
+						"bearer": [
+							{
+								"key": "token",
+								"value": "{{bearerToken}}"
+							}
+						]
+					},
+					"events": [],
+					"folder": null,
+					"responses_order": [],
+					"currentHelper": "bearerAuth",
+					"helperAttributes": {
+						"id": "bearer",
+						"token": "{{bearerToken}}"
+					},
+					"collectionId": "2229a7c6-0b1b-40a7-93ff-12ea86d5609f",
+					"headers": "",
+					"pathVariables": {}
+				},
+				{
+					"id": "255f3d50-7830-4903-9ad4-4829394296c9",
+					"uid": "0-255f3d50-7830-4903-9ad4-4829394296c9",
+					"name": "firewall - Request",
+					"url": "https://graph.microsoft.us/beta/deviceManagement/reports/exportJobs",
+					"description": "",
+					"data": [],
+					"dataOptions": null,
+					"dataMode": "raw",
+					"headerData": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "",
+							"type": "default",
+							"enabled": true
+						}
+					],
+					"method": "POST",
+					"pathVariableData": [],
+					"queryParams": [],
+					"auth": {
+						"type": "bearer",
+						"bearer": [
+							{
+								"key": "token",
+								"value": "{{bearerToken}}"
+							}
+						]
+					},
+					"events": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "e94aa3f5-6b15-461f-9671-29c53bbfff95",
+								"exec": [
+									"var json = JSON.parse(responseBody);\r",
+									"pm.environment.set(\"ReportId\", json.id)"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"folder": null,
+					"responses_order": [],
+					"preRequestScript": null,
+					"tests": "var json = JSON.parse(responseBody);\r\npm.environment.set(\"ReportId\", json.id)",
+					"currentHelper": "bearerAuth",
+					"helperAttributes": {
+						"id": "bearer",
+						"token": "{{bearerToken}}"
+					},
+					"collectionId": "2229a7c6-0b1b-40a7-93ff-12ea86d5609f",
+					"rawModeData": "{\"reportName\":\"FirewallStatus\",\"select\":[\"DeviceId\",\"DeviceName\",\"FirewallStatus\",\"LastReportedDateTime\",\"UPN\",\"UserName\",\"_OS\",\"_ManagedBy\",\"ReferenceId\"]}",
+					"headers": "Content-Type: application/json\n",
+					"pathVariables": {}
+				},
+				{
+					"id": "2917cd80-775d-4b04-a84f-80335ea97874",
+					"uid": "0-2917cd80-775d-4b04-a84f-80335ea97874",
+					"name": "firewall - Status",
+					"url": "https://graph.microsoft.us/beta/deviceManagement/reports/exportJobs/:ReportId",
+					"description": "",
+					"data": [],
+					"dataOptions": null,
+					"dataMode": "raw",
+					"headerData": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "",
+							"type": "default",
+							"enabled": true
+						}
+					],
+					"method": "GET",
+					"pathVariableData": [
+						{
+							"key": "ReportId",
+							"value": "{{ReportId}}"
+						}
+					],
+					"queryParams": [],
+					"auth": {
+						"type": "bearer",
+						"bearer": [
+							{
+								"key": "token",
+								"value": "{{bearerToken}}"
+							}
+						]
+					},
+					"events": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "30779d78-655c-4a79-b17f-48ac0563f02a",
+								"exec": [
+									"var json = JSON.parse(responseBody);\r",
+									"pm.environment.set(\"ReportURL\", json.url)"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"folder": null,
+					"responses_order": [],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"preRequestScript": null,
+					"tests": "var json = JSON.parse(responseBody);\r\npm.environment.set(\"ReportURL\", json.url)",
+					"currentHelper": "bearerAuth",
+					"helperAttributes": {
+						"id": "bearer",
+						"token": "{{bearerToken}}"
+					},
+					"collectionId": "2229a7c6-0b1b-40a7-93ff-12ea86d5609f",
+					"rawModeData": "{\"reportName\":\"Malware\",\"select\":[\"DeviceId\",\"DeviceName\",\"MalwareId\",\"MalwareName\",\"AdditionalInformationUrl\",\"Severity\",\"MalwareCategory\",\"ExecutionState\",\"State\",\"InitialDetectionDateTime\",\"LastStateChangeDateTime\",\"DetectionCount\",\"UPN\",\"UserEmail\",\"UserName\"]}",
+					"headers": "Content-Type: application/json\n",
+					"pathVariables": {
+						"ReportId": "{{ReportId}}"
+					}
+				},
+				{
+					"id": "74c70cac-90ec-4f19-9599-ed101c3c4787",
+					"uid": "0-74c70cac-90ec-4f19-9599-ed101c3c4787",
+					"name": "deviceCompliancePolicies",
+					"url": "https://graph.microsoft.us/beta/deviceManagement/deviceCompliancePolicies/",
+					"description": "",
+					"data": null,
+					"dataOptions": null,
+					"dataMode": null,
+					"headerData": [],
+					"method": "GET",
+					"pathVariableData": [],
+					"queryParams": [],
+					"auth": {
+						"type": "bearer",
+						"bearer": [
+							{
+								"key": "token",
+								"value": "{{bearerToken}}"
+							}
+						]
+					},
+					"events": [],
+					"folder": null,
+					"responses_order": [],
+					"currentHelper": "bearerAuth",
+					"helperAttributes": {
+						"id": "bearer",
+						"token": "{{bearerToken}}"
+					},
+					"collectionId": "2229a7c6-0b1b-40a7-93ff-12ea86d5609f",
+					"headers": "",
+					"pathVariables": {}
+				},
+				{
+					"id": "809d148b-40ea-46ab-8222-bd02259ae5c9",
+					"uid": "0-809d148b-40ea-46ab-8222-bd02259ae5c9",
+					"name": "deviceCompliancePolicies Copy",
+					"url": "https://graph.microsoft.us/beta/deviceManagement/deviceCompliancePolicies/",
+					"description": "",
+					"data": null,
+					"dataOptions": null,
+					"dataMode": null,
+					"headerData": [],
+					"method": "GET",
+					"pathVariableData": [],
+					"queryParams": [],
+					"auth": {
+						"type": "bearer",
+						"bearer": [
+							{
+								"key": "token",
+								"value": "{{bearerToken}}"
+							}
+						]
+					},
+					"events": [],
+					"folder": null,
+					"responses_order": [],
+					"currentHelper": "bearerAuth",
+					"helperAttributes": {
+						"id": "bearer",
+						"token": "{{bearerToken}}"
+					},
+					"collectionId": "2229a7c6-0b1b-40a7-93ff-12ea86d5609f",
+					"headers": "",
+					"pathVariables": {}
+				},
+				{
+					"id": "941ad36f-759d-4232-a69d-59f3960f62bb",
+					"uid": "0-941ad36f-759d-4232-a69d-59f3960f62bb",
+					"name": "signIns",
+					"url": "https://graph.microsoft.us/beta/auditLogs/signIns",
+					"description": "",
+					"data": null,
+					"dataOptions": null,
+					"dataMode": null,
+					"headerData": [],
+					"method": "GET",
+					"pathVariableData": [],
+					"queryParams": [],
+					"auth": {
+						"type": "bearer",
+						"bearer": [
+							{
+								"key": "token",
+								"value": "{{bearerToken}}"
+							}
+						]
+					},
+					"events": [],
+					"folder": null,
+					"responses_order": [],
+					"currentHelper": "bearerAuth",
+					"helperAttributes": {
+						"id": "bearer",
+						"token": "{{bearerToken}}"
+					},
+					"collectionId": "2229a7c6-0b1b-40a7-93ff-12ea86d5609f",
+					"headers": "",
+					"pathVariables": {}
+				},
+				{
+					"id": "ba1184a0-1159-4e12-83dc-397377c3cf50",
+					"uid": "0-ba1184a0-1159-4e12-83dc-397377c3cf50",
+					"name": "malware - Status",
+					"url": "https://graph.microsoft.us/beta/deviceManagement/reports/exportJobs/:ReportId",
+					"description": "",
+					"data": [],
+					"dataOptions": null,
+					"dataMode": "raw",
+					"headerData": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "",
+							"type": "default",
+							"enabled": true
+						}
+					],
+					"method": "GET",
+					"pathVariableData": [
+						{
+							"key": "ReportId",
+							"value": "{{ReportId}}"
+						}
+					],
+					"queryParams": [],
+					"auth": {
+						"type": "bearer",
+						"bearer": [
+							{
+								"key": "token",
+								"value": "{{bearerToken}}"
+							}
+						]
+					},
+					"events": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "9db88a8f-7a14-4994-8f9d-95da918ee348",
+								"exec": [
+									"var json = JSON.parse(responseBody);\r",
+									"pm.environment.set(\"ReportURL\", json.url)"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"folder": null,
+					"responses_order": [],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"preRequestScript": null,
+					"tests": "var json = JSON.parse(responseBody);\r\npm.environment.set(\"ReportURL\", json.url)",
+					"currentHelper": "bearerAuth",
+					"helperAttributes": {
+						"id": "bearer",
+						"token": "{{bearerToken}}"
+					},
+					"collectionId": "2229a7c6-0b1b-40a7-93ff-12ea86d5609f",
+					"rawModeData": "{\"reportName\":\"Malware\",\"select\":[\"DeviceId\",\"DeviceName\",\"MalwareId\",\"MalwareName\",\"AdditionalInformationUrl\",\"Severity\",\"MalwareCategory\",\"ExecutionState\",\"State\",\"InitialDetectionDateTime\",\"LastStateChangeDateTime\",\"DetectionCount\",\"UPN\",\"UserEmail\",\"UserName\"]}",
+					"headers": "Content-Type: application/json\n",
+					"pathVariables": {
+						"ReportId": "{{ReportId}}"
+					}
+				},
+				{
+					"id": "bb868001-6716-4f33-87e6-af11bbac6d33",
+					"uid": "0-bb868001-6716-4f33-87e6-af11bbac6d33",
+					"name": "users Copy",
+					"url": "https://graph.microsoft.us/v1.0/users/delta?$deltatoken=gXUKnZRTHnuSBC6viBQfmZvSdqa-9hoeHJNYB0TrSdyHQkMcNxlbo5zMp_E1xBV3y6vV7b-yvcwX1GnSDuQAzO-GBh4qHOW6ClWfNtxXLSnoqjHINMP5MD-vxwUEUKRHZ616XLbisn7tGW70dDXy_cmOdfu3veeicK6QezQsp0mfZ-9F3QYH6Jq22WB2219J807luN-qD__OlzeTXYCGoTqr3dZX4EuUXYCE5PK94pOcXs0OcXLefIHuCYI1PBCk-IlB-v8PRa01gX1H9nxJV_GbOuP2NHYkis0gOe3VsbRr4BjEXttSnjflpbtyoydU3nrkchs33bO459OOxPIUsEekfQjhgRScCwP10Kk6I0eEYEbEFiydsLj50ekBMk6QaAcAsofuwtLrWWNRTEu9LqGAXNY0BSxwMrJq1JoNfLoVy_3A-Wv18OTNosDfCnyIgxk0Nz7EOvsPJEObp84UJDR8GNxKLwHja6aRsoalTk8_DUcdmB6efC4DFEWeqoq3idtmMYecI5I-tadxfsh4mq2jawubvo7qc8US0Aa6UFumV5u8HMo2B8Ep_P9lwZary2SgTsL8J-wBauA_ZOFM9BVh24TTAwJwiczdd8T23Uoqw19ZMGOh8jydhSOCLgYHE4rXVpMQIT3W1LS3LLbAuxREtf1Pn-iwcSGB9Tj0pVa2HYdKzkCKmf_zO6h1b1dobGjJH3ZTb8yYnvh9hvO-KJ9eW0VKP9EXxEp_bBru53N6HI2q3wlqpi0-L6ANxN6BquhGg2E3lnW848llkK0cwIllBQYmHbhVcTjFeOjsyxnqDDpc2roh6USEhWtGfzEhEuZsGj0hsSeoIJSsvZ-IpBXIS0U-GSa59LaXGHlX5vQ03sTePZBaTpr6IjldAbA65s_V_QDICAhTGzwzMsjPpMEBDgNSMZEg4yWW8luxLmplX430RTtSDYT9XKtPm1QZBhjzpvMGp6cUJQNqP6-kMjH_B84hqxETQ57XRGNeCQf6HESJL_uMrDsbV0s-CbxwnteUFEueaEdPSyoqhd6ZiIXr9MQW-jJMI1p_Oa6M0QSsWBhlCitOg58edMD-FZ5WzA73jMAfzbWTewPUdLVysuolYpm2Gt3wmUxz7T-7s6kakX8KvoOfvPqIj7lwx6rah-e14YDWy7fIMWiSZcLVmh5f5LG2yfJQvl4ptFC0zc7rYoJc0w1SABFr55gOnYraWIAU8wZArFI-W0NhirU-CYI0CZ4V1hApsTcBzPMvCQhMIHce-9mqtKwkHT2FBE7omwJcY_r4Ups8ILBtiRN9lNnYhCKCjsMmcNofoK10D_VFz562itLZUGjCZq3zsqkB2A5zR3nezotHS4UjGdjj_ZVv92-WNRC51fUvxQiEhI1btv9YG6igaFrICUel-2IwzbxyecJY30UC7lLZJRaIm59JmJGIldGs4aIr7fkV0q2A2gLilOFHqj8gqdcew_XecJfEqQ-sjfwG_EPOlt1MlE0eL84IDSHFTsyQl_qM15LP7xS52K2B7gGPYXTcSOrm1j5A6O4NGVik7aW6diJsm10lVa5DkGA8yAoolxv5gSpj9HxIFeI4rxfiCLDMz82hrZv_Qo25UUWrZI7Xub5e7IIBOrJyVhOqATGP5Id9EfATOuD6a68WoXzPepqhZck49VrxofOqFg5zAZMGts6N7xybEa9JEwcBHRPe4pM5kf1EJc086p02fszUA2JKLsdCmfhD22j6mJtbairOt--ZZupUtZ0fnKOzFUbN--zTqSineBtY1r-6Y35TfGIYJwLFqfTnpENdnKdQJV1cPKXypGPkteVqCQSiQWWvv2u4I_ZN0GJBQzRSa3gYp8VM_VEFgNqDQ6_JUojKRqDauyIWtGZNv8G7KOPEF5ZiNso0boMK7H3nELSrUAEQP9Vy7VVXxlETgY2GzeOFEDa951T3FVgzOEGfEDNcpV39Ukm2AZzz8S_5ZvjhZcRghiAMZTFl3OLp2bOBmzlMmJ6w2YeOcd4vek31h_9MqVHHQycFpd43RchGs4UKESxJzQcJgHfRPnJoivXezFY0ybDLCu6dH73TCEnTKL3iQzpyrdRAedfscbp42Z_wOek0sGpWjjQztBVOtaEWcxdXycl5cyhD5tjk90-D6nsjvzbqmHXwiiQw22Ezs9CabHXrY1DyN82FGag8tQgEbfXHXew0O_PrPtvfdLqIoVlqbzimIc6-wJYVdPIR-YRPVD9XCfRoZjKFZu37swMi6oSadgacDqBoWoxt7_BxEr-mm7BP__Td8aM16kFWPUK4lfjXzOeMZ1IUUbYLgDullWxqjsHgOQzVsuJq6ic4fUFUwUdX7WgA69CoZOLUrp8iX7rK7blD3OqhjXo3M1IjMiJ07zgPfHcLCNrcRyDLM5cGxHXm5Vm-QH04w4A0zOUd22-nyii3nF0US6ulRwWjZXv2_5h6rR9DA9Avtrm35xPQ0b7cL0Zw3J3YaCSnoTr_VRYQa5pGrLnKhcrh3ZiB2syAqvJVr1EQWZ7fNThOJ61UlDDN2E_gfvtg9OvdD5KEnLa9H_94Ikm_MbxqENKKKxoBPH8-5pfFyaiEdyV4ZQC2HB9NPtM55I2aQarY2m3Wp7HQi-ZpruCnw-EJKo4s8-doA53pQBYosyStwxOBitZvZWXDle71lhuB6I-L37OMgWC1I99ExoW8eE6jtcNr_b6E_0pbWDnle6R2jdfoWS6w_Sceu8aJb-qedE7WnMiYjmHr6GXTWN_CKo5N80n_G_iA3ApHnTo-igM5hUH1FDgX2YNuYrRQelPyLb-FEsZXscfrIhY6b_wWinp-8tEgUyivj86ixfv3gRDIiJbYbQJd4rDnoLz5b7qwD_QrKBfKhufoGT72YceP_hwUn7OtzsoUrzArsaCo_Q.H_sdDlJlMwKQNxyTs_4qjl9fYiT0HVc_B9AmAowgdEg",
+					"description": "",
+					"data": null,
+					"dataOptions": null,
+					"dataMode": null,
+					"headerData": [
+						{
+							"key": "prefer",
+							"value": "return=minimal",
+							"description": "",
+							"type": "text",
+							"enabled": true
+						}
+					],
+					"method": "GET",
+					"pathVariableData": [],
+					"queryParams": [
+						{
+							"key": "$deltatoken",
+							"value": "gXUKnZRTHnuSBC6viBQfmZvSdqa-9hoeHJNYB0TrSdyHQkMcNxlbo5zMp_E1xBV3y6vV7b-yvcwX1GnSDuQAzO-GBh4qHOW6ClWfNtxXLSnoqjHINMP5MD-vxwUEUKRHZ616XLbisn7tGW70dDXy_cmOdfu3veeicK6QezQsp0mfZ-9F3QYH6Jq22WB2219J807luN-qD__OlzeTXYCGoTqr3dZX4EuUXYCE5PK94pOcXs0OcXLefIHuCYI1PBCk-IlB-v8PRa01gX1H9nxJV_GbOuP2NHYkis0gOe3VsbRr4BjEXttSnjflpbtyoydU3nrkchs33bO459OOxPIUsEekfQjhgRScCwP10Kk6I0eEYEbEFiydsLj50ekBMk6QaAcAsofuwtLrWWNRTEu9LqGAXNY0BSxwMrJq1JoNfLoVy_3A-Wv18OTNosDfCnyIgxk0Nz7EOvsPJEObp84UJDR8GNxKLwHja6aRsoalTk8_DUcdmB6efC4DFEWeqoq3idtmMYecI5I-tadxfsh4mq2jawubvo7qc8US0Aa6UFumV5u8HMo2B8Ep_P9lwZary2SgTsL8J-wBauA_ZOFM9BVh24TTAwJwiczdd8T23Uoqw19ZMGOh8jydhSOCLgYHE4rXVpMQIT3W1LS3LLbAuxREtf1Pn-iwcSGB9Tj0pVa2HYdKzkCKmf_zO6h1b1dobGjJH3ZTb8yYnvh9hvO-KJ9eW0VKP9EXxEp_bBru53N6HI2q3wlqpi0-L6ANxN6BquhGg2E3lnW848llkK0cwIllBQYmHbhVcTjFeOjsyxnqDDpc2roh6USEhWtGfzEhEuZsGj0hsSeoIJSsvZ-IpBXIS0U-GSa59LaXGHlX5vQ03sTePZBaTpr6IjldAbA65s_V_QDICAhTGzwzMsjPpMEBDgNSMZEg4yWW8luxLmplX430RTtSDYT9XKtPm1QZBhjzpvMGp6cUJQNqP6-kMjH_B84hqxETQ57XRGNeCQf6HESJL_uMrDsbV0s-CbxwnteUFEueaEdPSyoqhd6ZiIXr9MQW-jJMI1p_Oa6M0QSsWBhlCitOg58edMD-FZ5WzA73jMAfzbWTewPUdLVysuolYpm2Gt3wmUxz7T-7s6kakX8KvoOfvPqIj7lwx6rah-e14YDWy7fIMWiSZcLVmh5f5LG2yfJQvl4ptFC0zc7rYoJc0w1SABFr55gOnYraWIAU8wZArFI-W0NhirU-CYI0CZ4V1hApsTcBzPMvCQhMIHce-9mqtKwkHT2FBE7omwJcY_r4Ups8ILBtiRN9lNnYhCKCjsMmcNofoK10D_VFz562itLZUGjCZq3zsqkB2A5zR3nezotHS4UjGdjj_ZVv92-WNRC51fUvxQiEhI1btv9YG6igaFrICUel-2IwzbxyecJY30UC7lLZJRaIm59JmJGIldGs4aIr7fkV0q2A2gLilOFHqj8gqdcew_XecJfEqQ-sjfwG_EPOlt1MlE0eL84IDSHFTsyQl_qM15LP7xS52K2B7gGPYXTcSOrm1j5A6O4NGVik7aW6diJsm10lVa5DkGA8yAoolxv5gSpj9HxIFeI4rxfiCLDMz82hrZv_Qo25UUWrZI7Xub5e7IIBOrJyVhOqATGP5Id9EfATOuD6a68WoXzPepqhZck49VrxofOqFg5zAZMGts6N7xybEa9JEwcBHRPe4pM5kf1EJc086p02fszUA2JKLsdCmfhD22j6mJtbairOt--ZZupUtZ0fnKOzFUbN--zTqSineBtY1r-6Y35TfGIYJwLFqfTnpENdnKdQJV1cPKXypGPkteVqCQSiQWWvv2u4I_ZN0GJBQzRSa3gYp8VM_VEFgNqDQ6_JUojKRqDauyIWtGZNv8G7KOPEF5ZiNso0boMK7H3nELSrUAEQP9Vy7VVXxlETgY2GzeOFEDa951T3FVgzOEGfEDNcpV39Ukm2AZzz8S_5ZvjhZcRghiAMZTFl3OLp2bOBmzlMmJ6w2YeOcd4vek31h_9MqVHHQycFpd43RchGs4UKESxJzQcJgHfRPnJoivXezFY0ybDLCu6dH73TCEnTKL3iQzpyrdRAedfscbp42Z_wOek0sGpWjjQztBVOtaEWcxdXycl5cyhD5tjk90-D6nsjvzbqmHXwiiQw22Ezs9CabHXrY1DyN82FGag8tQgEbfXHXew0O_PrPtvfdLqIoVlqbzimIc6-wJYVdPIR-YRPVD9XCfRoZjKFZu37swMi6oSadgacDqBoWoxt7_BxEr-mm7BP__Td8aM16kFWPUK4lfjXzOeMZ1IUUbYLgDullWxqjsHgOQzVsuJq6ic4fUFUwUdX7WgA69CoZOLUrp8iX7rK7blD3OqhjXo3M1IjMiJ07zgPfHcLCNrcRyDLM5cGxHXm5Vm-QH04w4A0zOUd22-nyii3nF0US6ulRwWjZXv2_5h6rR9DA9Avtrm35xPQ0b7cL0Zw3J3YaCSnoTr_VRYQa5pGrLnKhcrh3ZiB2syAqvJVr1EQWZ7fNThOJ61UlDDN2E_gfvtg9OvdD5KEnLa9H_94Ikm_MbxqENKKKxoBPH8-5pfFyaiEdyV4ZQC2HB9NPtM55I2aQarY2m3Wp7HQi-ZpruCnw-EJKo4s8-doA53pQBYosyStwxOBitZvZWXDle71lhuB6I-L37OMgWC1I99ExoW8eE6jtcNr_b6E_0pbWDnle6R2jdfoWS6w_Sceu8aJb-qedE7WnMiYjmHr6GXTWN_CKo5N80n_G_iA3ApHnTo-igM5hUH1FDgX2YNuYrRQelPyLb-FEsZXscfrIhY6b_wWinp-8tEgUyivj86ixfv3gRDIiJbYbQJd4rDnoLz5b7qwD_QrKBfKhufoGT72YceP_hwUn7OtzsoUrzArsaCo_Q.H_sdDlJlMwKQNxyTs_4qjl9fYiT0HVc_B9AmAowgdEg",
+							"equals": true,
+							"description": "",
+							"enabled": true
+						}
+					],
+					"auth": {
+						"type": "bearer",
+						"bearer": [
+							{
+								"key": "token",
+								"value": "{{bearerToken}}"
+							}
+						]
+					},
+					"events": [],
+					"folder": null,
+					"responses_order": [],
+					"currentHelper": "bearerAuth",
+					"helperAttributes": {
+						"id": "bearer",
+						"token": "{{bearerToken}}"
+					},
+					"collectionId": "2229a7c6-0b1b-40a7-93ff-12ea86d5609f",
+					"headers": "prefer: return=minimal\n",
+					"pathVariables": {}
+				},
+				{
+					"id": "d66cdb72-049c-417a-a38d-8516a1a6e93f",
+					"uid": "0-d66cdb72-049c-417a-a38d-8516a1a6e93f",
+					"name": "malware - Request",
+					"url": "https://graph.microsoft.us/beta/deviceManagement/reports/exportJobs",
+					"description": "",
+					"data": [],
+					"dataOptions": null,
+					"dataMode": "raw",
+					"headerData": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "",
+							"type": "default",
+							"enabled": true
+						}
+					],
+					"method": "POST",
+					"pathVariableData": [],
+					"queryParams": [],
+					"auth": {
+						"type": "bearer",
+						"bearer": [
+							{
+								"key": "token",
+								"value": "{{bearerToken}}"
+							}
+						]
+					},
+					"events": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "18eac991-79f2-4b6e-afaf-6c95a288f9d1",
+								"exec": [
+									"var json = JSON.parse(responseBody);\r",
+									"pm.environment.set(\"ReportId\", json.id)"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"folder": null,
+					"responses_order": [],
+					"preRequestScript": null,
+					"tests": "var json = JSON.parse(responseBody);\r\npm.environment.set(\"ReportId\", json.id)",
+					"currentHelper": "bearerAuth",
+					"helperAttributes": {
+						"id": "bearer",
+						"token": "{{bearerToken}}"
+					},
+					"collectionId": "2229a7c6-0b1b-40a7-93ff-12ea86d5609f",
+					"rawModeData": "{\"reportName\":\"Malware\",\"select\":[\"DeviceId\",\"DeviceName\",\"MalwareId\",\"MalwareName\",\"AdditionalInformationUrl\",\"Severity\",\"MalwareCategory\",\"ExecutionState\",\"State\",\"InitialDetectionDateTime\",\"LastStateChangeDateTime\",\"DetectionCount\",\"UPN\",\"UserEmail\",\"UserName\"]}",
+					"headers": "Content-Type: application/json\n",
+					"pathVariables": {}
+				},
+				{
+					"id": "e6d53351-f54b-4132-9c86-b8a1ef85b2b6",
+					"uid": "0-e6d53351-f54b-4132-9c86-b8a1ef85b2b6",
+					"name": "managedDevices",
+					"url": "https://graph.microsoft.us/beta/deviceManagement/managedDevices/",
+					"description": "",
+					"data": null,
+					"dataOptions": null,
+					"dataMode": null,
+					"headerData": [],
+					"method": "GET",
+					"pathVariableData": [],
+					"queryParams": [],
+					"auth": {
+						"type": "bearer",
+						"bearer": [
+							{
+								"key": "token",
+								"value": "{{bearerToken}}"
+							}
+						]
+					},
+					"events": [],
+					"folder": null,
+					"responses_order": [],
+					"currentHelper": "bearerAuth",
+					"helperAttributes": {
+						"id": "bearer",
+						"token": "{{bearerToken}}"
+					},
+					"collectionId": "2229a7c6-0b1b-40a7-93ff-12ea86d5609f",
+					"headers": "",
+					"pathVariables": {}
+				},
+				{
+					"id": "e9abb43a-1579-4f46-9f8b-8394327c7160",
+					"uid": "0-e9abb43a-1579-4f46-9f8b-8394327c7160",
+					"name": "users",
+					"url": "https://graph.microsoft.us/v1.0/users/delta",
+					"description": "",
+					"data": null,
+					"dataOptions": null,
+					"dataMode": null,
+					"headerData": [
+						{
+							"key": "prefer",
+							"value": "return=minimal",
+							"description": "",
+							"type": "text",
+							"enabled": true
+						}
+					],
+					"method": "GET",
+					"pathVariableData": [],
+					"queryParams": [],
+					"auth": {
+						"type": "bearer",
+						"bearer": [
+							{
+								"key": "token",
+								"value": "{{bearerToken}}"
+							}
+						]
+					},
+					"events": [],
+					"folder": null,
+					"responses_order": [],
+					"currentHelper": "bearerAuth",
+					"helperAttributes": {
+						"id": "bearer",
+						"token": "{{bearerToken}}"
+					},
+					"collectionId": "2229a7c6-0b1b-40a7-93ff-12ea86d5609f",
+					"headers": "prefer: return=minimal\n",
+					"pathVariables": {}
+				}
+			]
+		},
+		{
+			"id": "396d5b54-a723-4408-81a5-ed6320b2b77a",
+			"uid": "0-396d5b54-a723-4408-81a5-ed6320b2b77a",
+			"name": "LogAnalytics AutoCDE",
+			"description": null,
+			"auth": null,
+			"events": null,
+			"variables": [],
+			"order": [
+				"12eaf796-b052-4885-bdc6-a66be4981ae4",
+				"d8d163e7-57a6-42ce-be7c-7f8cbbce464b"
+			],
+			"folders_order": [],
+			"protocolProfileBehavior": {},
+			"createdAt": "2021-07-20T20:17:48.654Z",
+			"folders": [],
+			"requests": [
+				{
+					"id": "12eaf796-b052-4885-bdc6-a66be4981ae4",
+					"uid": "0-12eaf796-b052-4885-bdc6-a66be4981ae4",
+					"name": "Bearer Token: Log Analytics",
+					"url": "https://login.microsoftonline.us/:TenantId/oauth2/token",
+					"description": null,
+					"data": [
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"description": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "client_id",
+							"value": "f170da9d-224c-4127-87b4-c52b5446dabe",
+							"description": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "client_secret",
+							"value": "SRsUEfctLeJASxmSuA.7kWt_jmHQkf2VEL",
+							"description": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "resource",
+							"value": "https://api.loganalytics.us",
+							"description": "",
+							"type": "text",
+							"enabled": true
+						}
+					],
+					"dataOptions": null,
+					"dataMode": "params",
+					"headerData": null,
+					"method": "POST",
+					"pathVariableData": [
+						{
+							"key": "TenantId",
+							"value": "fae6d70f-954b-4811-92b6-0530d6f84c43"
+						}
+					],
+					"queryParams": [],
+					"auth": null,
+					"events": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "18b4aaa5-ed4c-4b88-b92c-8bc4e78e547c",
+								"exec": [
+									"var json = JSON.parse(responseBody);\r",
+									"pm.environment.set(\"bearerToken\", json.access_token)\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"folder": null,
+					"responses_order": [],
+					"preRequestScript": null,
+					"tests": "var json = JSON.parse(responseBody);\r\npm.environment.set(\"bearerToken\", json.access_token)\r\n\r\n",
+					"currentHelper": null,
+					"helperAttributes": null,
+					"collectionId": "396d5b54-a723-4408-81a5-ed6320b2b77a",
+					"pathVariables": {
+						"TenantId": "fae6d70f-954b-4811-92b6-0530d6f84c43"
+					}
+				},
+				{
+					"id": "d8d163e7-57a6-42ce-be7c-7f8cbbce464b",
+					"uid": "0-d8d163e7-57a6-42ce-be7c-7f8cbbce464b",
+					"name": "logAnalytics - SecurityAlert",
+					"url": "https://api.loganalytics.us/v1/workspaces/39db35c6-6fa3-447b-a3d8-d3147f6e19c7/subscriptions/96ec76b3-d172-42ca-9360-ae675bbd5961/resourceGroups/S-VA-EITAAS-COR-CDE/providers/Microsoft.OperationalInsights/workspaces/svaeitaascdecore/",
+					"description": "",
+					"data": null,
+					"dataOptions": null,
+					"dataMode": null,
+					"headerData": [],
+					"method": "GET",
+					"pathVariableData": [],
+					"queryParams": [],
+					"auth": {
+						"type": "bearer",
+						"bearer": [
+							{
+								"key": "token",
+								"value": "{{bearerToken}}"
+							}
+						]
+					},
+					"events": [],
+					"folder": null,
+					"responses_order": [],
+					"currentHelper": "bearerAuth",
+					"helperAttributes": {
+						"id": "bearer",
+						"token": "{{bearerToken}}"
+					},
+					"collectionId": "396d5b54-a723-4408-81a5-ed6320b2b77a",
+					"headers": "",
+					"pathVariables": {}
+				}
+			]
+		},
+		{
+			"id": "3a485a67-cd99-42cc-98e7-ab1ccbb1f357",
+			"uid": "0-3a485a67-cd99-42cc-98e7-ab1ccbb1f357",
+			"name": "Synapse",
+			"description": null,
+			"auth": null,
+			"events": null,
+			"variables": [],
+			"order": [
+				"e912236d-0f7d-4f05-adb1-e2e4240b7d3f",
+				"ad445eea-f586-4255-8f5c-6c0b97701d64",
+				"e6098f7f-2014-4c10-8c04-d417b4358ed0"
+			],
+			"folders_order": [],
+			"protocolProfileBehavior": {},
+			"createdAt": "2022-03-02T17:06:30.738Z",
+			"folders": [],
+			"requests": [
+				{
+					"id": "ad445eea-f586-4255-8f5c-6c0b97701d64",
+					"uid": "0-ad445eea-f586-4255-8f5c-6c0b97701d64",
+					"name": "Synapse Get SQL Pool List",
+					"url": "https://management.usgovcloudapi.net/subscriptions/:subscriptionId/resourceGroups/:resourceGroupName/providers/Microsoft.Synapse/workspaces/:workspaceName/sqlPools?api-version=2021-06-01",
+					"description": "",
+					"data": [],
+					"dataOptions": null,
+					"dataMode": "raw",
+					"headerData": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "",
+							"type": "text",
+							"enabled": true
+						}
+					],
+					"method": "GET",
+					"pathVariableData": [
+						{
+							"key": "subscriptionId",
+							"value": "96ec76b3-d172-42ca-9360-ae675bbd5961"
+						},
+						{
+							"key": "resourceGroupName",
+							"value": "S-VA-EITAAS-COR-CDE"
+						},
+						{
+							"key": "workspaceName",
+							"value": "seitaascdecore"
+						}
+					],
+					"queryParams": [
+						{
+							"key": "api-version",
+							"value": "2021-06-01",
+							"equals": true,
+							"description": "",
+							"enabled": true
+						}
+					],
+					"auth": {
+						"type": "bearer",
+						"bearer": [
+							{
+								"key": "token",
+								"value": "{{bearerToken}}"
+							}
+						]
+					},
+					"events": [],
+					"folder": null,
+					"responses_order": [],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"currentHelper": "bearerAuth",
+					"helperAttributes": {
+						"id": "bearer",
+						"token": "{{bearerToken}}"
+					},
+					"collectionId": "3a485a67-cd99-42cc-98e7-ab1ccbb1f357",
+					"rawModeData": "",
+					"headers": "Content-Type: application/json\n",
+					"pathVariables": {
+						"subscriptionId": "96ec76b3-d172-42ca-9360-ae675bbd5961",
+						"resourceGroupName": "S-VA-EITAAS-COR-CDE",
+						"workspaceName": "seitaascdecore"
+					}
+				},
+				{
+					"id": "e6098f7f-2014-4c10-8c04-d417b4358ed0",
+					"uid": "0-e6098f7f-2014-4c10-8c04-d417b4358ed0",
+					"name": "Synapse Pause SQL Pool",
+					"url": "https://management.usgovcloudapi.net/subscriptions/:subscriptionId/resourceGroups/:resourceGroupName/providers/Microsoft.Synapse/workspaces/:workspaceName/sqlPools/:sqlPoolName/pause?api-version=2021-06-01",
+					"description": "",
+					"data": [],
+					"dataOptions": null,
+					"dataMode": "raw",
+					"headerData": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "",
+							"type": "text",
+							"enabled": true
+						}
+					],
+					"method": "POST",
+					"pathVariableData": [
+						{
+							"key": "subscriptionId",
+							"value": "96ec76b3-d172-42ca-9360-ae675bbd5961"
+						},
+						{
+							"key": "resourceGroupName",
+							"value": "S-VA-EITAAS-COR-CDE"
+						},
+						{
+							"key": "workspaceName",
+							"value": "seitaascdecore"
+						},
+						{
+							"key": "sqlPoolName",
+							"value": "seitaascdecore"
+						}
+					],
+					"queryParams": [
+						{
+							"key": "api-version",
+							"value": "2021-06-01",
+							"equals": true,
+							"description": "",
+							"enabled": true
+						}
+					],
+					"auth": {
+						"type": "bearer",
+						"bearer": [
+							{
+								"key": "token",
+								"value": "{{bearerToken}}"
+							}
+						]
+					},
+					"events": [],
+					"folder": null,
+					"responses_order": [],
+					"currentHelper": "bearerAuth",
+					"helperAttributes": {
+						"id": "bearer",
+						"token": "{{bearerToken}}"
+					},
+					"collectionId": "3a485a67-cd99-42cc-98e7-ab1ccbb1f357",
+					"rawModeData": "{}",
+					"headers": "Content-Type: application/json\n",
+					"pathVariables": {
+						"subscriptionId": "96ec76b3-d172-42ca-9360-ae675bbd5961",
+						"resourceGroupName": "S-VA-EITAAS-COR-CDE",
+						"workspaceName": "seitaascdecore",
+						"sqlPoolName": "seitaascdecore"
+					}
+				},
+				{
+					"id": "e912236d-0f7d-4f05-adb1-e2e4240b7d3f",
+					"uid": "0-e912236d-0f7d-4f05-adb1-e2e4240b7d3f",
+					"name": "Bearer Token: Synapse",
+					"url": "https://login.microsoftonline.us/:TenantId/oauth2/v2.0/token",
+					"description": null,
+					"data": [
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"description": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "client_id",
+							"value": "f170da9d-224c-4127-87b4-c52b5446dabe",
+							"description": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "client_secret",
+							"value": "yHy0_cQPZiBv0aK_pjN4W~Ik_V0bS~d114",
+							"description": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "scope",
+							"value": "https://management.usgovcloudapi.net/.default",
+							"description": "",
+							"type": "text",
+							"enabled": true
+						}
+					],
+					"dataOptions": null,
+					"dataMode": "params",
+					"headerData": null,
+					"method": "POST",
+					"pathVariableData": [
+						{
+							"key": "TenantId",
+							"value": "fae6d70f-954b-4811-92b6-0530d6f84c43"
+						}
+					],
+					"queryParams": [],
+					"auth": null,
+					"events": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "5a01d588-38aa-4943-8d99-4ff3127a8b16",
+								"exec": [
+									"var json = JSON.parse(responseBody);\r",
+									"pm.environment.set(\"bearerToken\", json.access_token)\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"folder": null,
+					"responses_order": [],
+					"preRequestScript": null,
+					"tests": "var json = JSON.parse(responseBody);\r\npm.environment.set(\"bearerToken\", json.access_token)\r\n\r\n",
+					"currentHelper": null,
+					"helperAttributes": null,
+					"collectionId": "3a485a67-cd99-42cc-98e7-ab1ccbb1f357",
+					"pathVariables": {
+						"TenantId": "fae6d70f-954b-4811-92b6-0530d6f84c43"
+					}
+				}
+			]
+		},
+		{
+			"id": "449fae17-eaee-4fb2-8e25-664a73d0ca72",
+			"uid": "0-449fae17-eaee-4fb2-8e25-664a73d0ca72",
+			"name": "Resource",
+			"description": null,
+			"auth": null,
+			"events": null,
+			"variables": [],
+			"order": [
+				"28daf67b-62b3-4200-87d3-03c9a63cdd6d",
+				"f3e48504-b7c7-463b-b5ea-2ee7709c6acf",
+				"7f2412af-2e35-4c1f-9613-b726b567e633",
+				"da8a569d-526e-40e1-8a15-171b87e15f41",
+				"8fd04e4b-7d1b-42a3-bb8f-0eeeb6f42a7b",
+				"87b58f32-7ac6-4b75-8fab-8d116a3360cb",
+				"dc75f9b2-ec63-4a44-9dec-aca58b585c3b"
+			],
+			"folders_order": [],
+			"protocolProfileBehavior": {},
+			"createdAt": "2021-08-31T17:04:13.972Z",
+			"folders": [],
+			"requests": [
+				{
+					"id": "28daf67b-62b3-4200-87d3-03c9a63cdd6d",
+					"uid": "0-28daf67b-62b3-4200-87d3-03c9a63cdd6d",
+					"name": "Bearer Token: Graph API Copy",
+					"url": "https://login.microsoftonline.us/:TenantId/oauth2/v2.0/token",
+					"description": null,
+					"data": [
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"description": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "client_id",
+							"value": "f170da9d-224c-4127-87b4-c52b5446dabe",
+							"description": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "client_secret",
+							"value": "SRsUEfctLeJASxmSuA.7kWt_jmHQkf2VEL",
+							"description": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "scope",
+							"value": "https://management.usgovcloudapi.net/.default",
+							"description": "",
+							"type": "text",
+							"enabled": true
+						}
+					],
+					"dataOptions": null,
+					"dataMode": "params",
+					"headerData": null,
+					"method": "POST",
+					"pathVariableData": [
+						{
+							"key": "TenantId",
+							"value": "fae6d70f-954b-4811-92b6-0530d6f84c43"
+						}
+					],
+					"queryParams": [],
+					"auth": null,
+					"events": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "673ba63d-1063-4c7c-9cae-d15af69a4a91",
+								"exec": [
+									"var json = JSON.parse(responseBody);\r",
+									"pm.environment.set(\"bearerToken\", json.access_token)\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"folder": null,
+					"responses_order": [],
+					"preRequestScript": null,
+					"tests": "var json = JSON.parse(responseBody);\r\npm.environment.set(\"bearerToken\", json.access_token)\r\n\r\n",
+					"currentHelper": null,
+					"helperAttributes": null,
+					"collectionId": "449fae17-eaee-4fb2-8e25-664a73d0ca72",
+					"pathVariables": {
+						"TenantId": "fae6d70f-954b-4811-92b6-0530d6f84c43"
+					}
+				},
+				{
+					"id": "7f2412af-2e35-4c1f-9613-b726b567e633",
+					"uid": "0-7f2412af-2e35-4c1f-9613-b726b567e633",
+					"name": "Bearer Token: Graph API Copy 3",
+					"url": "https://login.microsoftonline.us/:TenantId/oauth2/v2.0/token",
+					"description": null,
+					"data": [
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"description": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "client_id",
+							"value": "139b8db2-dba2-4894-8cfa-f07afb02d8a5",
+							"description": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "client_secret",
+							"value": "7U_KhHP~Y_qp7xT4-48-VsVh93Bt2wBU2Z",
+							"description": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "scope",
+							"value": "https://management.usgovcloudapi.net/.default",
+							"description": "",
+							"type": "text",
+							"enabled": true
+						}
+					],
+					"dataOptions": null,
+					"dataMode": "params",
+					"headerData": null,
+					"method": "POST",
+					"pathVariableData": [
+						{
+							"key": "TenantId",
+							"value": "fae6d70f-954b-4811-92b6-0530d6f84c43"
+						}
+					],
+					"queryParams": [],
+					"auth": null,
+					"events": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "59931ff9-c455-4fcd-aaa7-ef6234c17536",
+								"exec": [
+									"var json = JSON.parse(responseBody);\r",
+									"pm.environment.set(\"bearerToken\", json.access_token)\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"folder": null,
+					"responses_order": [],
+					"preRequestScript": null,
+					"tests": "var json = JSON.parse(responseBody);\r\npm.environment.set(\"bearerToken\", json.access_token)\r\n\r\n",
+					"currentHelper": null,
+					"helperAttributes": null,
+					"collectionId": "449fae17-eaee-4fb2-8e25-664a73d0ca72",
+					"pathVariables": {
+						"TenantId": "fae6d70f-954b-4811-92b6-0530d6f84c43"
+					}
+				},
+				{
+					"id": "87b58f32-7ac6-4b75-8fab-8d116a3360cb",
+					"uid": "0-87b58f32-7ac6-4b75-8fab-8d116a3360cb",
+					"name": "Resource Test",
+					"url": "https://management.usgovcloudapi.net/providers/Microsoft.ResourceGraph/resources?api-version=2021-03-01",
+					"description": "",
+					"data": [],
+					"dataOptions": null,
+					"dataMode": "raw",
+					"headerData": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "",
+							"type": "text",
+							"enabled": true
+						}
+					],
+					"method": "POST",
+					"pathVariableData": [],
+					"queryParams": [
+						{
+							"key": "api-version",
+							"value": "2021-03-01",
+							"equals": true,
+							"description": "",
+							"enabled": true
+						}
+					],
+					"auth": {
+						"type": "bearer",
+						"bearer": [
+							{
+								"key": "token",
+								"value": "{{bearerToken}}"
+							}
+						]
+					},
+					"events": [],
+					"folder": null,
+					"responses_order": [],
+					"currentHelper": "bearerAuth",
+					"helperAttributes": {
+						"id": "bearer",
+						"token": "{{bearerToken}}"
+					},
+					"collectionId": "449fae17-eaee-4fb2-8e25-664a73d0ca72",
+					"rawModeData": "{\r\n  \"query\": \"Resources | where id == '/subscriptions/254480bb-8d06-4ea1-89cb-3b4283d8f359/resourceGroups/P-TX-RG-DDI/providers/Microsoft.Compute/availabilitySets/P-TX-AVSET-DDI'\",\r\n  \"options\": {\r\n    \"$top\": 250,\r\n    \"$skip\": 0\r\n  }\r\n}\r\n",
+					"headers": "Content-Type: application/json\n",
+					"pathVariables": {}
+				},
+				{
+					"id": "8fd04e4b-7d1b-42a3-bb8f-0eeeb6f42a7b",
+					"uid": "0-8fd04e4b-7d1b-42a3-bb8f-0eeeb6f42a7b",
+					"name": "Resource",
+					"url": "https://management.usgovcloudapi.net/providers/Microsoft.ResourceGraph/resources?api-version=2021-03-01",
+					"description": "",
+					"data": [],
+					"dataOptions": null,
+					"dataMode": "raw",
+					"headerData": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "",
+							"type": "text",
+							"enabled": true
+						}
+					],
+					"method": "POST",
+					"pathVariableData": [],
+					"queryParams": [
+						{
+							"key": "api-version",
+							"value": "2021-03-01",
+							"equals": true,
+							"description": "",
+							"enabled": true
+						}
+					],
+					"auth": {
+						"type": "bearer",
+						"bearer": [
+							{
+								"key": "token",
+								"value": "{{bearerToken}}"
+							}
+						]
+					},
+					"events": [],
+					"folder": null,
+					"responses_order": [],
+					"currentHelper": "bearerAuth",
+					"helperAttributes": {
+						"id": "bearer",
+						"token": "{{bearerToken}}"
+					},
+					"collectionId": "449fae17-eaee-4fb2-8e25-664a73d0ca72",
+					"rawModeData": "{\r\n  \"query\": \"Resources\",\r\n  \"options\": {\r\n    \"$top\": 300,\r\n    \"$skip\": 0\r\n  }\r\n}\r\n",
+					"headers": "Content-Type: application/json\n",
+					"pathVariables": {}
+				},
+				{
+					"id": "da8a569d-526e-40e1-8a15-171b87e15f41",
+					"uid": "0-da8a569d-526e-40e1-8a15-171b87e15f41",
+					"name": "Bearer Token: Graph API Copy 4",
+					"url": "https://login.microsoftonline.us/:TenantId/oauth2/v2.0/token",
+					"description": null,
+					"data": [
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"description": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "client_id",
+							"value": "139b8db2-dba2-4894-8cfa-f07afb02d8a5",
+							"description": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "client_secret",
+							"value": "1PkdkmzhJ-17_yvEJNMdZ1J0X.fV6DU~0.",
+							"description": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "scope",
+							"value": "https://management.usgovcloudapi.net/.default",
+							"description": "",
+							"type": "text",
+							"enabled": true
+						}
+					],
+					"dataOptions": null,
+					"dataMode": "params",
+					"headerData": null,
+					"method": "POST",
+					"pathVariableData": [
+						{
+							"key": "TenantId",
+							"value": "fae6d70f-954b-4811-92b6-0530d6f84c43"
+						}
+					],
+					"queryParams": [],
+					"auth": null,
+					"events": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "9d29dddc-f41c-430a-a973-97aaab3887ba",
+								"exec": [
+									"var json = JSON.parse(responseBody);\r",
+									"pm.environment.set(\"bearerToken\", json.access_token)\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"folder": null,
+					"responses_order": [],
+					"preRequestScript": null,
+					"tests": "var json = JSON.parse(responseBody);\r\npm.environment.set(\"bearerToken\", json.access_token)\r\n\r\n",
+					"currentHelper": null,
+					"helperAttributes": null,
+					"collectionId": "449fae17-eaee-4fb2-8e25-664a73d0ca72",
+					"pathVariables": {
+						"TenantId": "fae6d70f-954b-4811-92b6-0530d6f84c43"
+					}
+				},
+				{
+					"id": "dc75f9b2-ec63-4a44-9dec-aca58b585c3b",
+					"uid": "0-dc75f9b2-ec63-4a44-9dec-aca58b585c3b",
+					"name": "Resource - SkipToken",
+					"url": "https://management.usgovcloudapi.net/providers/Microsoft.ResourceGraph/resources?api-version=2021-03-01",
+					"description": "",
+					"data": [],
+					"dataOptions": null,
+					"dataMode": "raw",
+					"headerData": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "",
+							"type": "text",
+							"enabled": true
+						}
+					],
+					"method": "POST",
+					"pathVariableData": [],
+					"queryParams": [
+						{
+							"key": "api-version",
+							"value": "2021-03-01",
+							"equals": true,
+							"description": "",
+							"enabled": true
+						},
+						{
+							"key": "$skipToken",
+							"value": "\"ew0KICAiJGlkIjogIjEiLA0KICAiTWF4Um93cyI6IDI1MCwNCiAgIlJvd3NUb1NraXAiOiAyNTAsDQogICJLdXN0b0NsdXN0ZXJVcmwiOiAiaHR0cHM6Ly9hcmctZmZ2YS10d28tc2YuYXJnLmNvcmUudXNnb3ZjbG91ZGFwaS5uZXQiDQp9\"",
+							"equals": true,
+							"description": "",
+							"enabled": false
+						},
+						{
+							"key": "$top",
+							"value": "250",
+							"equals": true,
+							"description": "",
+							"enabled": false
+						}
+					],
+					"auth": {
+						"type": "bearer",
+						"bearer": [
+							{
+								"key": "token",
+								"value": "{{bearerToken}}"
+							}
+						]
+					},
+					"events": [],
+					"folder": null,
+					"responses_order": [],
+					"currentHelper": "bearerAuth",
+					"helperAttributes": {
+						"id": "bearer",
+						"token": "{{bearerToken}}"
+					},
+					"collectionId": "449fae17-eaee-4fb2-8e25-664a73d0ca72",
+					"rawModeData": "{\r\n  \"query\": \"Resources\",\r\n  \"options\": {\r\n    \"$skipToken\": \"ew0KICAiJGlkIjogIjEiLA0KICAiTWF4Um93cyI6IDEwMDAsDQogICJSb3dzVG9Ta2lwIjogMTAwMCwNCiAgIkt1c3RvQ2x1c3RlclVybCI6ICJodHRwczovL2FyZy1mZnZhLXR3by1zZi5hcmcuY29yZS51c2dvdmNsb3VkYXBpLm5ldCINCn0=\"\r\n  }\r\n}",
+					"headers": "Content-Type: application/json\n",
+					"pathVariables": {}
+				},
+				{
+					"id": "f3e48504-b7c7-463b-b5ea-2ee7709c6acf",
+					"uid": "0-f3e48504-b7c7-463b-b5ea-2ee7709c6acf",
+					"name": "Bearer Token: Graph API Copy 2",
+					"url": "https://login.microsoftonline.us/:TenantId/oauth2/v2.0/token",
+					"description": null,
+					"data": [
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"description": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "client_id",
+							"value": "8ba75d6f-4d9e-4cd0-821a-65346ded8fd5",
+							"description": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "client_secret",
+							"value": ".YJ84DWgYUd7yUlW6k6_ZTQj~nDyG~0k9t",
+							"description": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "scope",
+							"value": "https://management.usgovcloudapi.net/.default",
+							"description": "",
+							"type": "text",
+							"enabled": true
+						}
+					],
+					"dataOptions": null,
+					"dataMode": "params",
+					"headerData": null,
+					"method": "POST",
+					"pathVariableData": [
+						{
+							"key": "TenantId",
+							"value": "fae6d70f-954b-4811-92b6-0530d6f84c43"
+						}
+					],
+					"queryParams": [],
+					"auth": null,
+					"events": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "c2505ade-a327-42bc-a3a2-433280ebad31",
+								"exec": [
+									"var json = JSON.parse(responseBody);\r",
+									"pm.environment.set(\"bearerToken\", json.access_token)\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"folder": null,
+					"responses_order": [],
+					"preRequestScript": null,
+					"tests": "var json = JSON.parse(responseBody);\r\npm.environment.set(\"bearerToken\", json.access_token)\r\n\r\n",
+					"currentHelper": null,
+					"helperAttributes": null,
+					"collectionId": "449fae17-eaee-4fb2-8e25-664a73d0ca72",
+					"pathVariables": {
+						"TenantId": "fae6d70f-954b-4811-92b6-0530d6f84c43"
+					}
+				}
+			]
+		},
+		{
+			"id": "6caac758-1602-4c40-b8cd-c22893d6918a",
+			"uid": "0-6caac758-1602-4c40-b8cd-c22893d6918a",
+			"name": "PolicyStates",
+			"description": null,
+			"auth": null,
+			"events": null,
+			"variables": [],
+			"order": [
+				"f4b203b5-e111-4bbc-ab8f-f0874828507a",
+				"c034cf3e-1dc4-4188-9ac4-9d66d83234cd"
+			],
+			"folders_order": [],
+			"protocolProfileBehavior": {},
+			"createdAt": "2021-09-22T13:34:35.448Z",
+			"folders": [],
+			"requests": [
+				{
+					"id": "c034cf3e-1dc4-4188-9ac4-9d66d83234cd",
+					"uid": "0-c034cf3e-1dc4-4188-9ac4-9d66d83234cd",
+					"name": "PolicyStates",
+					"url": "https://management.usgovcloudapi.net/subscriptions/:subscriptionId/providers/Microsoft.PolicyInsights/policyStates/latest/queryResults?api-version=2019-10-01",
+					"description": "",
+					"data": [],
+					"dataOptions": null,
+					"dataMode": "raw",
+					"headerData": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "",
+							"type": "text",
+							"enabled": true
+						}
+					],
+					"method": "POST",
+					"pathVariableData": [
+						{
+							"key": "subscriptionId",
+							"value": "7db0f2e2-0d76-4cbb-aa0a-b88a1e8b8803"
+						}
+					],
+					"queryParams": [
+						{
+							"key": "api-version",
+							"value": "2019-10-01",
+							"equals": true,
+							"description": "",
+							"enabled": true
+						}
+					],
+					"auth": {
+						"type": "bearer",
+						"bearer": [
+							{
+								"key": "token",
+								"value": "{{bearerToken}}"
+							}
+						]
+					},
+					"events": [],
+					"folder": null,
+					"responses_order": [],
+					"currentHelper": "bearerAuth",
+					"helperAttributes": {
+						"id": "bearer",
+						"token": "{{bearerToken}}"
+					},
+					"collectionId": "6caac758-1602-4c40-b8cd-c22893d6918a",
+					"rawModeData": "{\r\n  \"query\": \"Resources\",\r\n  \"options\": {\r\n    \"$top\": 300,\r\n    \"$skip\": 0\r\n  }\r\n}\r\n",
+					"headers": "Content-Type: application/json\n",
+					"pathVariables": {
+						"subscriptionId": "7db0f2e2-0d76-4cbb-aa0a-b88a1e8b8803"
+					}
+				},
+				{
+					"id": "f4b203b5-e111-4bbc-ab8f-f0874828507a",
+					"uid": "0-f4b203b5-e111-4bbc-ab8f-f0874828507a",
+					"name": "Bearer Token: Policy States",
+					"url": "https://login.microsoftonline.us/:TenantId/oauth2/v2.0/token",
+					"description": null,
+					"data": [
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"description": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "client_id",
+							"value": "8ba75d6f-4d9e-4cd0-821a-65346ded8fd5",
+							"description": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "client_secret",
+							"value": "LDN0Zue3U6r7.7mlQokLv8I3VrBO9ntytc",
+							"description": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "scope",
+							"value": "https://management.usgovcloudapi.net/.default",
+							"description": "",
+							"type": "text",
+							"enabled": true
+						}
+					],
+					"dataOptions": null,
+					"dataMode": "params",
+					"headerData": null,
+					"method": "POST",
+					"pathVariableData": [
+						{
+							"key": "TenantId",
+							"value": "fae6d70f-954b-4811-92b6-0530d6f84c43"
+						}
+					],
+					"queryParams": [],
+					"auth": null,
+					"events": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "fe9d49a4-1e11-4964-b83b-506d71f5fdc0",
+								"exec": [
+									"var json = JSON.parse(responseBody);\r",
+									"pm.environment.set(\"bearerToken\", json.access_token)\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"folder": null,
+					"responses_order": [],
+					"preRequestScript": null,
+					"tests": "var json = JSON.parse(responseBody);\r\npm.environment.set(\"bearerToken\", json.access_token)\r\n\r\n",
+					"currentHelper": null,
+					"helperAttributes": null,
+					"collectionId": "6caac758-1602-4c40-b8cd-c22893d6918a",
+					"pathVariables": {
+						"TenantId": "fae6d70f-954b-4811-92b6-0530d6f84c43"
+					}
+				}
+			]
+		},
+		{
+			"id": "7d5a28d6-0334-49d2-9ae7-2cfd38bbd19d",
+			"uid": "0-7d5a28d6-0334-49d2-9ae7-2cfd38bbd19d",
+			"name": "LogAnalytics Dev",
+			"description": null,
+			"auth": null,
+			"events": null,
+			"variables": [],
+			"order": [
+				"5964b6ce-8c91-462c-a316-ffb33794e71a",
+				"dd652bad-9a54-48c7-9f6c-fd4f3b46307a"
+			],
+			"folders_order": [],
+			"protocolProfileBehavior": {},
+			"createdAt": "2021-07-21T19:50:10.502Z",
+			"folders": [],
+			"requests": [
+				{
+					"id": "5964b6ce-8c91-462c-a316-ffb33794e71a",
+					"uid": "0-5964b6ce-8c91-462c-a316-ffb33794e71a",
+					"name": "Bearer Token: Log Analytics",
+					"url": "https://login.microsoftonline.us/:TenantId/oauth2/token",
+					"description": null,
+					"data": [
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"description": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "client_id",
+							"value": "139b8db2-dba2-4894-8cfa-f07afb02d8a5",
+							"description": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "client_secret",
+							"value": "1PkdkmzhJ-17_yvEJNMdZ1J0X.fV6DU~0.",
+							"description": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "resource",
+							"value": "https://api.loganalytics.us",
+							"description": "",
+							"type": "text",
+							"enabled": true
+						}
+					],
+					"dataOptions": null,
+					"dataMode": "params",
+					"headerData": null,
+					"method": "POST",
+					"pathVariableData": [
+						{
+							"key": "TenantId",
+							"value": "fae6d70f-954b-4811-92b6-0530d6f84c43"
+						}
+					],
+					"queryParams": [],
+					"auth": null,
+					"events": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "c094f9d1-e552-4cc3-874e-6321a9c6ce86",
+								"exec": [
+									"var json = JSON.parse(responseBody);\r",
+									"pm.environment.set(\"bearerToken\", json.access_token)\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"folder": null,
+					"responses_order": [],
+					"preRequestScript": null,
+					"tests": "var json = JSON.parse(responseBody);\r\npm.environment.set(\"bearerToken\", json.access_token)\r\n\r\n",
+					"currentHelper": null,
+					"helperAttributes": null,
+					"collectionId": "7d5a28d6-0334-49d2-9ae7-2cfd38bbd19d",
+					"pathVariables": {
+						"TenantId": "fae6d70f-954b-4811-92b6-0530d6f84c43"
+					}
+				},
+				{
+					"id": "dd652bad-9a54-48c7-9f6c-fd4f3b46307a",
+					"uid": "0-dd652bad-9a54-48c7-9f6c-fd4f3b46307a",
+					"name": "logAnalytics - SecurityAlert",
+					"url": "https://api.loganalytics.us/v1/workspaces/:WorkspaceId/query?query=SecurityAlert | where TimeGenerated between ('1900-06-22 14:07:10.150' .. '2022-06-22 14:07:36.063')",
+					"description": "",
+					"data": null,
+					"dataOptions": null,
+					"dataMode": null,
+					"headerData": [],
+					"method": "GET",
+					"pathVariableData": [
+						{
+							"key": "WorkspaceId",
+							"value": ""
+						}
+					],
+					"queryParams": [
+						{
+							"key": "query",
+							"value": "SecurityAlert | where TimeGenerated between ('1900-06-22 14:07:10.150' .. '2022-06-22 14:07:36.063')",
+							"equals": true,
+							"description": "",
+							"enabled": true
+						}
+					],
+					"auth": {
+						"type": "bearer",
+						"bearer": [
+							{
+								"key": "token",
+								"value": "{{bearerToken}}"
+							}
+						]
+					},
+					"events": [],
+					"folder": null,
+					"responses_order": [],
+					"currentHelper": "bearerAuth",
+					"helperAttributes": {
+						"id": "bearer",
+						"token": "{{bearerToken}}"
+					},
+					"collectionId": "7d5a28d6-0334-49d2-9ae7-2cfd38bbd19d",
+					"headers": "",
+					"pathVariables": {
+						"WorkspaceId": ""
+					}
+				}
+			]
+		},
+		{
+			"id": "b996124b-651d-4b1a-8061-f5d197704e19",
+			"uid": "0-b996124b-651d-4b1a-8061-f5d197704e19",
+			"name": "A365",
+			"description": null,
+			"auth": null,
+			"events": null,
+			"variables": [],
+			"order": [
+				"f4a1d9e2-b65b-4473-9d54-6c590e5ec6ee",
+				"4fdea5d5-bd38-40e8-9c92-010641e989da"
+			],
+			"folders_order": [],
+			"protocolProfileBehavior": {},
+			"createdAt": "2022-02-01T20:28:59.084Z",
+			"folders": [],
+			"requests": [
+				{
+					"id": "4fdea5d5-bd38-40e8-9c92-010641e989da",
+					"uid": "0-4fdea5d5-bd38-40e8-9c92-010641e989da",
+					"name": "A365",
+					"url": "https://dod-graph.microsoft.us/v1.0/reports/getSharePointActivityUserDetail(period='D7')",
+					"description": "",
+					"data": null,
+					"dataOptions": null,
+					"dataMode": null,
+					"headerData": [],
+					"method": "GET",
+					"pathVariableData": [],
+					"queryParams": [],
+					"auth": {
+						"type": "bearer",
+						"bearer": [
+							{
+								"key": "token",
+								"value": "{{bearerToken}}"
+							}
+						]
+					},
+					"events": [],
+					"folder": null,
+					"responses_order": [],
+					"currentHelper": "bearerAuth",
+					"helperAttributes": {
+						"id": "bearer",
+						"token": "{{bearerToken}}"
+					},
+					"collectionId": "b996124b-651d-4b1a-8061-f5d197704e19",
+					"headers": "",
+					"pathVariables": {}
+				},
+				{
+					"id": "f4a1d9e2-b65b-4473-9d54-6c590e5ec6ee",
+					"uid": "0-f4a1d9e2-b65b-4473-9d54-6c590e5ec6ee",
+					"name": "Bearer Token: Graph API Copy",
+					"url": "https://login.microsoftonline.us/:TenantId/oauth2/v2.0/token",
+					"description": null,
+					"data": [
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"description": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "client_id",
+							"value": "f170da9d-224c-4127-87b4-c52b5446dabe",
+							"description": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "client_secret",
+							"value": "yHy0_cQPZiBv0aK_pjN4W~Ik_V0bS~d114",
+							"description": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "scope",
+							"value": "https://dod-graph.microsoft.us/.default",
+							"description": "",
+							"type": "text",
+							"enabled": true
+						}
+					],
+					"dataOptions": null,
+					"dataMode": "params",
+					"headerData": null,
+					"method": "POST",
+					"pathVariableData": [
+						{
+							"key": "TenantId",
+							"value": "fae6d70f-954b-4811-92b6-0530d6f84c43"
+						}
+					],
+					"queryParams": [],
+					"auth": null,
+					"events": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "77ab09a9-2e22-4a01-ba77-0b459f8a0301",
+								"exec": [
+									"var json = JSON.parse(responseBody);\r",
+									"pm.environment.set(\"bearerToken\", json.access_token)\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"folder": null,
+					"responses_order": [],
+					"preRequestScript": null,
+					"tests": "var json = JSON.parse(responseBody);\r\npm.environment.set(\"bearerToken\", json.access_token)\r\n\r\n",
+					"currentHelper": null,
+					"helperAttributes": null,
+					"collectionId": "b996124b-651d-4b1a-8061-f5d197704e19",
+					"pathVariables": {
+						"TenantId": "fae6d70f-954b-4811-92b6-0530d6f84c43"
+					}
+				}
+			]
+		},
+		{
+			"id": "d3fc0c02-52cb-404e-8430-545322f1435d",
+			"uid": "0-d3fc0c02-52cb-404e-8430-545322f1435d",
+			"name": "LogAnalytics",
+			"description": null,
+			"auth": null,
+			"events": null,
+			"variables": [],
+			"order": [
+				"a102c58c-6971-44de-aed5-4c60f8ce9b19",
+				"a9e4a190-f546-4558-8220-bc1c7efcbd7f"
+			],
+			"folders_order": [],
+			"protocolProfileBehavior": {},
+			"createdAt": "2021-06-25T13:59:40.346Z",
+			"folders": [],
+			"requests": [
+				{
+					"id": "a102c58c-6971-44de-aed5-4c60f8ce9b19",
+					"uid": "0-a102c58c-6971-44de-aed5-4c60f8ce9b19",
+					"name": "Bearer Token: Log Analytics",
+					"url": "https://login.microsoftonline.us/:TenantId/oauth2/token",
+					"description": null,
+					"data": [
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"description": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "client_id",
+							"value": "f170da9d-224c-4127-87b4-c52b5446dabe",
+							"description": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "client_secret",
+							"value": "SRsUEfctLeJASxmSuA.7kWt_jmHQkf2VEL",
+							"description": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "resource",
+							"value": "https://api.loganalytics.us",
+							"description": "",
+							"type": "text",
+							"enabled": true
+						}
+					],
+					"dataOptions": null,
+					"dataMode": "params",
+					"headerData": null,
+					"method": "POST",
+					"pathVariableData": [
+						{
+							"key": "TenantId",
+							"value": "fae6d70f-954b-4811-92b6-0530d6f84c43"
+						}
+					],
+					"queryParams": [],
+					"auth": null,
+					"events": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "f6e5d9f6-c5bc-4932-b6d8-70117f5ae0d9",
+								"exec": [
+									"var json = JSON.parse(responseBody);\r",
+									"pm.environment.set(\"bearerToken\", json.access_token)\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"folder": null,
+					"responses_order": [],
+					"preRequestScript": null,
+					"tests": "var json = JSON.parse(responseBody);\r\npm.environment.set(\"bearerToken\", json.access_token)\r\n\r\n",
+					"currentHelper": null,
+					"helperAttributes": null,
+					"collectionId": "d3fc0c02-52cb-404e-8430-545322f1435d",
+					"pathVariables": {
+						"TenantId": "fae6d70f-954b-4811-92b6-0530d6f84c43"
+					}
+				},
+				{
+					"id": "a9e4a190-f546-4558-8220-bc1c7efcbd7f",
+					"uid": "0-a9e4a190-f546-4558-8220-bc1c7efcbd7f",
+					"name": "logAnalytics - SecurityAlert",
+					"url": "https://api.loganalytics.us/v1/workspaces/:WorkspaceId/query?query=SecurityAlert | where TimeGenerated between ('1900-06-22 14:07:10.150' .. '2022-06-22 14:07:36.063')",
+					"description": "",
+					"data": null,
+					"dataOptions": null,
+					"dataMode": null,
+					"headerData": [
+						{
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"description": "",
+							"type": "text",
+							"enabled": true
+						}
+					],
+					"method": "GET",
+					"pathVariableData": [
+						{
+							"key": "WorkspaceId",
+							"value": "0650461d-93bc-470b-b1db-f7bbdd5ffc08"
+						}
+					],
+					"queryParams": [
+						{
+							"key": "query",
+							"value": "SecurityAlert | where TimeGenerated between ('1900-06-22 14:07:10.150' .. '2022-06-22 14:07:36.063')",
+							"equals": true,
+							"description": "",
+							"enabled": true
+						}
+					],
+					"auth": {
+						"type": "bearer",
+						"bearer": [
+							{
+								"key": "token",
+								"value": "{{bearerToken}}"
+							}
+						]
+					},
+					"events": [],
+					"folder": null,
+					"responses_order": [],
+					"currentHelper": "bearerAuth",
+					"helperAttributes": {
+						"id": "bearer",
+						"token": "{{bearerToken}}"
+					},
+					"collectionId": "d3fc0c02-52cb-404e-8430-545322f1435d",
+					"headers": "content-type: application/json; charset=utf-8\n",
+					"pathVariables": {
+						"WorkspaceId": "0650461d-93bc-470b-b1db-f7bbdd5ffc08"
+					}
+				}
+			]
+		},
+		{
+			"id": "d4cf7d79-0bbd-4a03-a1b1-55bd64417b86",
+			"uid": "0-d4cf7d79-0bbd-4a03-a1b1-55bd64417b86",
+			"name": "Databricks",
+			"description": null,
+			"auth": null,
+			"events": null,
+			"variables": [],
+			"order": [
+				"5454ddd4-189c-47cb-bf74-672bc8e54d2a",
+				"9c52119a-500c-4f89-9535-14d6c208ec17",
+				"a30d18e6-1207-40f3-85e6-2489e8e0c795",
+				"19c4af22-77f0-471b-b9fb-6abf73f01b7b",
+				"5f660d93-fd3f-4303-8c25-d1d0efe0a119",
+				"40cee9c7-bf73-4c7e-ae4d-5c9466544a6b"
+			],
+			"folders_order": [],
+			"protocolProfileBehavior": {},
+			"createdAt": "2021-09-09T16:08:20.611Z",
+			"folders": [],
+			"requests": [
+				{
+					"id": "19c4af22-77f0-471b-b9fb-6abf73f01b7b",
+					"uid": "0-19c4af22-77f0-471b-b9fb-6abf73f01b7b",
+					"name": "Databricks Get Job List",
+					"url": "https://adb-8103539900501678.2.databricks.azure.us/api/2.1/jobs/runs/list?active_only=true",
+					"description": "",
+					"data": [],
+					"dataOptions": null,
+					"dataMode": "raw",
+					"headerData": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "",
+							"type": "text",
+							"enabled": true
+						}
+					],
+					"method": "GET",
+					"pathVariableData": [],
+					"queryParams": [
+						{
+							"key": "active_only",
+							"value": "true",
+							"equals": true,
+							"description": "",
+							"enabled": true
+						}
+					],
+					"auth": {
+						"type": "bearer",
+						"bearer": [
+							{
+								"key": "token",
+								"value": "{{bearerToken}}"
+							}
+						]
+					},
+					"events": [],
+					"folder": null,
+					"responses_order": [],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"currentHelper": "bearerAuth",
+					"helperAttributes": {
+						"id": "bearer",
+						"token": "{{bearerToken}}"
+					},
+					"collectionId": "d4cf7d79-0bbd-4a03-a1b1-55bd64417b86",
+					"rawModeData": "",
+					"headers": "Content-Type: application/json\n",
+					"pathVariables": {}
+				},
+				{
+					"id": "40cee9c7-bf73-4c7e-ae4d-5c9466544a6b",
+					"uid": "0-40cee9c7-bf73-4c7e-ae4d-5c9466544a6b",
+					"name": "Resource - SkipToken",
+					"url": "https://management.usgovcloudapi.net/providers/Microsoft.ResourceGraph/resources?api-version=2021-03-01&$skipToken=\"ew0KICAiJGlkIjogIjEiLA0KICAiTWF4Um93cyI6IDMwMCwNCiAgIlJvd3NUb1NraXAiOiAzMDAsDQogICJLdXN0b0NsdXN0ZXJVcmwiOiAiaHR0cHM6Ly9hcmctZmZhei1vbmUtc2YuYXJnLmNvcmUudXNnb3ZjbG91ZGFwaS5uZXQiDQp9\"&$top=300",
+					"description": "",
+					"data": [],
+					"dataOptions": null,
+					"dataMode": "raw",
+					"headerData": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "",
+							"type": "text",
+							"enabled": true
+						}
+					],
+					"method": "POST",
+					"pathVariableData": [],
+					"queryParams": [
+						{
+							"key": "api-version",
+							"value": "2021-03-01",
+							"equals": true,
+							"description": "",
+							"enabled": true
+						},
+						{
+							"key": "$skipToken",
+							"value": "\"ew0KICAiJGlkIjogIjEiLA0KICAiTWF4Um93cyI6IDMwMCwNCiAgIlJvd3NUb1NraXAiOiAzMDAsDQogICJLdXN0b0NsdXN0ZXJVcmwiOiAiaHR0cHM6Ly9hcmctZmZhei1vbmUtc2YuYXJnLmNvcmUudXNnb3ZjbG91ZGFwaS5uZXQiDQp9\"",
+							"equals": true,
+							"description": "",
+							"enabled": true
+						},
+						{
+							"key": "$top",
+							"value": "300",
+							"equals": true,
+							"description": "",
+							"enabled": true
+						}
+					],
+					"auth": {
+						"type": "bearer",
+						"bearer": [
+							{
+								"key": "token",
+								"value": "{{bearerToken}}"
+							}
+						]
+					},
+					"events": [],
+					"folder": null,
+					"responses_order": [],
+					"currentHelper": "bearerAuth",
+					"helperAttributes": {
+						"id": "bearer",
+						"token": "{{bearerToken}}"
+					},
+					"collectionId": "d4cf7d79-0bbd-4a03-a1b1-55bd64417b86",
+					"rawModeData": "{\r\n  \"query\": \"Resources\",\r\n  \"options\": {\r\n    \"$top\": 300,\r\n    \"$skipToken\": \"ew0KICAiJGlkIjogIjEiLA0KICAiTWF4Um93cyI6IDMwMCwNCiAgIlJvd3NUb1NraXAiOiAzMDAsDQogICJLdXN0b0NsdXN0ZXJVcmwiOiAiaHR0cHM6Ly9hcmctZmZhei1vbmUtc2YuYXJnLmNvcmUudXNnb3ZjbG91ZGFwaS5uZXQiDQp9\"\r\n  }\r\n}",
+					"headers": "Content-Type: application/json\n",
+					"pathVariables": {}
+				},
+				{
+					"id": "5454ddd4-189c-47cb-bf74-672bc8e54d2a",
+					"uid": "0-5454ddd4-189c-47cb-bf74-672bc8e54d2a",
+					"name": "Bearer Token: DataBricks",
+					"url": "https://login.microsoftonline.us/:TenantId/oauth2/token",
+					"description": null,
+					"data": [
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"description": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "client_id",
+							"value": "f170da9d-224c-4127-87b4-c52b5446dabe",
+							"description": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "client_secret",
+							"value": "yHy0_cQPZiBv0aK_pjN4W~Ik_V0bS~d114",
+							"description": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "resource",
+							"value": "2ff814a6-3304-4ab8-85cb-cd0e6f879c1d",
+							"description": "",
+							"type": "text",
+							"enabled": true
+						}
+					],
+					"dataOptions": null,
+					"dataMode": "params",
+					"headerData": null,
+					"method": "POST",
+					"pathVariableData": [
+						{
+							"key": "TenantId",
+							"value": "fae6d70f-954b-4811-92b6-0530d6f84c43"
+						}
+					],
+					"queryParams": [],
+					"auth": null,
+					"events": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "0024b47c-324d-427e-bedc-629ef537201b",
+								"exec": [
+									"var json = JSON.parse(responseBody);\r",
+									"pm.environment.set(\"bearerToken\", json.access_token)\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"folder": null,
+					"responses_order": [],
+					"preRequestScript": null,
+					"tests": "var json = JSON.parse(responseBody);\r\npm.environment.set(\"bearerToken\", json.access_token)\r\n\r\n",
+					"currentHelper": null,
+					"helperAttributes": null,
+					"collectionId": "d4cf7d79-0bbd-4a03-a1b1-55bd64417b86",
+					"pathVariables": {
+						"TenantId": "fae6d70f-954b-4811-92b6-0530d6f84c43"
+					}
+				},
+				{
+					"id": "5f660d93-fd3f-4303-8c25-d1d0efe0a119",
+					"uid": "0-5f660d93-fd3f-4303-8c25-d1d0efe0a119",
+					"name": "Databricks Cancel Job Run",
+					"url": "https://adb-8103539900501678.2.databricks.azure.us/api/2.1/jobs/runs/cancel",
+					"description": "",
+					"data": [],
+					"dataOptions": null,
+					"dataMode": "raw",
+					"headerData": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "",
+							"type": "text",
+							"enabled": true
+						}
+					],
+					"method": "POST",
+					"pathVariableData": [],
+					"queryParams": [],
+					"auth": {
+						"type": "bearer",
+						"bearer": [
+							{
+								"key": "token",
+								"value": "{{bearerToken}}"
+							}
+						]
+					},
+					"events": [],
+					"folder": null,
+					"responses_order": [],
+					"currentHelper": "bearerAuth",
+					"helperAttributes": {
+						"id": "bearer",
+						"token": "{{bearerToken}}"
+					},
+					"collectionId": "d4cf7d79-0bbd-4a03-a1b1-55bd64417b86",
+					"rawModeData": "{\r\n  \"run_id\": \"978192\"\r\n}\r\n",
+					"headers": "Content-Type: application/json\n",
+					"pathVariables": {}
+				},
+				{
+					"id": "9c52119a-500c-4f89-9535-14d6c208ec17",
+					"uid": "0-9c52119a-500c-4f89-9535-14d6c208ec17",
+					"name": "Databricks Terminate Cluster",
+					"url": "https://adb-8103539900501678.2.databricks.azure.us/api/2.0/clusters/delete",
+					"description": "",
+					"data": [],
+					"dataOptions": null,
+					"dataMode": "raw",
+					"headerData": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "",
+							"type": "text",
+							"enabled": true
+						}
+					],
+					"method": "POST",
+					"pathVariableData": [],
+					"queryParams": [],
+					"auth": {
+						"type": "bearer",
+						"bearer": [
+							{
+								"key": "token",
+								"value": "{{bearerToken}}"
+							}
+						]
+					},
+					"events": [],
+					"folder": null,
+					"responses_order": [],
+					"currentHelper": "bearerAuth",
+					"helperAttributes": {
+						"id": "bearer",
+						"token": "{{bearerToken}}"
+					},
+					"collectionId": "d4cf7d79-0bbd-4a03-a1b1-55bd64417b86",
+					"rawModeData": "{\r\n  \"cluster_id\": \"0607-212452-gears48\"\r\n}\r\n",
+					"headers": "Content-Type: application/json\n",
+					"pathVariables": {}
+				},
+				{
+					"id": "a30d18e6-1207-40f3-85e6-2489e8e0c795",
+					"uid": "0-a30d18e6-1207-40f3-85e6-2489e8e0c795",
+					"name": "Databricks Get Cluster",
+					"url": "https://adb-8103539900501678.2.databricks.azure.us/api/2.0/clusters/get",
+					"description": "",
+					"data": [],
+					"dataOptions": null,
+					"dataMode": "raw",
+					"headerData": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "",
+							"type": "text",
+							"enabled": true
+						}
+					],
+					"method": "POST",
+					"pathVariableData": [],
+					"queryParams": [],
+					"auth": {
+						"type": "bearer",
+						"bearer": [
+							{
+								"key": "token",
+								"value": "{{bearerToken}}"
+							}
+						]
+					},
+					"events": [],
+					"folder": null,
+					"responses_order": [],
+					"currentHelper": "bearerAuth",
+					"helperAttributes": {
+						"id": "bearer",
+						"token": "{{bearerToken}}"
+					},
+					"collectionId": "d4cf7d79-0bbd-4a03-a1b1-55bd64417b86",
+					"rawModeData": "{\r\n  \"cluster_id\": \"0607-212452-gears48\"\r\n}\r\n",
+					"headers": "Content-Type: application/json\n",
+					"pathVariables": {}
+				}
+			]
+		},
+		{
+			"id": "e1b29599-718f-4308-b275-e6aa8122048c",
+			"uid": "0-e1b29599-718f-4308-b275-e6aa8122048c",
+			"name": "Metrics",
+			"description": null,
+			"auth": null,
+			"events": null,
+			"variables": [],
+			"order": [
+				"2e3193b4-5d00-41d1-85ef-a80c80a1a87c",
+				"eb735bb6-0eee-4efb-9479-fdb6d79754d8",
+				"ea7ba50e-16a2-4eb2-af20-c0b51ec0d391",
+				"1ff0e3b5-e801-4cca-a7eb-0af54c315f37",
+				"7509d4ee-373b-4019-a884-619f64d478bc"
+			],
+			"folders_order": [],
+			"protocolProfileBehavior": {},
+			"createdAt": "2022-01-11T20:14:26.971Z",
+			"folders": [],
+			"requests": [
+				{
+					"id": "1ff0e3b5-e801-4cca-a7eb-0af54c315f37",
+					"uid": "0-1ff0e3b5-e801-4cca-a7eb-0af54c315f37",
+					"name": "Metrics - StorageAccount",
+					"url": "https://management.usgovcloudapi.net/subscriptions/:subscriptionId/resourceGroups/:resourceGroupName/providers/:providers/:resource-type/:resource-name/providers/microsoft.insights/metrics?metricnames=Transactions&timespan=2021-012-01T02:00Z/2021-12-12T02:05&`$filter=apiname eq 'GetBlobProperties'&interval=PT1M&aggregation=Total&top=3&orderby=Total desc&api-version=2019-07-01",
+					"description": "",
+					"data": [],
+					"dataOptions": null,
+					"dataMode": "raw",
+					"headerData": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "",
+							"type": "text",
+							"enabled": true
+						}
+					],
+					"method": "GET",
+					"pathVariableData": [
+						{
+							"key": "subscriptionId",
+							"value": "96ec76b3-d172-42ca-9360-ae675bbd5961"
+						},
+						{
+							"key": "resourceGroupName",
+							"value": ""
+						},
+						{
+							"key": "providers",
+							"value": ""
+						},
+						{
+							"key": "resource-type",
+							"value": ""
+						},
+						{
+							"key": "resource-name",
+							"value": ""
+						}
+					],
+					"queryParams": [
+						{
+							"key": "metricnames",
+							"value": "Transactions",
+							"equals": true,
+							"description": "",
+							"enabled": true
+						},
+						{
+							"key": "timespan",
+							"value": "2021-012-01T02:00Z/2021-12-12T02:05",
+							"equals": true,
+							"description": "",
+							"enabled": true
+						},
+						{
+							"key": "`$filter",
+							"value": "apiname eq 'GetBlobProperties'",
+							"equals": true,
+							"description": "",
+							"enabled": true
+						},
+						{
+							"key": "interval",
+							"value": "PT1M",
+							"equals": true,
+							"description": "",
+							"enabled": true
+						},
+						{
+							"key": "aggregation",
+							"value": "Total",
+							"equals": true,
+							"description": "",
+							"enabled": true
+						},
+						{
+							"key": "top",
+							"value": "3",
+							"equals": true,
+							"description": "",
+							"enabled": true
+						},
+						{
+							"key": "orderby",
+							"value": "Total desc",
+							"equals": true,
+							"description": "",
+							"enabled": true
+						},
+						{
+							"key": "api-version",
+							"value": "2019-07-01",
+							"equals": true,
+							"description": "",
+							"enabled": true
+						}
+					],
+					"auth": {
+						"type": "bearer",
+						"bearer": [
+							{
+								"key": "token",
+								"value": "{{bearerToken}}"
+							}
+						]
+					},
+					"events": [],
+					"folder": null,
+					"responses_order": [],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"currentHelper": "bearerAuth",
+					"helperAttributes": {
+						"id": "bearer",
+						"token": "{{bearerToken}}"
+					},
+					"collectionId": "e1b29599-718f-4308-b275-e6aa8122048c",
+					"rawModeData": "",
+					"headers": "Content-Type: application/json\n",
+					"pathVariables": {
+						"subscriptionId": "96ec76b3-d172-42ca-9360-ae675bbd5961",
+						"resourceGroupName": "",
+						"providers": "",
+						"resource-type": "",
+						"resource-name": ""
+					}
+				},
+				{
+					"id": "2e3193b4-5d00-41d1-85ef-a80c80a1a87c",
+					"uid": "0-2e3193b4-5d00-41d1-85ef-a80c80a1a87c",
+					"name": "Bearer Token: Metrics",
+					"url": "https://login.microsoftonline.us/:TenantId/oauth2/v2.0/token",
+					"description": null,
+					"data": [
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"description": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "client_id",
+							"value": "f170da9d-224c-4127-87b4-c52b5446dabe",
+							"description": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "client_secret",
+							"value": "yHy0_cQPZiBv0aK_pjN4W~Ik_V0bS~d114",
+							"description": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "scope",
+							"value": "https://management.usgovcloudapi.net/.default",
+							"description": "",
+							"type": "text",
+							"enabled": true
+						}
+					],
+					"dataOptions": null,
+					"dataMode": "params",
+					"headerData": null,
+					"method": "POST",
+					"pathVariableData": [
+						{
+							"key": "TenantId",
+							"value": "fae6d70f-954b-4811-92b6-0530d6f84c43"
+						}
+					],
+					"queryParams": [],
+					"auth": null,
+					"events": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "af953dd4-289b-45fd-b5cf-bd8021681e88",
+								"exec": [
+									"var json = JSON.parse(responseBody);\r",
+									"pm.environment.set(\"bearerToken\", json.access_token)\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"folder": null,
+					"responses_order": [],
+					"preRequestScript": null,
+					"tests": "var json = JSON.parse(responseBody);\r\npm.environment.set(\"bearerToken\", json.access_token)\r\n\r\n",
+					"currentHelper": null,
+					"helperAttributes": null,
+					"collectionId": "e1b29599-718f-4308-b275-e6aa8122048c",
+					"pathVariables": {
+						"TenantId": "fae6d70f-954b-4811-92b6-0530d6f84c43"
+					}
+				},
+				{
+					"id": "7509d4ee-373b-4019-a884-619f64d478bc",
+					"uid": "0-7509d4ee-373b-4019-a884-619f64d478bc",
+					"name": "Resource Health",
+					"url": "https://management.usgovcloudapi.net/subscriptions/:subscriptionId/providers/Microsoft.ResourceHealth/availabilityStatuses?api-version=2018-07-01",
+					"description": "",
+					"data": [],
+					"dataOptions": null,
+					"dataMode": "raw",
+					"headerData": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "",
+							"type": "text",
+							"enabled": true
+						}
+					],
+					"method": "GET",
+					"pathVariableData": [
+						{
+							"key": "subscriptionId",
+							"value": "96ec76b3-d172-42ca-9360-ae675bbd5961"
+						}
+					],
+					"queryParams": [
+						{
+							"key": "api-version",
+							"value": "2018-07-01",
+							"equals": true,
+							"description": "",
+							"enabled": true
+						}
+					],
+					"auth": {
+						"type": "bearer",
+						"bearer": [
+							{
+								"key": "token",
+								"value": "{{bearerToken}}"
+							}
+						]
+					},
+					"events": [],
+					"folder": null,
+					"responses_order": [],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"currentHelper": "bearerAuth",
+					"helperAttributes": {
+						"id": "bearer",
+						"token": "{{bearerToken}}"
+					},
+					"collectionId": "e1b29599-718f-4308-b275-e6aa8122048c",
+					"rawModeData": "",
+					"headers": "Content-Type: application/json\n",
+					"pathVariables": {
+						"subscriptionId": "96ec76b3-d172-42ca-9360-ae675bbd5961"
+					}
+				},
+				{
+					"id": "ea7ba50e-16a2-4eb2-af20-c0b51ec0d391",
+					"uid": "0-ea7ba50e-16a2-4eb2-af20-c0b51ec0d391",
+					"name": "Metrics - Synapse",
+					"url": "https://management.usgovcloudapi.net/subscriptions/:subscriptionId/resourceGroups/:resourceGroupName/providers/:providers/:resource-type/:resource-name/providers/microsoft.insights/metrics?metricnames=IntegrationPipelineRunsEnded,IntegrationActivityRunsEnded,IntegrationTriggerRunsEnded,BuiltinSqlPoolLoginAttempts,BuiltinSqlPoolRequestsEnded,BuiltinSqlPoolDataProcessedBytes,SQLStreamingResourceUtilization,SQLStreamingRuntimeErrors,SQLStreamingOutOfOrderEvents,SQLStreamingInputEvents,SQLStreamingInputEventBytes,SQLStreamingLateInputEvents,SQLStreamingEarlyInputEvents,SQLStreamingDeserializationError,SQLStreamingConversionErrors,SQLStreamingBackloggedInputEventSources,SQLStreamingInputEventsSourcesPerSecond,SQLStreamingOutputEvents,SQLStreamingOutputWatermarkDelaySeconds&api-version=2018-01-01&",
+					"description": "",
+					"data": [],
+					"dataOptions": null,
+					"dataMode": "raw",
+					"headerData": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "",
+							"type": "text",
+							"enabled": true
+						}
+					],
+					"method": "GET",
+					"pathVariableData": [
+						{
+							"key": "subscriptionId",
+							"value": "96ec76b3-d172-42ca-9360-ae675bbd5961"
+						},
+						{
+							"key": "resourceGroupName",
+							"value": "cde-sandbox"
+						},
+						{
+							"key": "providers",
+							"value": "Microsoft.Synapse"
+						},
+						{
+							"key": "resource-type",
+							"value": "workspaces"
+						},
+						{
+							"key": "resource-name",
+							"value": "synwseitaasdatateam"
+						}
+					],
+					"queryParams": [
+						{
+							"key": "metricnames",
+							"value": "IntegrationPipelineRunsEnded,IntegrationActivityRunsEnded,IntegrationTriggerRunsEnded,BuiltinSqlPoolLoginAttempts,BuiltinSqlPoolRequestsEnded,BuiltinSqlPoolDataProcessedBytes,SQLStreamingResourceUtilization,SQLStreamingRuntimeErrors,SQLStreamingOutOfOrderEvents,SQLStreamingInputEvents,SQLStreamingInputEventBytes,SQLStreamingLateInputEvents,SQLStreamingEarlyInputEvents,SQLStreamingDeserializationError,SQLStreamingConversionErrors,SQLStreamingBackloggedInputEventSources,SQLStreamingInputEventsSourcesPerSecond,SQLStreamingOutputEvents,SQLStreamingOutputWatermarkDelaySeconds",
+							"equals": true,
+							"description": "",
+							"enabled": true
+						},
+						{
+							"key": "api-version",
+							"value": "2018-01-01",
+							"equals": true,
+							"description": "",
+							"enabled": true
+						},
+						{
+							"key": "",
+							"value": null,
+							"equals": false,
+							"description": "",
+							"enabled": true
+						}
+					],
+					"auth": {
+						"type": "bearer",
+						"bearer": [
+							{
+								"key": "token",
+								"value": "{{bearerToken}}"
+							}
+						]
+					},
+					"events": [],
+					"folder": null,
+					"responses_order": [],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"currentHelper": "bearerAuth",
+					"helperAttributes": {
+						"id": "bearer",
+						"token": "{{bearerToken}}"
+					},
+					"collectionId": "e1b29599-718f-4308-b275-e6aa8122048c",
+					"rawModeData": "",
+					"headers": "Content-Type: application/json\n",
+					"pathVariables": {
+						"subscriptionId": "96ec76b3-d172-42ca-9360-ae675bbd5961",
+						"resourceGroupName": "cde-sandbox",
+						"providers": "Microsoft.Synapse",
+						"resource-type": "workspaces",
+						"resource-name": "synwseitaasdatateam"
+					}
+				},
+				{
+					"id": "eb735bb6-0eee-4efb-9479-fdb6d79754d8",
+					"uid": "0-eb735bb6-0eee-4efb-9479-fdb6d79754d8",
+					"name": "Metrics - SQLPool",
+					"url": "https://management.usgovcloudapi.net/subscriptions/:subscriptionId/resourceGroups/:resourceGroupName/providers/Microsoft.Synapse/workspaces/synwseitaasdatateam/sqlPools/synwsdbdatateam/providers/microsoft.insights/metrics?metricnames=DWULimit,DWUUsed,DWUUsedPercent,ConnectionsBlockedByFirewall,AdaptiveCacheHitPercent,AdaptiveCacheUsedPercent,LocalTempDBUsedPercent,MemoryUsedPercent,CPUPercent,Connections,WLGActiveQueries,WLGActiveQueriesTimeouts,WLGAllocationBySystemPercent,WLGAllocationByEffectiveCapResourcePercent,WLGEffectiveCapResourcePercent,WLGEffectiveMinResourcePercent,WLGQueuedQueries,ActiveQueries,QueuedQueries&interval=PT1M&aggregation=Average,Maximum,Minimum,Count,Total&api-version=2017-12-01-preview",
+					"description": "",
+					"data": [],
+					"dataOptions": null,
+					"dataMode": "raw",
+					"headerData": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "",
+							"type": "text",
+							"enabled": true
+						}
+					],
+					"method": "GET",
+					"pathVariableData": [
+						{
+							"key": "subscriptionId",
+							"value": "96ec76b3-d172-42ca-9360-ae675bbd5961"
+						},
+						{
+							"key": "resourceGroupName",
+							"value": "cde-sandbox"
+						}
+					],
+					"queryParams": [
+						{
+							"key": "metricnames",
+							"value": "DWULimit,DWUUsed,DWUUsedPercent,ConnectionsBlockedByFirewall,AdaptiveCacheHitPercent,AdaptiveCacheUsedPercent,LocalTempDBUsedPercent,MemoryUsedPercent,CPUPercent,Connections,WLGActiveQueries,WLGActiveQueriesTimeouts,WLGAllocationBySystemPercent,WLGAllocationByEffectiveCapResourcePercent,WLGEffectiveCapResourcePercent,WLGEffectiveMinResourcePercent,WLGQueuedQueries,ActiveQueries,QueuedQueries",
+							"equals": true,
+							"description": "",
+							"enabled": true
+						},
+						{
+							"key": "interval",
+							"value": "PT1M",
+							"equals": true,
+							"description": "",
+							"enabled": true
+						},
+						{
+							"key": "aggregation",
+							"value": "Average,Maximum,Minimum,Count,Total",
+							"equals": true,
+							"description": "",
+							"enabled": true
+						},
+						{
+							"key": "api-version",
+							"value": "2017-12-01-preview",
+							"equals": true,
+							"description": "",
+							"enabled": true
+						}
+					],
+					"auth": {
+						"type": "bearer",
+						"bearer": [
+							{
+								"key": "token",
+								"value": "{{bearerToken}}"
+							}
+						]
+					},
+					"events": [],
+					"folder": null,
+					"responses_order": [],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"currentHelper": "bearerAuth",
+					"helperAttributes": {
+						"id": "bearer",
+						"token": "{{bearerToken}}"
+					},
+					"collectionId": "e1b29599-718f-4308-b275-e6aa8122048c",
+					"rawModeData": "",
+					"headers": "Content-Type: application/json\n",
+					"pathVariables": {
+						"subscriptionId": "96ec76b3-d172-42ca-9360-ae675bbd5961",
+						"resourceGroupName": "cde-sandbox"
+					}
+				}
+			]
+		},
+		{
+			"id": "ecec712f-73b5-46e0-93ff-343730d8b29a",
+			"uid": "0-ecec712f-73b5-46e0-93ff-343730d8b29a",
+			"name": "ServiceNow",
+			"description": null,
+			"auth": null,
+			"events": null,
+			"variables": [],
+			"order": [
+				"0b0f2924-ee39-4886-9682-76432a8d95d3",
+				"7f3da2f9-3041-45d5-8e17-db4c9194508d",
+				"2216adb7-19a4-4db8-bae0-24a3e0266326",
+				"9d87c7c1-da69-48f0-8cce-ab4d156a0a29",
+				"e9fd74d3-0432-4aa7-9347-4a40032ba6c1"
+			],
+			"folders_order": [],
+			"protocolProfileBehavior": {},
+			"createdAt": "2021-09-27T16:13:52.219Z",
+			"folders": [],
+			"requests": [
+				{
+					"id": "0b0f2924-ee39-4886-9682-76432a8d95d3",
+					"uid": "0-0b0f2924-ee39-4886-9682-76432a8d95d3",
+					"name": "sn_customerservice_case",
+					"url": "https://eitpro.aesd-w.army.mil/api/now/table/sn_customerservice_case",
+					"description": "",
+					"data": [],
+					"dataOptions": null,
+					"dataMode": "raw",
+					"headerData": [],
+					"method": "GET",
+					"pathVariableData": [],
+					"queryParams": [],
+					"auth": {
+						"type": "basic",
+						"basic": [
+							{
+								"key": "password",
+								"value": "S1cdB6fZ"
+							},
+							{
+								"key": "username",
+								"value": "msft_cde_reports_SA"
+							}
+						]
+					},
+					"events": [],
+					"folder": null,
+					"responses_order": [],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"currentHelper": "basicAuth",
+					"helperAttributes": {
+						"id": "basic",
+						"username": "msft_cde_reports_SA",
+						"password": "S1cdB6fZ"
+					},
+					"collectionId": "ecec712f-73b5-46e0-93ff-343730d8b29a",
+					"rawModeData": "",
+					"headers": "",
+					"pathVariables": {}
+				},
+				{
+					"id": "2216adb7-19a4-4db8-bae0-24a3e0266326",
+					"uid": "0-2216adb7-19a4-4db8-bae0-24a3e0266326",
+					"name": "kb_knowledge Copy",
+					"url": "http://eitpro.aesd-w.army.mil/api/now/table/kb_knowledge/9db3cbd51cc67010ed42449c2e3789b5",
+					"description": "",
+					"data": [],
+					"dataOptions": null,
+					"dataMode": "raw",
+					"headerData": [],
+					"method": "GET",
+					"pathVariableData": [],
+					"queryParams": [],
+					"auth": {
+						"type": "basic",
+						"basic": [
+							{
+								"key": "password",
+								"value": "S1cdB6fZ"
+							},
+							{
+								"key": "username",
+								"value": "msft_cde_reports_SA"
+							}
+						]
+					},
+					"events": [],
+					"folder": null,
+					"responses_order": [],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"currentHelper": "basicAuth",
+					"helperAttributes": {
+						"id": "basic",
+						"username": "msft_cde_reports_SA",
+						"password": "S1cdB6fZ"
+					},
+					"collectionId": "ecec712f-73b5-46e0-93ff-343730d8b29a",
+					"rawModeData": "",
+					"headers": "",
+					"pathVariables": {}
+				},
+				{
+					"id": "7f3da2f9-3041-45d5-8e17-db4c9194508d",
+					"uid": "0-7f3da2f9-3041-45d5-8e17-db4c9194508d",
+					"name": "kb_knowledge",
+					"url": "https://eitpro.aesd-w.army.mil/api/now/table/kb_knowledge",
+					"description": "",
+					"data": [],
+					"dataOptions": null,
+					"dataMode": "raw",
+					"headerData": [],
+					"method": "GET",
+					"pathVariableData": [],
+					"queryParams": [],
+					"auth": {
+						"type": "basic",
+						"basic": [
+							{
+								"key": "password",
+								"value": "S1cdB6fZ"
+							},
+							{
+								"key": "username",
+								"value": "msft_cde_reports_SA"
+							}
+						]
+					},
+					"events": [],
+					"folder": null,
+					"responses_order": [],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"currentHelper": "basicAuth",
+					"helperAttributes": {
+						"id": "basic",
+						"username": "msft_cde_reports_SA",
+						"password": "S1cdB6fZ"
+					},
+					"collectionId": "ecec712f-73b5-46e0-93ff-343730d8b29a",
+					"rawModeData": "",
+					"headers": "",
+					"pathVariables": {}
+				},
+				{
+					"id": "9d87c7c1-da69-48f0-8cce-ab4d156a0a29",
+					"uid": "0-9d87c7c1-da69-48f0-8cce-ab4d156a0a29",
+					"name": "kb_version",
+					"url": "https://eitpro.aesd-w.army.mil/api/now/table/kb_version",
+					"description": "",
+					"data": [],
+					"dataOptions": null,
+					"dataMode": "raw",
+					"headerData": [],
+					"method": "GET",
+					"pathVariableData": [],
+					"queryParams": [],
+					"auth": {
+						"type": "basic",
+						"basic": [
+							{
+								"key": "password",
+								"value": "S1cdB6fZ"
+							},
+							{
+								"key": "username",
+								"value": "msft_cde_reports_SA"
+							}
+						]
+					},
+					"events": [],
+					"folder": null,
+					"responses_order": [],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"currentHelper": "basicAuth",
+					"helperAttributes": {
+						"id": "basic",
+						"username": "msft_cde_reports_SA",
+						"password": "S1cdB6fZ"
+					},
+					"collectionId": "ecec712f-73b5-46e0-93ff-343730d8b29a",
+					"rawModeData": "",
+					"headers": "",
+					"pathVariables": {}
+				},
+				{
+					"id": "e9fd74d3-0432-4aa7-9347-4a40032ba6c1",
+					"uid": "0-e9fd74d3-0432-4aa7-9347-4a40032ba6c1",
+					"name": "sys_choice",
+					"url": "https://eitpro.aesd-w.army.mil/api/now/table/sys_choice?sysparm_limit=1000000",
+					"description": "",
+					"data": [],
+					"dataOptions": null,
+					"dataMode": "raw",
+					"headerData": [],
+					"method": "GET",
+					"pathVariableData": [],
+					"queryParams": [
+						{
+							"key": "sysparm_limit",
+							"value": "1000000",
+							"equals": true,
+							"description": "",
+							"enabled": true
+						}
+					],
+					"auth": {
+						"type": "basic",
+						"basic": [
+							{
+								"key": "password",
+								"value": "S1cdB6fZ"
+							},
+							{
+								"key": "username",
+								"value": "msft_cde_reports_SA"
+							}
+						]
+					},
+					"events": [],
+					"folder": null,
+					"responses_order": [],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"currentHelper": "basicAuth",
+					"helperAttributes": {
+						"id": "basic",
+						"username": "msft_cde_reports_SA",
+						"password": "S1cdB6fZ"
+					},
+					"collectionId": "ecec712f-73b5-46e0-93ff-343730d8b29a",
+					"rawModeData": "",
+					"headers": "",
+					"pathVariables": {}
+				}
+			]
+		},
+		{
+			"id": "f454e998-6f27-41d8-a52c-b6b7406cbc06",
+			"uid": "0-f454e998-6f27-41d8-a52c-b6b7406cbc06",
+			"name": "Power BI",
+			"description": null,
+			"auth": null,
+			"events": null,
+			"variables": [],
+			"order": [
+				"be01a78a-ccfc-4e9d-8eff-97f54ca2f548",
+				"6f1a2eae-5ade-4c2d-9ba2-004d83fd9eca",
+				"80a9dbb3-2856-486b-80ca-362af0328385",
+				"458117a7-f79d-4ea2-9d47-0de98cf2474c",
+				"a067102e-fafb-4781-b04e-402b0a178072",
+				"d8784a6f-ef7e-4311-945c-84b58949491f",
+				"26548927-47fe-4a2c-bfc9-df815bb9f373",
+				"e4b9829a-6ffc-483c-a23b-fc222b32419a"
+			],
+			"folders_order": [],
+			"protocolProfileBehavior": {},
+			"createdAt": "2021-04-30T14:00:18.705Z",
+			"folders": [],
+			"requests": [
+				{
+					"id": "26548927-47fe-4a2c-bfc9-df815bb9f373",
+					"uid": "0-26548927-47fe-4a2c-bfc9-df815bb9f373",
+					"name": "PowerBi Dataflow Refresh Status",
+					"url": "https://api.mil.powerbigov.us/v1.0/myorg/groups/:varGroupId/dataflows/:varDataflowId/transactions?value[].refreshType=ViaApi&$top=1",
+					"description": "",
+					"data": null,
+					"dataOptions": null,
+					"dataMode": null,
+					"headerData": [],
+					"method": "GET",
+					"pathVariableData": [
+						{
+							"key": "varGroupId",
+							"value": "{{powerBiGroupId}}"
+						},
+						{
+							"key": "varDataflowId",
+							"value": "7f230d1d-9f57-498e-9828-f58ddff20265"
+						}
+					],
+					"queryParams": [
+						{
+							"key": "value[].refreshType",
+							"value": "ViaApi",
+							"equals": true,
+							"description": "",
+							"enabled": true
+						},
+						{
+							"key": "$top",
+							"value": "1",
+							"equals": true,
+							"description": "",
+							"enabled": true
+						}
+					],
+					"auth": {
+						"type": "bearer",
+						"bearer": [
+							{
+								"key": "token",
+								"value": "{{bearerToken}}"
+							}
+						]
+					},
+					"events": [],
+					"folder": null,
+					"responses_order": [],
+					"currentHelper": "bearerAuth",
+					"helperAttributes": {
+						"id": "bearer",
+						"token": "{{bearerToken}}"
+					},
+					"collectionId": "f454e998-6f27-41d8-a52c-b6b7406cbc06",
+					"headers": "",
+					"pathVariables": {
+						"varGroupId": "{{powerBiGroupId}}",
+						"varDataflowId": "7f230d1d-9f57-498e-9828-f58ddff20265"
+					}
+				},
+				{
+					"id": "458117a7-f79d-4ea2-9d47-0de98cf2474c",
+					"uid": "0-458117a7-f79d-4ea2-9d47-0de98cf2474c",
+					"name": "PowerBi Get Datasets",
+					"url": "https://api.mil.powerbigov.us/v1.0/myorg/groups/:groupId/datasets",
+					"description": "",
+					"data": null,
+					"dataOptions": null,
+					"dataMode": null,
+					"headerData": [],
+					"method": "GET",
+					"pathVariableData": [
+						{
+							"key": "groupId",
+							"value": "{{powerBiGroupId}}"
+						}
+					],
+					"queryParams": [],
+					"auth": {
+						"type": "bearer",
+						"bearer": [
+							{
+								"key": "token",
+								"value": "{{bearerToken}}"
+							}
+						]
+					},
+					"events": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "6865280b-ec80-4260-acdb-e8fb432d67b0",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"folder": null,
+					"responses_order": [],
+					"preRequestScript": null,
+					"tests": null,
+					"currentHelper": "bearerAuth",
+					"helperAttributes": {
+						"id": "bearer",
+						"token": "{{bearerToken}}"
+					},
+					"collectionId": "f454e998-6f27-41d8-a52c-b6b7406cbc06",
+					"headers": "",
+					"pathVariables": {
+						"groupId": "{{powerBiGroupId}}"
+					}
+				},
+				{
+					"id": "6f1a2eae-5ade-4c2d-9ba2-004d83fd9eca",
+					"uid": "0-6f1a2eae-5ade-4c2d-9ba2-004d83fd9eca",
+					"name": "PowerBi Get Groups",
+					"url": "https://api.mil.powerbigov.us/v1.0/myorg/groups",
+					"description": "",
+					"data": null,
+					"dataOptions": null,
+					"dataMode": null,
+					"headerData": [],
+					"method": "GET",
+					"pathVariableData": [],
+					"queryParams": [],
+					"auth": {
+						"type": "bearer",
+						"bearer": [
+							{
+								"key": "token",
+								"value": "{{bearerToken}}"
+							}
+						]
+					},
+					"events": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "c4cc33dd-a533-4bcb-bc44-23fec967491e",
+								"exec": [
+									"var json = JSON.parse(responseBody);\r",
+									"pm.environment.set(\"powerBiGroupId\", json.value[0].id)"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"folder": null,
+					"responses_order": [],
+					"preRequestScript": null,
+					"tests": "var json = JSON.parse(responseBody);\r\npm.environment.set(\"powerBiGroupId\", json.value[0].id)",
+					"currentHelper": "bearerAuth",
+					"helperAttributes": {
+						"id": "bearer",
+						"token": "{{bearerToken}}"
+					},
+					"collectionId": "f454e998-6f27-41d8-a52c-b6b7406cbc06",
+					"headers": "",
+					"pathVariables": {}
+				},
+				{
+					"id": "80a9dbb3-2856-486b-80ca-362af0328385",
+					"uid": "0-80a9dbb3-2856-486b-80ca-362af0328385",
+					"name": "PowerBi Get Dataflows",
+					"url": "https://api.mil.powerbigov.us/v1.0/myorg/groups/:groupId/dataflows",
+					"description": "",
+					"data": null,
+					"dataOptions": null,
+					"dataMode": null,
+					"headerData": [],
+					"method": "GET",
+					"pathVariableData": [
+						{
+							"key": "groupId",
+							"value": "{{powerBiGroupId}}"
+						}
+					],
+					"queryParams": [],
+					"auth": {
+						"type": "bearer",
+						"bearer": [
+							{
+								"key": "token",
+								"value": "{{bearerToken}}"
+							}
+						]
+					},
+					"events": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "35041c58-6057-4ce6-92b3-bc398938fb04",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"folder": null,
+					"responses_order": [],
+					"preRequestScript": null,
+					"tests": null,
+					"currentHelper": "bearerAuth",
+					"helperAttributes": {
+						"id": "bearer",
+						"token": "{{bearerToken}}"
+					},
+					"collectionId": "f454e998-6f27-41d8-a52c-b6b7406cbc06",
+					"headers": "",
+					"pathVariables": {
+						"groupId": "{{powerBiGroupId}}"
+					}
+				},
+				{
+					"id": "a067102e-fafb-4781-b04e-402b0a178072",
+					"uid": "0-a067102e-fafb-4781-b04e-402b0a178072",
+					"name": "PowerBi Dataset Refresh",
+					"url": "https://api.mil.powerbigov.us/v1.0/myorg/groups/:varGroupId/datasets/:varDatasetId/refreshes",
+					"description": "",
+					"data": [],
+					"dataOptions": null,
+					"dataMode": "raw",
+					"headerData": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "",
+							"type": "default",
+							"enabled": true
+						}
+					],
+					"method": "POST",
+					"pathVariableData": [
+						{
+							"key": "varGroupId",
+							"value": "{{powerBiGroupId}}"
+						},
+						{
+							"key": "varDatasetId",
+							"value": "f190a26d-45ce-4e16-a92e-400c1ea18edd"
+						}
+					],
+					"queryParams": [],
+					"auth": {
+						"type": "bearer",
+						"bearer": [
+							{
+								"key": "token",
+								"value": "{{bearerToken}}"
+							}
+						]
+					},
+					"events": [],
+					"folder": null,
+					"responses_order": [],
+					"currentHelper": "bearerAuth",
+					"helperAttributes": {
+						"id": "bearer",
+						"token": "{{bearerToken}}"
+					},
+					"collectionId": "f454e998-6f27-41d8-a52c-b6b7406cbc06",
+					"rawModeData": "{\"None\":\"NONE\"}",
+					"headers": "Content-Type: application/json\n",
+					"pathVariables": {
+						"varGroupId": "{{powerBiGroupId}}",
+						"varDatasetId": "f190a26d-45ce-4e16-a92e-400c1ea18edd"
+					}
+				},
+				{
+					"id": "be01a78a-ccfc-4e9d-8eff-97f54ca2f548",
+					"uid": "0-be01a78a-ccfc-4e9d-8eff-97f54ca2f548",
+					"name": "Bearer Token: PowerBi",
+					"url": "https://login.microsoftonline.us/:TenantId/oauth2/token/",
+					"description": null,
+					"data": [
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"description": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "client_id",
+							"value": "589c2538-d5fa-4cd4-8951-ecdb5dc6c936",
+							"description": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "client_secret",
+							"value": "i3WA4RdopT3jwG3~_9E2h0-sCmHr~DC-R2",
+							"description": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "resource",
+							"value": "https://mil.analysis.usgovcloudapi.net/powerbi/api",
+							"description": "",
+							"type": "text",
+							"enabled": true
+						}
+					],
+					"dataOptions": null,
+					"dataMode": "params",
+					"headerData": [
+						{
+							"warning": "This is a duplicate header and will be overridden by the Content-Type header generated by Postman.",
+							"key": "Content-Type",
+							"value": "application/x-www-form-urlencoded",
+							"description": "",
+							"type": "default",
+							"enabled": true
+						}
+					],
+					"method": "POST",
+					"pathVariableData": [
+						{
+							"key": "TenantId",
+							"value": "fae6d70f-954b-4811-92b6-0530d6f84c43"
+						}
+					],
+					"queryParams": [],
+					"auth": null,
+					"events": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "1e6e3acb-6eae-40aa-97bb-87c5e068aed7",
+								"exec": [
+									"var json = JSON.parse(responseBody);\r",
+									"pm.environment.set(\"bearerToken\", json.access_token)"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"folder": null,
+					"responses_order": [],
+					"preRequestScript": null,
+					"tests": "var json = JSON.parse(responseBody);\r\npm.environment.set(\"bearerToken\", json.access_token)",
+					"currentHelper": null,
+					"helperAttributes": null,
+					"collectionId": "f454e998-6f27-41d8-a52c-b6b7406cbc06",
+					"headers": "Content-Type: application/x-www-form-urlencoded\n",
+					"pathVariables": {
+						"TenantId": "fae6d70f-954b-4811-92b6-0530d6f84c43"
+					}
+				},
+				{
+					"id": "d8784a6f-ef7e-4311-945c-84b58949491f",
+					"uid": "0-d8784a6f-ef7e-4311-945c-84b58949491f",
+					"name": "PowerBi Dataflow Refresh",
+					"url": "https://api.mil.powerbigov.us/v1.0/myorg/groups/:varGroupId/dataflows/:varDataflowId/refreshes",
+					"description": "",
+					"data": [],
+					"dataOptions": null,
+					"dataMode": "raw",
+					"headerData": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "",
+							"type": "default",
+							"enabled": true
+						}
+					],
+					"method": "POST",
+					"pathVariableData": [
+						{
+							"key": "varGroupId",
+							"value": "{{powerBiGroupId}}"
+						},
+						{
+							"key": "varDataflowId",
+							"value": "7f230d1d-9f57-498e-9828-f58ddff20265"
+						}
+					],
+					"queryParams": [],
+					"auth": {
+						"type": "bearer",
+						"bearer": [
+							{
+								"key": "token",
+								"value": "{{bearerToken}}"
+							}
+						]
+					},
+					"events": [],
+					"folder": null,
+					"responses_order": [],
+					"currentHelper": "bearerAuth",
+					"helperAttributes": {
+						"id": "bearer",
+						"token": "{{bearerToken}}"
+					},
+					"collectionId": "f454e998-6f27-41d8-a52c-b6b7406cbc06",
+					"rawModeData": "{\"None\":\"NONE\"}",
+					"headers": "Content-Type: application/json\n",
+					"pathVariables": {
+						"varGroupId": "{{powerBiGroupId}}",
+						"varDataflowId": "7f230d1d-9f57-498e-9828-f58ddff20265"
+					}
+				},
+				{
+					"id": "e4b9829a-6ffc-483c-a23b-fc222b32419a",
+					"uid": "0-e4b9829a-6ffc-483c-a23b-fc222b32419a",
+					"name": "PowerBi Dataset Refresh Status",
+					"url": "https://api.mil.powerbigov.us/v1.0/myorg/groups/:varGroupId/datasets/:varDatasetId/refreshes?$top=1",
+					"description": "",
+					"data": null,
+					"dataOptions": null,
+					"dataMode": null,
+					"headerData": [],
+					"method": "GET",
+					"pathVariableData": [
+						{
+							"key": "varGroupId",
+							"value": "{{powerBiGroupId}}"
+						},
+						{
+							"key": "varDatasetId",
+							"value": "f190a26d-45ce-4e16-a92e-400c1ea18edd"
+						}
+					],
+					"queryParams": [
+						{
+							"key": "$top",
+							"value": "1",
+							"equals": true,
+							"description": "",
+							"enabled": true
+						}
+					],
+					"auth": {
+						"type": "bearer",
+						"bearer": [
+							{
+								"key": "token",
+								"value": "{{bearerToken}}"
+							}
+						]
+					},
+					"events": [],
+					"folder": null,
+					"responses_order": [],
+					"currentHelper": "bearerAuth",
+					"helperAttributes": {
+						"id": "bearer",
+						"token": "{{bearerToken}}"
+					},
+					"collectionId": "f454e998-6f27-41d8-a52c-b6b7406cbc06",
+					"headers": "",
+					"pathVariables": {
+						"varGroupId": "{{powerBiGroupId}}",
+						"varDatasetId": "f190a26d-45ce-4e16-a92e-400c1ea18edd"
+					}
+				}
+			]
+		}
+	],
+	"environments": [
+		{
+			"id": "fdb293bb-9114-4a62-a221-ea2c220d7e8e",
+			"name": "EITaas",
+			"values": [
+				{
+					"key": "bearerToken",
+					"value": "",
+					"enabled": true
+				},
+				{
+					"key": "ReportId",
+					"value": "",
+					"type": "any",
+					"enabled": true
+				},
+				{
+					"key": "ReportURL",
+					"value": "",
+					"type": "any",
+					"enabled": true
+				},
+				{
+					"key": "powerBiGroupId",
+					"value": "",
+					"type": "any",
+					"enabled": true
+				}
+			]
+		},
+		{
+			"id": "9a7839ee-7b95-448d-9f60-66d27e3cf114",
+			"name": "My Workspace - globals",
+			"values": [
+				{
+					"key": "ReportId",
+					"value": "",
+					"type": "default",
+					"enabled": true
+				}
+			]
+		}
+	],
+	"headerPresets": [],
+	"globals": []
+}
