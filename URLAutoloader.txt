@@ -1,5 +1,0 @@
-Job URL for Entire Device Module Autoloader :
-https://adb-1705688193820504.0.databricks.azure.us/?o=1705688193820504#notebook/2778072528534968/command/2778072528534969
-
-URL for deviceCompliance AutoLoader Notebook :
-https://adb-1705688193820504.0.databricks.azure.us/?o=1705688193820504#notebook/2778072528534839/command/2778072528534840
