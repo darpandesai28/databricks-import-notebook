@@ -1,8 +1,7 @@
-Blob SAS token
-
-sp=r&st=2023-03-01T20:11:47Z&se=2023-03-02T04:11:47Z&spr=https&sv=2021-06-08&sr=c&sig=M6WYpHCnTjFwUzBx5Gh%2BnE0nO4attGOGAI1SO1JRdJo%3D
-Blob SAS URL
-https://saeitaasdatateam.blob.core.usgovcloudapi.net/zz-for-darpan?sp=r&st=2023-03-01T20:11:47Z&se=2023-03-02T04:11:47Z&spr=https&sv=2021-06-08&sr=c&sig=M6WYpHCnTjFwUzBx5Gh%2BnE0nO4attGOGAI1SO1JRdJo%3D
+%sql
+Select distinct generatedDateTime,date_format(generatedDateTime, 'HH:mm:ss') as Time,
+case when date_format(generatedDateTime, 'HH:mm') between '00:00' and '14:30' then 'AM' else 'PM' end as TAG
+ FROM cdereporting_stagedata.pbiActivityEvent
 
 public static class GetMetadata
 {
