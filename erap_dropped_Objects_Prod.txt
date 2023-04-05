@@ -1,0 +1,78 @@
+select 1
+
+/****** Object:  Table [erap].[ImportJSONData]    Script Date: 3/9/2023 11:39:27 AM ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[erap].[ImportJSONData]') AND type in (N'U'))
+DROP TABLE [erap].[ImportJSONData]
+GO
+
+/****** Object:  Table [erap].[CVEImportedFiles]    Script Date: 3/9/2023 11:56:13 AM ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[erap].[CVEImportedFiles]') AND type in (N'U'))
+DROP TABLE [erap].[CVEImportedFiles]
+GO
+
+/****** Object:  Table [erap].[CVE]    Script Date: 3/9/2023 11:57:39 AM ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[erap].[CVE]') AND type in (N'U'))
+DROP TABLE [erap].[CVE]
+GO
+
+/****** Object:  Table [erap].[CVEReferences]    Script Date: 3/9/2023 12:00:21 PM ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[erap].[CVEReferences]') AND type in (N'U'))
+DROP TABLE [erap].[CVEReferences]
+GO
+
+/****** Object:  Table [erap].[CVEConfigurations]    Script Date: 3/9/2023 12:13:36 PM ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[erap].[CVEConfigurations]') AND type in (N'U'))
+DROP TABLE [erap].[CVEConfigurations]
+GO
+
+/****** Object:  Table [erap].[CVEConfigStrings]    Script Date: 3/9/2023 12:19:25 PM ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[erap].[CVEConfigStrings]') AND type in (N'U'))
+DROP TABLE [erap].[CVEConfigStrings]
+GO
+
+/****** Object:  Table [erap].[MSRC]    Script Date: 3/9/2023 12:37:11 PM ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[erap].[MSRC]') AND type in (N'U'))
+DROP TABLE [erap].[MSRC]
+GO
+
+/****** Object:  Table [erap].[MSRCKBs]    Script Date: 3/9/2023 12:38:03 PM ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[erap].[MSRCKBs]') AND type in (N'U'))
+DROP TABLE [erap].[MSRCKBs]
+GO
+
+/****** Object:  Table [erap].[MSRCKnownIssues]    Script Date: 3/9/2023 12:39:21 PM ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[erap].[MSRCKnownIssues]') AND type in (N'U'))
+DROP TABLE [erap].[MSRCKnownIssues]
+GO
+
+/****** Object:  Table [erap].[MSRC_KBData]    Script Date: 3/15/2023 3:30:06 PM ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[erap].[MSRC_KBData]') AND type in (N'U'))
+DROP TABLE [erap].[MSRC_KBData]
+GO
+
+/*---------- Drop Stored Procs ----------*/
+/****** Object:  StoredProcedure [erap].[usp_ImportMainCVEFiles_JSONData]    Script Date: 3/9/2023 12:52:07 PM ******/
+IF (OBJECT_ID('erap.usp_ImportMainCVEFiles_JSONData', 'P') IS NOT NULL) 
+  DROP PROCEDURE [erap].[usp_ImportMainCVEFiles_JSONData]
+GO
+
+/****** Object:  StoredProcedure [erap].[usp_CVE_Insert_CVEData]    Script Date: 3/9/2023 12:52:07 PM ******/
+IF (OBJECT_ID('erap.usp_CVE_Insert_CVEData', 'P') IS NOT NULL) 
+  DROP PROCEDURE [erap].[usp_CVE_Insert_CVEData]
+GO
+
+/****** Object:  StoredProcedure [erap].[usp_CVE_Insert_CPEString]    Script Date: 3/9/2023 12:52:07 PM ******/
+IF (OBJECT_ID('erap.usp_CVE_Insert_CPEString', 'P') IS NOT NULL)
+  DROP PROCEDURE [erap].[usp_CVE_Insert_CPEString]
+GO
+
+/****** Object:  StoredProcedure [erap].[usp_CVE_Insert_MSRCData]    Script Date: 3/9/2023 12:52:07 PM ******/
+IF (OBJECT_ID('erap.usp_CVE_Insert_MSRCData', 'P') IS NOT NULL)
+  DROP PROCEDURE [erap].[usp_CVE_Insert_MSRCData]
+GO
+
+/*---------- Drop View ----------*/
+/****** Object:  View [erap].[vw_CVEImportedFiles]    Script Date: 3/10/2023 9:38:09 AM ******/
+IF (OBJECT_ID('erap.vw_CVEImportedFiles', 'V') IS NOT NULL)
+DROP VIEW [erap].[vw_CVEImportedFiles]
+GO
