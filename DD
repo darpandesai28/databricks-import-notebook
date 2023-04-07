@@ -1,0 +1,20 @@
+with myCTE
+AS (Select UserPrincipalName,ActivityTypeName,	ActivityName,	ActivityCountValue
+,ActivityDate,
+DATEADD(D, -(DATEPART(WEEKDAY, ActivityDate) - 1), ActivityDate) as ActivityWeekStartDate,
+DATEADD(D, (7 - DATEPART(WEEKDAY, ActivityDate)), ActivityDate) as  ActivityWeekEndDate
+from	[powerbi].[vw_a365_teamsActivity]
+where reportRefreshDate = (Select max(reportRefreshDate) from [powerbi].[vw_a365_teamsActivity]))
+
+Select UserPrincipalName,
+       ActivityName,
+       SUM(ActivityCountValue) as ActivityCountValue,
+       ActivityWeekStartDate,
+	   ActivityWeekEndDate
+from myCTE 
+group by 
+       UserPrincipalName,
+       ActivityName,
+       ActivityWeekStartDate,
+	   ActivityWeekEndDate
+order by UserPrincipalName	
