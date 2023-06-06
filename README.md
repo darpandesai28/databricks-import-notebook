@@ -64,3 +64,8 @@ trademarks or logos is subject to and must follow
 [Microsoft's Trademark & Brand Guidelines](https://www.microsoft.com/en-us/legal/intellectualproperty/trademarks/usage/general).
 Use of Microsoft trademarks or logos in modified versions of this project must not cause confusion or imply Microsoft sponsorship.
 Any use of third-party trademarks or logos are subject to those third-party's policies.   
+    
+    https://learn.microsoft.com/en-us/graph/api/intune-apps-mobileappinstallstatus-get?view=graph-rest-beta
+    
+    url = f"https://graph.microsoft.us/beta/deviceAppManagement/mobileApps/20344620-cb8d-448a-93ce-321d2c51ecdb/deviceStatuses"  
+    {'error': {'code': 'BadRequest', 'message': "Resource not found for the segment 'deviceStatuses'.", 'innerError': {'date': '2023-06-06T18:09:26', 'request-id': 'da313c46-be06-46dc-a467-0ec523b1bb3c', 'client-request-id': 'da313c46-be06-46dc-a467-0ec523b1bb3c'}}}
