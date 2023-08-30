@@ -1,0 +1,47 @@
+SET NOCOUNT ON;
+DECLARE @Object_id INT = OBJECT_ID('DataBaseName.Schema.TableName');
+
+IF OBJECT_ID('tempdb..#TableCols', 'U') IS NOT NULL DROP TABLE #TableCols;
+CREATE TABLE #TableCols (
+    SchemaName sysname,    TableName sysname,    ColumnName sysname,    ColumnID INT NOT NULL,
+    Value NVARCHAR(MAX) NULL 
+    );INSERT #TableCols (SchemaName, TableName, ColumnName, ColumnID)SELECT 
+    s.name,    o.name,    c.name,    c.column_idFROM    sys.objects o    JOIN sys.schemas s
+        ON o.schema_id = s.schema_id
+    JOIN sys.columns c
+        ON o.object_id = c.object_idWHERE    o.type = 'U'    AND o.object_id = @Object_idORDER BY 
+    c.column_id;DECLARE 
+    @CrossCols VARCHAR(MAX) = N'',
+    @TopVal NVARCHAR(10) = N'',
+    @Table sysname = N'', 
+    @sql NVARCHAR(MAX) = N'',
+    @DeBug BIT = 0;     -- 1 = PRINT ; 0 = EXECUTESELECT 
+    @CrossCols = CONCAT(@CrossCols, N',
+                                (', tc.ColumnID, N', CAST(t.[', tc.ColumnName, N'] AS NVARCHAR(MAX)))'),
+    @TopVal = tc.ColumnID,
+    @Table = CONCAT(tc.SchemaName, '.', tc.TableName)FROM 
+    #TableCols tcORDER BY 
+    tc.ColumnID;SET @sql = CONCAT(N'    
+UPDATE tc SET 
+    tc.Value = t.ColumnValue
+FROM
+    #TableCols tc
+    JOIN (
+        SELECT TOP (', @TopVal, N')
+            x.*
+        FROM
+            ', @Table, N' t
+            CROSS APPLY ( VALUES', STUFF(@CrossCols, 1, 1, ''), N'
+                            ) x (ColumnID, ColumnValue)
+        ) t
+        ON tc.ColumnID = t.ColumnID;')
+
+IF @DeBug = 1
+BEGIN 
+    EXEC dbo.LongPrint @sql;
+END;
+ELSE
+BEGIN
+    EXEC(@sql);
+    SELECT * FROM #TableCols tc;
+END;
