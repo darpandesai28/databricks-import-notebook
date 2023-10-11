@@ -8,4 +8,3 @@ Resources:
 - [Microsoft Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/)
 - Contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with questions or concerns
 
-url = "https://graph.microsoft.us/v1.0/groups?$filter=startswith(displayName, 'EITaaS CDE Report')"
