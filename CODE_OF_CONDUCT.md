@@ -8,70 +8,26 @@ Resources:
 - [Microsoft Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/)
 - Contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with questions or concerns
 
-Command 1 (script):
-%python
-dbutils.fs.put("/db_support/heap/driver_heap_dump.sh", """#!/bin/bash
-  
-if [[ $DB_IS_DRIVER == "TRUE" ]]; then
-  
-cat <<'EOF' >> /tmp/collect_executor_stats.sh
-#!/bin/bash
-DB_CLUSTER_ID=$1
-DB_CONTAINER_IP=$2
-DB_IS_DRIVER=$3
-  
-sleep 10s
-logDir=/local_disk0/tmp/debug_executor_logs/
-logDbfsDir=/dbfs/debug_logs/driver_heap_dump/
-mkdir -p $logDir $logDbfsDir
-  
-rotate_cnt=3
-max_rotation=3
-  
-cd $logDir
-#Capture top output for every 1 hour
-LongInterval=3600
-  
-while [ 1 ]; do
- pid=`cat /tmp/driver-daemon.pid`
- sudo top -H -b -n1 -p $pid > $logDir/top_`date "+%Y%m%d_%H%M%S"`.$HOSTNAME.out
- sudo top -bn 1 > $logDir/top_processes_`date "+%Y%m%d_%H%M%S"`.$HOSTNAME.out
- sudo top -b -H -n 1 > $logDir/top_threads_`date "+%Y%m%d_%H%M%S"`.$HOSTNAME.out
-
- rotate_cnt=$((rotate_cnt-1))
- if [ $rotate_cnt -le 0 ]
- then
- sudo jmap -histo:live ${pid} > $logDir/jmap_`date "+%Y%m%d_%H%M%S"`.$HOSTNAME.out
- jmap -dump:live,format=b,file=$logDir/heapdump_${pid}_$HOSTNAME.hprof ${pid} &> $logDir/jmap_dump_`date "+%Y%m%d_%H%M%S"`.$HOSTNAME.out
- archive_file=/tmp/jstack_log_${pid}_${DB_CLUSTER_ID}_$(date +"%Y-%m-%d--%H-%M%S")_$HOSTNAME.zip
- sudo zip -r $archive_file *
- sudo mv $archive_file $logDbfsDir/
- sudo rm -rf ${logDir}/*
- rotate_cnt=$max_rotation
- fi
- sleep $LongInterval
-done
-EOF
-  
-chmod a+x /tmp/collect_executor_stats.sh
-  
-/tmp/collect_executor_stats.sh ${DB_CLUSTER_ID} ${DB_CONTAINER_IP} ${DB_IS_DRIVER} & disown
-  
-fi
-  
-""", true)
-
-Command 2:
-%fs ls dbfs:/db_support/heap/driver_heap.sh
-
-Please follow these steps to generate the init script to collect the driver heap dump. 
-1.	Please run the above script in the notebook to generate the dbfs:/db_support/heap/driver_heap_dump.sh
-2.	Once the notebook runs, we will have a dbfs:/db_support/heap/driver_heap_dump.sh file that will be added as an init script
-3.	Now to add the .sh file as an Init Script on your cluster:
-1.	go to your cluster configuration, head to the Advanced Options at the bottom, and click on Init Script
-2.	click add and for the Location Type select dbfs and add this path after the dbfs:/ text that gets generated in the File Path /db_support/heap/driver_heap_dump.sh
-4.	Once you run your job on this cluster, the driver heap dump will be generated in this path dbfs:/debug_logs/driver_heap/. The heap dump will be captured and uploaded every 3 hours in dbfs
-
-
-I hope this helps. Please let me know if you have any other questions.
-
+Sr No 	Group Name
+1	EITaaS CDE Report Reader (RCC-C Dashboards)
+2	EITaaS CDE Report Reader (Support)
+3	EITaaS CDE Report Reader (Army Futures Command)
+4	EITaaS CDE Report Reader (Activity)
+5	EITaaS CDE Report Reader Global (Case Mgmt)
+6	EITaaS CDE Report Reader Global (Performance)
+7	EITaaS CDE Report Reader (Case Mgmt)
+8	EITaaS CDE Report Reader (PII)
+9	EITaaS CDE Report Reader (Incident Mgmt)
+10	EITaaS CDE Report Reader (Health)
+11	EITaaS CDE Report Reader (ADOC Dashboards)
+12	EITaaS CDE Report Reader Global (Device Compliance)
+13	EITaaS CDE Report Reader Global (Activity)
+14	EITaaS CDE Report Reader (Device Compliance)
+15	EITaaS CDE Report Reader Global (Azure Compliance)
+16	EITaaS CDE Report Reader (App Only)
+17	EITaaS CDE Report Reader Global (Health)
+18	EITaaS CDE Report Reader (Performance)
+19	EITaaS CDE Report Reader Global (Incident Mgmt)
+20	EITaaS CDE Report Admin
+21	EITaaS CDE Report Reader (Azure Compliance)
+![image](https://github.com/darpandesai28/databricks-import-notebook/assets/39281473/c815c952-c6ba-4bb7-bca0-67514a7234fe)
