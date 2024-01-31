@@ -31,3 +31,22 @@ from (Select * from serviceNow_rawdata.almasset
                  where 
 model_category_value = '81feb9c137101000deeabfc8bcbe5dc4') a
 on c.assetId = a.assetId
+
+
+
+/api/now/table/<tablename>?sysparm_limit=10&sysparm_offset=0
+
+
+Then for next 10 records, you would simply increment the value of sysparm_offset by the value of your sysparm_limit
+
+/api/now/table/tablename?sysparm_limit=10&sysparm_offset=10
+
+/api/now/table/tablename?sysparm_limit=10&sysparm_offset=20
+
+/api/now/table/tablename?sysparm_limit=10&sysparm_offset=30
+
+.
+
+.
+
+/api/now/table/tablename?sysparm_limit=10&sysparm_offset=n
