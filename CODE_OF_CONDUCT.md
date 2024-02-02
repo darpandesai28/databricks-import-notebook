@@ -32,7 +32,8 @@ from (Select * from serviceNow_rawdata.almasset
 model_category_value = '81feb9c137101000deeabfc8bcbe5dc4') a
 on c.assetId = a.assetId
 
-
+if object_id('tempdb.dbo.#afct') is not null
+	drop table #afct
 
 /api/now/table/<tablename>?sysparm_limit=10&sysparm_offset=0
 
