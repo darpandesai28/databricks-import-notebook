@@ -84,3 +84,21 @@ body['filter'] = '(ApplicationId eq ' + f"'{app_id}'" + ')'
           .option("tempDir", "wasbs://" + data_lake_container + "@" + data_lake_endpoint + "/tempDirs") \
           .load()  
 display(df)   
+
+
+
+df.write \
+  .format("com.databricks.spark.sqldw") \
+  .mode("append") \
+  .option("url", jdbc_connection_string + ";encrypt=true;trustServerCertificate=true;hostNameInCertificate=*.sql.azuresynapse.usgovcloudapi.net;loginTimeout=30") \
+  .option("forwardSparkAzureStorageCredentials", "true") \
+  .option("enableServicePrincipalAuth", "true") \
+  .option("dbTable", destination_database_name + "." + destination_table_name) \
+  .option("tempDir", "wasbs://" + data_lake_container + "@" + data_lake_endpoint + "/tempDirs") \
+  .option("tableOptions","HEAP,DISTRIBUTION = ROUND_ROBIN") \
+  .save()
+
+
+  # Defining a separate set of service principal credentials for Azure Synapse Analytics (If not defined, the connector will use the Azure storage account credentials)  
+spark.conf.set("spark.databricks.sqldw.jdbc.service.principal.client.id", service_principal_id)  
+spark.conf.set("spark.databricks.sqldw.jdbc.service.principal.client.secret", service_principal_key)  
