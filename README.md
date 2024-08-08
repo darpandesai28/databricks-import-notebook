@@ -72,3 +72,15 @@ Any use of third-party trademarks or logos are subject to those third-party's po
 
 body['filter'] = '(ApplicationId eq ' + f"'{app_id}'" + ')'
     url = f"https://graph.microsoft.us/beta/deviceManagement/reports/getDeviceInstallStatusReport" 
+
+
+    df = spark.read \
+          .format("com.databricks.spark.sqldw") \
+          .option("url", "jdbc:sqlserver://synwseitaasdatateam.sql.azuresynapse.usgovcloudapi.net:1433;database=synwsdbdatateam;encrypt=true;trustServerCertificate=true;hostNameInCertificate=*.sql.azuresynapse.usgovcloudapi.net;loginTimeout=30") \
+          .option("tempDir", "wasbs://" + data_lake_container + "@" + data_lake_endpoint + "/tempDirs") \
+          .option("forwardSparkAzureStorageCredentials", "true") \
+          .option("enableServicePrincipalAuth", "true") \
+          .option("dbTable", "darpan.dateDim") \
+          .option("tempDir", "wasbs://" + data_lake_container + "@" + data_lake_endpoint + "/tempDirs") \
+          .load()  
+display(df)   
