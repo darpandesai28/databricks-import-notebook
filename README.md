@@ -102,3 +102,6 @@ df.write \
   # Defining a separate set of service principal credentials for Azure Synapse Analytics (If not defined, the connector will use the Azure storage account credentials)  
 spark.conf.set("spark.databricks.sqldw.jdbc.service.principal.client.id", service_principal_id)  
 spark.conf.set("spark.databricks.sqldw.jdbc.service.principal.client.secret", service_principal_key)  
+
+
+org.apache.spark.SparkException: [SPARK_JOB_CANCELLED] Job 3357 cancelled because Task 159619 in Stage 7066 exceeded the maximum allowed ratio of input to output records (1 to 18033699, max allowed 1 to 10000); this limit can be modified with configuration parameter spark.databricks.queryWatchdog.outputRatioThreshold
