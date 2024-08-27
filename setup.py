@@ -19,3 +19,16 @@ setup(name='cde_functions',
         license='',
         packages=['cde_functions'],
         python_requires='>=3.6')
+
+
+# Get From Type from Synapse
+def get_from_type_v2(source_name,spark,jdbc_connection_string):  
+  query = f""" (SELECT distinct fromType FROM etl.fromSourceTypeLup WHERE fromSource = '{source_name}')"""
+  df_from_type = spark.read.format("com.databricks.spark.sqldw") \
+                         .option("url", jdbc_connection_string + ";encrypt=true;trustServerCertificate=true;hostNameInCertificate=*.sql.azuresynapse.usgovcloudapi.net;loginTimeout=30") \
+                         .option("forwardSparkAzureStorageCredentials", "true") \
+                         .option("enableServicePrincipalAuth", "true") \
+                         .option("query",query)  
+  df = df_from_type.load() 
+  from_type = df.first()['fromType']
+  return from_type 
