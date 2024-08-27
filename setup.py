@@ -9,7 +9,7 @@ setuptools.setup(
     python_requires = '>=3.6'
 )
 
-
+from .functions import *
 from setuptools import setup
 
 setup(name='cde_functions',
