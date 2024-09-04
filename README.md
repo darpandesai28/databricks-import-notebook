@@ -138,3 +138,77 @@ def get_from_type_v3(source_name,spark,jdbc_connection_string):
              .load()
     from_type = df_from_type.collect()[0][0]
     return from_type
+
+
+
+
+
+
+
+
+
+
+service_principal_id  = dbutils.secrets.get(scope = "key-vault-managed", key = "service-principal-id")
+service_principal_key = dbutils.secrets.get(scope = "key-vault-managed", key = "service-principal-key")
+tenant_id             = dbutils.secrets.get(scope = "key-vault-managed", key = "tenant-id")
+data_lake_url         = dbutils.secrets.get(scope = "key-vault-managed", key = "data-lake-url")
+
+data_lake_name        = data_lake_url[len(data_lake_url[0:data_lake_url.index('.')])-data_lake_url[0:data_lake_url.index('.')][::-1].index('/') :data_lake_url.index('.')]
+data_lake_endpoint    = data_lake_name + ".blob.core.usgovcloudapi.net"
+
+
+
+#---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------#
+# Get From Type from Synapse
+def get_from_type(source_name,spark,jdbc_connection_string,jdbc_connection_Properties):  
+  query = f""" (SELECT fromType FROM etl.fromSourceTypeLup WHERE fromSource = '{source_name}') as tmp"""
+  df_from_type = spark.read.jdbc(url=jdbc_connection_string, table=query, properties=jdbc_connection_Properties)
+  from_type = df_from_type.collect()[0][0]
+  return from_type
+
+#---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------#
+# Get From Type from Synapse v2
+def get_from_type_v2(source_name,spark,jdbc_connection_string):  
+    
+    import adal  
+
+    # Set url & credentials
+    jdbc_url = jdbc_connection_string  + ";encrypt=true;trustServerCertificate=true;hostNameInCertificate=*.sql.azuresynapse.usgovcloudapi.net;loginTimeout=30"
+
+    # Truncate QA table in Synapse
+    query = f""" (SELECT distinct fromType FROM etl.fromSourceTypeLup WHERE fromSource = '{source_name}')"""
+
+    # Create a connection object and pass the properties object
+    resource_app_id_url = "https://database.usgovcloudapi.net/"
+    authority = "https://login.microsoftonline.us/" + tenant_id
+
+    context = adal.AuthenticationContext(authority)
+    token = context.acquire_token_with_client_credentials(resource_app_id_url, service_principal_id, service_principal_key)
+    access_token = token["accessToken"]
+  
+    df_from_type = spark.read \
+             .format("com.microsoft.sqlserver.jdbc.spark") \
+             .option("url", jdbc_url) \
+             .option("query",query) \
+             .option("accessToken", access_token) \
+             .load()
+    from_type = df_from_type.collect()[0][0]
+    return from_type
+    #from_type = df_from_type.first()['fromType']
+    #return from_type  
+    
+#---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------#
+# Get From Type from Synapse v2
+def get_from_type_v3(source_name,spark,jdbc_connection_string):  
+    query = f""" (SELECT distinct fromType FROM etl.fromSourceTypeLup WHERE fromSource = '{source_name}')"""
+    df_from_type = spark.read.format("com.databricks.spark.sqldw") \
+                          .option("url", jdbc_connection_string + ";encrypt=true;trustServerCertificate=true;hostNameInCertificate=*.sql.azuresynapse.usgovcloudapi.net;loginTimeout=30") \
+                          .option("forwardSparkAzureStorageCredentials", "true") \
+                          .option("enableServicePrincipalAuth", "true") \
+                          .option("query",query) \
+                          .option("tempDir", "wasbs://deltalake@" + data_lake_endpoint + "/tempDirs") \
+                          .load()
+ 
+    from_type = df_from_type.first()['fromType']
+    return from_type  
+
