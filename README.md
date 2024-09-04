@@ -105,3 +105,8 @@ spark.conf.set("spark.databricks.sqldw.jdbc.service.principal.client.secret", se
 
 
 org.apache.spark.SparkException: [SPARK_JOB_CANCELLED] Job 3357 cancelled because Task 159619 in Stage 7066 exceeded the maximum allowed ratio of input to output records (1 to 18033699, max allowed 1 to 10000); this limit can be modified with configuration parameter spark.databricks.queryWatchdog.outputRatioThreshold
+
+
+data_lake_container = "deltalake"
+data_lake_name = data_lake_url[len(data_lake_url[0:data_lake_url.index('.')])-data_lake_url[0:data_lake_url.index('.')][::-1].index('/') :data_lake_url.index('.')]
+data_lake_endpoint = data_lake_name + ".blob.core.usgovcloudapi.net"
