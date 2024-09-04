@@ -212,3 +212,4 @@ def get_from_type_v3(source_name,spark,jdbc_connection_string):
     from_type = df_from_type.first()['fromType']
     return from_type  
 
+from databricks.sdk.runtime import *
