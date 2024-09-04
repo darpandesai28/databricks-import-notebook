@@ -110,3 +110,31 @@ org.apache.spark.SparkException: [SPARK_JOB_CANCELLED] Job 3357 cancelled becaus
 data_lake_container = "deltalake"
 data_lake_name = data_lake_url[len(data_lake_url[0:data_lake_url.index('.')])-data_lake_url[0:data_lake_url.index('.')][::-1].index('/') :data_lake_url.index('.')]
 data_lake_endpoint = data_lake_name + ".blob.core.usgovcloudapi.net"
+
+
+def get_from_type_v3(source_name,spark,jdbc_connection_string):  
+    
+    import adal  
+
+    # Set url & credentials
+    jdbc_url = jdbc_connection_string  + ";encrypt=true;trustServerCertificate=true;hostNameInCertificate=*.sql.azuresynapse.usgovcloudapi.net;loginTimeout=30"
+
+    # Truncate QA table in Synapse
+    query = f""" (SELECT distinct fromType FROM etl.fromSourceTypeLup WHERE fromSource = '{source_name}')"""
+
+    # Create a connection object and pass the properties object
+    resource_app_id_url = "https://database.usgovcloudapi.net/"
+    authority = "https://login.microsoftonline.us/" + tenant_id
+
+    context = adal.AuthenticationContext(authority)
+    token = context.acquire_token_with_client_credentials(resource_app_id_url, service_principal_id, service_principal_key)
+    access_token = token["accessToken"]
+  
+    df_from_type = spark.read \
+             .format("com.microsoft.sqlserver.jdbc.spark") \
+             .option("url", jdbc_url) \
+             .option("query",query) \
+             .option("accessToken", access_token) \
+             .load()
+    from_type = df_from_type.collect()[0][0]
+    return from_type
