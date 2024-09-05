@@ -213,3 +213,15 @@ def get_from_type_v3(source_name,spark,jdbc_connection_string):
     return from_type  
 
 from databricks.sdk.runtime import *
+
+
+def get_dbutils(spark):
+        try:
+            from pyspark.dbutils import dbutils
+            dbutils = dbutils(spark)
+        except ImportError:
+            import IPython
+            dbutils = IPython.get_ipython().user_ns["dbutils"]
+        return dbutils
+
+dbutils = get_dbutils(spark)
