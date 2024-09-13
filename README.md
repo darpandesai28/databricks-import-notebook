@@ -252,3 +252,6 @@ SELECT
 FROM schema.table a
       CROSS APPLY OPENJSON('['+ REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(SensitiveInfoTypeData,' ',''),'"@',''),'{','{"'),'=','"="'),';','";"'),'}"','"}'),'=',':'),'[',''),']',''),';',',') +']') b
 WHERE SensitiveInfoTypeData IS NOT NULL
+
+
+https://martinschoombee.com/2022/03/08/working-with-oauth-2-0-apis-in-azure-data-factory-refreshing-tokens/
