@@ -234,6 +234,17 @@ spark = SparkSession.builder.getOrCreate()
 dbutils = DBUtils(spark)
 
 
+SELECT top 1000 b.*,
+JSON_VALUE(b.[value], '$.SensitiveInfoTypeId') as SensitiveInfoTypeId,
+JSON_VALUE(b.[value], '$.Count') as Count,
+JSON_VALUE(b.[value], '$.Confidence') as Confidence,
+JSON_VALUE(b.[value], '$.ClassifierType') as ClassifierType,
+JSON_VALUE(b.[value], '$.UniqueCount') as UniqueCount
+FROM [dlp].[purview] a       
+CROSS APPLY OPENJSON('['+ REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(SensitiveInfoTypeData,' ',''),'"@',''),'{','{"'),'=','"="'),';','";"'),'}"','"}'),'=',':'),'[',''),']',''),';',',') +']') b 
+WHERE SensitiveInfoTypeData IS NOT NULL
+
+
 SELECT
       top 1000
       b.*,
