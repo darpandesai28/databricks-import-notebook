@@ -232,3 +232,12 @@ from pyspark.dbutils import DBUtils
 
 spark = SparkSession.builder.getOrCreate()
 dbutils = DBUtils(spark)
+
+
+SELECT
+      top 1000
+      b.*,
+      JSON_VALUE(b.[value], '$.SensitiveInfoTypeId')
+FROM schema.table a
+      CROSS APPLY OPENJSON('['+ REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(SensitiveInfoTypeData,' ',''),'"@',''),'{','{"'),'=','"="'),';','";"'),'}"','"}'),'=',':'),'[',''),']',''),';',',') +']') b
+WHERE SensitiveInfoTypeData IS NOT NULL
