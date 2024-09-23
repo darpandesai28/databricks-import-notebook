@@ -255,3 +255,26 @@ WHERE SensitiveInfoTypeData IS NOT NULL
 
 
 https://martinschoombee.com/2022/03/08/working-with-oauth-2-0-apis-in-azure-data-factory-refreshing-tokens/
+
+
+
+
+from azure.identity import ClientSecretCredential
+from azure.storage.blob import (BlobServiceClient, BlobClient, ContainerClient, 
+                                BlobSasPermissions, generate_blob_sas, 
+                                generate_container_sas, ContainerSasPermissions)
+def get_container_client(tenant_id,service_principal_id,service_principal_key,blob_storage_name,container_name,file_name,connection_string):
+    service_client = get_service_client(connection_string)
+    
+    token_credential = ClientSecretCredential(
+        tenant_id=tenant_id,
+        client_id=service_principal_id,
+        client_secret=service_principal_key
+    )
+    return BlobClient(
+        service_client.url,
+        container_name = container_name, 
+        blob_name = file_name,credential=token_credential)
+
+
+        
