@@ -277,4 +277,8 @@ def get_container_client(tenant_id,service_principal_id,service_principal_key,bl
         blob_name = file_name,credential=token_credential)
 
 
-        
+response_blob_client = get_container_client(tenant_id,service_principal_id,service_principal_key,blob_storage_name,container_name,response_file_name,blob_storage_connection_string) 
+#response_blob_client = get_blob_client(container_name, response_file_name, blob_storage_connection_string, blob_storage_access_key)
+error_blob_client = get_container_client(tenant_id,service_principal_id,service_principal_key,blob_storage_name,container_name,error_file_name,blob_storage_connection_string) 
+#error_blob_client = get_blob_client(container_name, error_file_name, blob_storage_connection_string, blob_storage_access_key) 
+
