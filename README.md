@@ -282,3 +282,19 @@ response_blob_client = get_container_client(tenant_id,service_principal_id,servi
 error_blob_client = get_container_client(tenant_id,service_principal_id,service_principal_key,blob_storage_name,container_name,error_file_name,blob_storage_connection_string) 
 #error_blob_client = get_blob_client(container_name, error_file_name, blob_storage_connection_string, blob_storage_access_key) 
 
+
+
+
+def get_container_client_v1(tenant_id,service_principal_id,service_principal_key,blob_storage_name,container_name,blob_name): 
+  
+  # Authenticate using the Azure AD service principal
+  credential = ClientSecretCredential(tenant_id,service_principal_id,service_principal_key)
+  # Create a BlobServiceClient using the Azure AD credential
+  blob_service_client = BlobServiceClient(
+      account_url=f"https://{blob_storage_name}.blob.core.usgovcloudapi.net",
+      credential=credential
+  )
+  # Get a client for the specific container
+  container_client = blob_service_client.get_container_client(container_name)
+  return container_client.get_blob_client(blob_name)
+
