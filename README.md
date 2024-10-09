@@ -298,3 +298,12 @@ def get_container_client_v1(tenant_id,service_principal_id,service_principal_key
   container_client = blob_service_client.get_container_client(container_name)
   return container_client.get_blob_client(blob_name)
 
+
+# Set Spark Hadoop configurations for Azure Blob Storage using Service Principal
+spark.conf.set("fs.azure.account.auth.type." + data_lake_name + ".dfs.core.usgovcloudapi.net", "OAuth")
+spark.conf.set("fs.azure.account.oauth.provider.type." + data_lake_name + ".dfs.core.usgovcloudapi.net", "org.apache.hadoop.fs.azurebfs.oauth2.ClientCredsTokenProvider")
+spark.conf.set("fs.azure.account.oauth2.client.id." + data_lake_name + ".dfs.core.usgovcloudapi.net", service_principal_id)
+spark.conf.set("fs.azure.account.oauth2.client.secret." + data_lake_name + ".dfs.core.usgovcloudapi.net", service_principal_key)
+spark.conf.set("fs.azure.account.oauth2.client.endpoint." + data_lake_name + ".dfs.core.usgovcloudapi.net",  "https://login.microsoftonline.us/" + tenant_id + "/oauth2/token")
+
+#print(sc._jsc.hadoopConfiguration().get( "fs.azure.account.key." + data_lake_name + ".blob.core.usgovcloudapi.net"))
