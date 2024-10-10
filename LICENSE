@@ -19,3 +19,17 @@
     LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
     OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
     SOFTWARE
+
+
+
+# ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------#
+# Returns client for a specific blob. Used to upload a blob using Service Principal
+def get_service_client_sp(tenant_id, service_principal_id, service_principal_key, blob_storage_name, container_name):
+    # Authenticate using the Azure AD service principal
+    credential = ClientSecretCredential(tenant_id, service_principal_id, service_principal_key)
+    # Create a BlobServiceClient using the Azure AD credential
+    blob_service_client = BlobServiceClient(
+        account_url=f"https://{blob_storage_name}.blob.core.usgovcloudapi.net",
+        credential=credential
+    )
+    return blob_service_client.get_container_client(container_name)
