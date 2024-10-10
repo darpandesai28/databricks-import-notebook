@@ -307,3 +307,19 @@ spark.conf.set("fs.azure.account.oauth2.client.secret." + data_lake_name + ".dfs
 spark.conf.set("fs.azure.account.oauth2.client.endpoint." + data_lake_name + ".dfs.core.usgovcloudapi.net",  "https://login.microsoftonline.us/" + tenant_id + "/oauth2/token")
 
 #print(sc._jsc.hadoopConfiguration().get( "fs.azure.account.key." + data_lake_name + ".blob.core.usgovcloudapi.net"))
+
+
+
+def get_service_client_sp(tenant_id, service_principal_id, service_principal_key, blob_storage_name):
+    # Authenticate using the Azure AD service principal
+    credential = ClientSecretCredential(tenant_id, service_principal_id, service_principal_key)    
+    return BlobServiceClient(account_url=f"https://{blob_storage_name}.blob.core.usgovcloudapi.net",credential=credential)  
+
+def get_blob_client_sp(tenant_id,service_principal_id,service_principal_key,blob_storage_name,container_name, blob_name): 
+  service_client = get_service_client_sp(tenant_id,service_principal_id,service_principal_key,blob_storage_name)
+  return BlobClient(
+        service_client.url,
+        container_name = container_name, 
+        blob_name = blob_name,
+        credential=service_client.credential)
+    
