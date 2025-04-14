@@ -1,0 +1,1670 @@
+Mon Apr 14 05:00:13 2025 Connection to spark from PID  820996
+Mon Apr 14 05:00:13 2025 Initialized gateway on port 42741
+Mon Apr 14 05:00:13 2025 Connected to spark.
+Mon Apr 14 05:00:29 2025 Connection to spark from PID  822378
+Mon Apr 14 05:00:29 2025 Initialized gateway on port 38963
+Mon Apr 14 05:00:30 2025 Connection to spark from PID  822397
+Mon Apr 14 05:00:30 2025 Connection to spark from PID  822362
+Mon Apr 14 05:00:30 2025 Initialized gateway on port 41573
+Mon Apr 14 05:00:30 2025 Initialized gateway on port 36311
+Mon Apr 14 05:00:30 2025 Connection to spark from PID  822439
+Mon Apr 14 05:00:30 2025 Initialized gateway on port 44315
+Mon Apr 14 05:00:30 2025 Connection to spark from PID  822462
+Mon Apr 14 05:00:30 2025 Initialized gateway on port 43647
+Mon Apr 14 05:00:31 2025 Connected to spark.
+Mon Apr 14 05:00:31 2025 Connected to spark.
+Mon Apr 14 05:00:31 2025 Connected to spark.
+Mon Apr 14 05:00:31 2025 Connected to spark.
+Mon Apr 14 05:00:31 2025 Connected to spark.
+Mon Apr 14 05:00:32 2025 Connection to spark from PID  822974
+Mon Apr 14 05:00:32 2025 Initialized gateway on port 33275
+Mon Apr 14 05:00:32 2025 Connection to spark from PID  822989
+Mon Apr 14 05:00:32 2025 Initialized gateway on port 41229
+Mon Apr 14 05:00:33 2025 Connected to spark.
+Mon Apr 14 05:00:33 2025 Connected to spark.
+Mon Apr 14 05:00:35 2025 Connection to spark from PID  823515
+Mon Apr 14 05:00:35 2025 Initialized gateway on port 44467
+Mon Apr 14 05:00:36 2025 Connected to spark.
+Mon Apr 14 05:00:40 2025 Connection to spark from PID  823898
+Mon Apr 14 05:00:40 2025 Connection to spark from PID  823900
+Mon Apr 14 05:00:40 2025 Initialized gateway on port 40961
+Mon Apr 14 05:00:40 2025 Initialized gateway on port 38983
+Mon Apr 14 05:00:41 2025 Connection to spark from PID  823897
+Mon Apr 14 05:00:41 2025 Initialized gateway on port 40839
+Mon Apr 14 05:00:41 2025 Connection to spark from PID  823961
+Mon Apr 14 05:00:41 2025 Connection to spark from PID  823946
+Mon Apr 14 05:00:41 2025 Initialized gateway on port 38695
+Mon Apr 14 05:00:41 2025 Initialized gateway on port 43529
+Mon Apr 14 05:00:41 2025 Connection to spark from PID  823969
+Mon Apr 14 05:00:41 2025 Initialized gateway on port 39647
+Mon Apr 14 05:00:41 2025 Connection to spark from PID  823982
+Mon Apr 14 05:00:41 2025 Initialized gateway on port 44125
+Mon Apr 14 05:00:41 2025 Connected to spark.
+Mon Apr 14 05:00:42 2025 Connected to spark.
+Mon Apr 14 05:00:42 2025 Connected to spark.
+Mon Apr 14 05:00:42 2025 Connected to spark.
+Mon Apr 14 05:00:42 2025 Connected to spark.
+Mon Apr 14 05:00:42 2025 Connected to spark.
+Mon Apr 14 05:00:42 2025 Connected to spark.
+Mon Apr 14 05:00:44 2025 Connection to spark from PID  824492
+Mon Apr 14 05:00:44 2025 Connection to spark from PID  824541
+Mon Apr 14 05:00:44 2025 Connection to spark from PID  824500
+Mon Apr 14 05:00:44 2025 Connection to spark from PID  824550
+Mon Apr 14 05:00:44 2025 Initialized gateway on port 44041
+Mon Apr 14 05:00:44 2025 Initialized gateway on port 45333
+Mon Apr 14 05:00:44 2025 Initialized gateway on port 38717
+Mon Apr 14 05:00:44 2025 Connection to spark from PID  824540
+Mon Apr 14 05:00:44 2025 Connection to spark from PID  824559
+Mon Apr 14 05:00:44 2025 Initialized gateway on port 38729
+Mon Apr 14 05:00:44 2025 Initialized gateway on port 34613
+Mon Apr 14 05:00:44 2025 Initialized gateway on port 41299
+Mon Apr 14 05:00:47 2025 Connection to spark from PID  825132
+Mon Apr 14 05:00:47 2025 Connection to spark from PID  825300
+Mon Apr 14 05:00:47 2025 Initialized gateway on port 35067
+Mon Apr 14 05:00:47 2025 Connection to spark from PID  825298
+Mon Apr 14 05:00:47 2025 Connection to spark from PID  825350
+Mon Apr 14 05:00:47 2025 Initialized gateway on port 38947
+Mon Apr 14 05:00:47 2025 Connection to spark from PID  825302
+Mon Apr 14 05:00:47 2025 Initialized gateway on port 46181
+Mon Apr 14 05:00:47 2025 Initialized gateway on port 34647
+Mon Apr 14 05:00:47 2025 Initialized gateway on port 33967
+Mon Apr 14 05:00:47 2025 Connection to spark from PID  825354
+Mon Apr 14 05:00:47 2025 Connection to spark from PID  825335
+Mon Apr 14 05:00:47 2025 Connected to spark.
+Mon Apr 14 05:00:48 2025 Initialized gateway on port 33305
+Mon Apr 14 05:00:48 2025 Initialized gateway on port 45685
+Mon Apr 14 05:00:48 2025 Connection to spark from PID  825407
+Mon Apr 14 05:00:48 2025 Initialized gateway on port 38719
+Mon Apr 14 05:00:48 2025 Connected to spark.
+Mon Apr 14 05:00:48 2025 Connected to spark.
+Mon Apr 14 05:00:49 2025 Connection to spark from PID  825722
+Mon Apr 14 05:00:49 2025 Initialized gateway on port 40949
+Mon Apr 14 05:00:49 2025 Connected to spark.
+Mon Apr 14 05:00:49 2025 Connected to spark.
+Mon Apr 14 05:00:49 2025 Connected to spark.
+Mon Apr 14 05:00:49 2025 Connection to spark from PID  825855
+Mon Apr 14 05:00:49 2025 Initialized gateway on port 33785
+Mon Apr 14 05:00:51 2025 Connected to spark.
+Mon Apr 14 05:00:51 2025 Connected to spark.
+Mon Apr 14 05:00:52 2025 Connected to spark.
+Mon Apr 14 05:00:52 2025 Connection to spark from PID  826198
+Mon Apr 14 05:00:52 2025 Connected to spark.
+Mon Apr 14 05:00:52 2025 Connected to spark.
+Mon Apr 14 05:00:52 2025 Connected to spark.
+Mon Apr 14 05:00:52 2025 Connection to spark from PID  826240
+Mon Apr 14 05:00:52 2025 Connected to spark.
+Mon Apr 14 05:00:52 2025 Initialized gateway on port 33735
+Mon Apr 14 05:00:52 2025 Initialized gateway on port 38445
+Mon Apr 14 05:00:52 2025 Connected to spark.
+Mon Apr 14 05:00:52 2025 Connection to spark from PID  826269
+Mon Apr 14 05:00:52 2025 Connection to spark from PID  826268
+Mon Apr 14 05:00:52 2025 Initialized gateway on port 45589
+Mon Apr 14 05:00:52 2025 Connected to spark.
+Mon Apr 14 05:00:52 2025 Initialized gateway on port 37587
+Mon Apr 14 05:00:53 2025 Connected to spark.
+Mon Apr 14 05:00:54 2025 Connected to spark.
+Mon Apr 14 05:00:54 2025 Connected to spark.
+Mon Apr 14 05:00:54 2025 Connected to spark.
+Mon Apr 14 05:00:54 2025 Connected to spark.
+Mon Apr 14 05:00:55 2025 Connection to spark from PID  826797
+Mon Apr 14 05:00:55 2025 Initialized gateway on port 36461
+Mon Apr 14 05:00:55 2025 Connection to spark from PID  826819
+Mon Apr 14 05:00:55 2025 Initialized gateway on port 33107
+Mon Apr 14 05:00:55 2025 Connection to spark from PID  826820
+Mon Apr 14 05:00:55 2025 Initialized gateway on port 43101
+Mon Apr 14 05:00:56 2025 Connected to spark.
+Mon Apr 14 05:00:57 2025 Connected to spark.
+Mon Apr 14 05:00:57 2025 Connected to spark.
+Mon Apr 14 05:00:59 2025 Connection to spark from PID  827238
+Mon Apr 14 05:00:59 2025 Initialized gateway on port 39665
+Mon Apr 14 05:00:59 2025 Connection to spark from PID  827256
+Mon Apr 14 05:00:59 2025 Initialized gateway on port 46673
+Mon Apr 14 05:00:59 2025 Connection to spark from PID  827276
+Mon Apr 14 05:00:59 2025 Initialized gateway on port 46853
+Mon Apr 14 05:00:59 2025 Connection to spark from PID  827237
+Mon Apr 14 05:00:59 2025 Initialized gateway on port 45847
+Mon Apr 14 05:01:00 2025 Connected to spark.
+Mon Apr 14 05:01:00 2025 Connected to spark.
+Mon Apr 14 05:01:00 2025 Connected to spark.
+Mon Apr 14 05:01:00 2025 Connected to spark.
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+Mon Apr 14 05:02:20 2025 Connection to spark from PID  831504
+Mon Apr 14 05:02:20 2025 Initialized gateway on port 33961
+Mon Apr 14 05:02:20 2025 Connection to spark from PID  831519
+Mon Apr 14 05:02:20 2025 Initialized gateway on port 41517
+Mon Apr 14 05:02:20 2025 Connection to spark from PID  831510
+Mon Apr 14 05:02:20 2025 Initialized gateway on port 35429
+Mon Apr 14 05:02:22 2025 Connected to spark.
+Mon Apr 14 05:02:22 2025 Connected to spark.
+Mon Apr 14 05:02:22 2025 Connected to spark.
+Mon Apr 14 05:02:22 2025 Connection to spark from PID  831784
+Mon Apr 14 05:02:22 2025 Connection to spark from PID  831805
+Mon Apr 14 05:02:22 2025 Initialized gateway on port 36263
+Mon Apr 14 05:02:22 2025 Initialized gateway on port 46645
+Mon Apr 14 05:02:22 2025 Connection to spark from PID  831797
+Mon Apr 14 05:02:22 2025 Initialized gateway on port 43285
+Mon Apr 14 05:02:24 2025 Connected to spark.
+Mon Apr 14 05:02:24 2025 Connected to spark.
+Mon Apr 14 05:02:24 2025 Connected to spark.
+
+KeyboardInterrupt
+
+Mon Apr 14 05:02:35 2025 Connection to spark from PID  832691
+Mon Apr 14 05:02:35 2025 Initialized gateway on port 41561
+Mon Apr 14 05:02:35 2025 Connection to spark from PID  832707
+Mon Apr 14 05:02:35 2025 Initialized gateway on port 34669
+Mon Apr 14 05:02:36 2025 Connection to spark from PID  832696
+Mon Apr 14 05:02:36 2025 Initialized gateway on port 39775
+Mon Apr 14 05:02:36 2025 Connection to spark from PID  832665
+Mon Apr 14 05:02:36 2025 Initialized gateway on port 36083
+Mon Apr 14 05:02:37 2025 Connected to spark.
+Mon Apr 14 05:02:37 2025 Connected to spark.
+Mon Apr 14 05:02:37 2025 Connected to spark.
+Mon Apr 14 05:02:37 2025 Connected to spark.
+Mon Apr 14 05:02:38 2025 Connection to spark from PID  833224
+Mon Apr 14 05:02:38 2025 Initialized gateway on port 44613
+Mon Apr 14 05:02:38 2025 Connection to spark from PID  833225
+Mon Apr 14 05:02:38 2025 Initialized gateway on port 32795
+Mon Apr 14 05:02:38 2025 Connection to spark from PID  833272
+Mon Apr 14 05:02:38 2025 Initialized gateway on port 45811
+Mon Apr 14 05:02:39 2025 Connection to spark from PID  833294
+Mon Apr 14 05:02:39 2025 Initialized gateway on port 39077
+Mon Apr 14 05:02:39 2025 Connected to spark.
+Mon Apr 14 05:02:39 2025 Connected to spark.
+Mon Apr 14 05:02:39 2025 Connected to spark.
+Mon Apr 14 05:02:39 2025 Connected to spark.
+Mon Apr 14 05:02:45 2025 Connection to spark from PID  833831
+Mon Apr 14 05:02:45 2025 Initialized gateway on port 44719
+Mon Apr 14 05:02:45 2025 Connected to spark.
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+Mon Apr 14 05:05:57 2025 Connection to spark from PID  841709
+Mon Apr 14 05:05:57 2025 Initialized gateway on port 33921
+Mon Apr 14 05:05:57 2025 Connected to spark.
+Mon Apr 14 05:06:00 2025 Connection to spark from PID  841849
+Mon Apr 14 05:06:00 2025 Initialized gateway on port 43303
+Mon Apr 14 05:06:00 2025 Connection to spark from PID  841869
+Mon Apr 14 05:06:00 2025 Initialized gateway on port 38001
+Mon Apr 14 05:06:00 2025 Connection to spark from PID  841878
+Mon Apr 14 05:06:00 2025 Initialized gateway on port 34237
+Mon Apr 14 05:06:00 2025 Connected to spark.
+Mon Apr 14 05:06:00 2025 Connected to spark.
+Mon Apr 14 05:06:00 2025 Connected to spark.
+Mon Apr 14 05:06:02 2025 Connection to spark from PID  842269
+Mon Apr 14 05:06:02 2025 Initialized gateway on port 44091
+Mon Apr 14 05:06:02 2025 Connection to spark from PID  842296
+Mon Apr 14 05:06:02 2025 Initialized gateway on port 40727
+Mon Apr 14 05:06:03 2025 Connected to spark.
+Mon Apr 14 05:06:03 2025 Connected to spark.
+Mon Apr 14 05:06:10 2025 Connection to spark from PID  842673
+Mon Apr 14 05:06:10 2025 Initialized gateway on port 43209
+
+KeyboardInterrupt
+
+Mon Apr 14 05:06:10 2025 Connected to spark.
+Mon Apr 14 05:07:38 2025 Connection to spark from PID  842987
+Mon Apr 14 05:07:38 2025 Initialized gateway on port 42043
+Mon Apr 14 05:07:38 2025 Connection to spark from PID  843007
+Mon Apr 14 05:07:38 2025 Initialized gateway on port 36335
+Mon Apr 14 05:07:38 2025 Connection to spark from PID  843019
+Mon Apr 14 05:07:38 2025 Initialized gateway on port 37167
+Mon Apr 14 05:07:39 2025 Connected to spark.
+Mon Apr 14 05:07:39 2025 Connected to spark.
+Mon Apr 14 05:07:39 2025 Connected to spark.
+Mon Apr 14 05:07:41 2025 Connection to spark from PID  843251
+Mon Apr 14 05:07:41 2025 Initialized gateway on port 42275
+Mon Apr 14 05:07:41 2025 Connection to spark from PID  843275
+Mon Apr 14 05:07:41 2025 Initialized gateway on port 39545
+Mon Apr 14 05:07:41 2025 Connected to spark.
+Mon Apr 14 05:07:41 2025 Connected to spark.
+Mon Apr 14 05:07:48 2025 Connection to spark from PID  843696
+Mon Apr 14 05:07:48 2025 Initialized gateway on port 35203
+Mon Apr 14 05:07:49 2025 Connected to spark.
+Mon Apr 14 05:07:51 2025 Connection to spark from PID  843849
+Mon Apr 14 05:07:51 2025 Initialized gateway on port 36037
+Mon Apr 14 05:07:51 2025 Connection to spark from PID  843851
+Mon Apr 14 05:07:51 2025 Initialized gateway on port 43499
+Mon Apr 14 05:07:51 2025 Connection to spark from PID  843871
+Mon Apr 14 05:07:51 2025 Initialized gateway on port 40603
+Mon Apr 14 05:07:51 2025 Connected to spark.
+Mon Apr 14 05:07:51 2025 Connected to spark.
+Mon Apr 14 05:07:51 2025 Connected to spark.
+Mon Apr 14 05:07:53 2025 Connection to spark from PID  844175
+Mon Apr 14 05:07:53 2025 Initialized gateway on port 36871
+Mon Apr 14 05:07:53 2025 Connection to spark from PID  844181
+Mon Apr 14 05:07:53 2025 Initialized gateway on port 40121
+Mon Apr 14 05:07:54 2025 Connected to spark.
+Mon Apr 14 05:07:54 2025 Connected to spark.
+Mon Apr 14 05:07:56 2025 Connection to spark from PID  844430
+Mon Apr 14 05:07:56 2025 Initialized gateway on port 36127
+Mon Apr 14 05:07:56 2025 Connection to spark from PID  844439
+Mon Apr 14 05:07:56 2025 Initialized gateway on port 40485
+Mon Apr 14 05:07:56 2025 Connection to spark from PID  844438
+Mon Apr 14 05:07:56 2025 Initialized gateway on port 33967
+Mon Apr 14 05:07:57 2025 Connected to spark.
+Mon Apr 14 05:07:57 2025 Connected to spark.
+Mon Apr 14 05:07:57 2025 Connected to spark.
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+Mon Apr 14 05:07:59 2025 Connection to spark from PID  844751
+Mon Apr 14 05:07:59 2025 Connection to spark from PID  844738
+Mon Apr 14 05:07:59 2025 Initialized gateway on port 44013
+Mon Apr 14 05:07:59 2025 Initialized gateway on port 38407
+Mon Apr 14 05:07:59 2025 Connection to spark from PID  844770
+Mon Apr 14 05:07:59 2025 Initialized gateway on port 44269
+Mon Apr 14 05:07:59 2025 Connected to spark.
+Mon Apr 14 05:07:59 2025 Connected to spark.
+Mon Apr 14 05:07:59 2025 Connected to spark.
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+Mon Apr 14 05:08:01 2025 Connection to spark from PID  845112
+Mon Apr 14 05:08:01 2025 Initialized gateway on port 39169
+Mon Apr 14 05:08:02 2025 Connected to spark.
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+Mon Apr 14 05:09:05 2025 Connection to spark from PID  845582
+Mon Apr 14 05:09:05 2025 Initialized gateway on port 37007
+Mon Apr 14 05:09:05 2025 Connection to spark from PID  845609
+Mon Apr 14 05:09:05 2025 Initialized gateway on port 39373
+Mon Apr 14 05:09:05 2025 Connection to spark from PID  845610
+Mon Apr 14 05:09:05 2025 Initialized gateway on port 40659
+Mon Apr 14 05:09:05 2025 Connection to spark from PID  845629
+Mon Apr 14 05:09:05 2025 Initialized gateway on port 43045
+Mon Apr 14 05:09:05 2025 Connection to spark from PID  845639
+Mon Apr 14 05:09:05 2025 Initialized gateway on port 33717
+Mon Apr 14 05:09:05 2025 Connection to spark from PID  845653
+Mon Apr 14 05:09:05 2025 Initialized gateway on port 41775
+Mon Apr 14 05:09:05 2025 Connected to spark.
+Mon Apr 14 05:09:05 2025 Connected to spark.
+Mon Apr 14 05:09:06 2025 Connected to spark.
+Mon Apr 14 05:09:06 2025 Connected to spark.
+Mon Apr 14 05:09:06 2025 Connected to spark.
+Mon Apr 14 05:09:06 2025 Connected to spark.
+Mon Apr 14 05:09:07 2025 Connection to spark from PID  846057
+Mon Apr 14 05:09:07 2025 Initialized gateway on port 43175
+Mon Apr 14 05:09:08 2025 Connected to spark.
+Mon Apr 14 05:09:10 2025 Connection to spark from PID  846218
+Mon Apr 14 05:09:10 2025 Initialized gateway on port 33535
+Mon Apr 14 05:09:10 2025 Connection to spark from PID  846233
+Mon Apr 14 05:09:10 2025 Initialized gateway on port 33301
+Mon Apr 14 05:09:10 2025 Connection to spark from PID  846245
+Mon Apr 14 05:09:10 2025 Initialized gateway on port 36599
+Mon Apr 14 05:09:10 2025 Connected to spark.
+Mon Apr 14 05:09:10 2025 Connected to spark.
+Mon Apr 14 05:09:10 2025 Connected to spark.
+Mon Apr 14 05:09:12 2025 Connection to spark from PID  846635
+Mon Apr 14 05:09:12 2025 Initialized gateway on port 46349
+
+KeyboardInterrupt
+
+Mon Apr 14 05:09:12 2025 Connection to spark from PID  846669
+Mon Apr 14 05:09:12 2025 Initialized gateway on port 44541
+Mon Apr 14 05:09:12 2025 Connection to spark from PID  846677
+Mon Apr 14 05:09:12 2025 Initialized gateway on port 37169
+Mon Apr 14 05:09:13 2025 Connected to spark.
+Mon Apr 14 05:09:13 2025 Connected to spark.
+Mon Apr 14 05:09:13 2025 Connected to spark.
+Mon Apr 14 05:09:15 2025 Connection to spark from PID  846953
+Mon Apr 14 05:09:15 2025 Initialized gateway on port 41945
+Mon Apr 14 05:09:15 2025 Connected to spark.
+
+KeyboardInterrupt
+
+
+KeyboardInterrupt
+
+Mon Apr 14 05:09:22 2025 Connection to spark from PID  847514
+Mon Apr 14 05:09:22 2025 Initialized gateway on port 44145
+Mon Apr 14 05:09:22 2025 Connected to spark.
+Mon Apr 14 05:10:43 2025 Connection to spark from PID  847758
+Mon Apr 14 05:10:43 2025 Initialized gateway on port 39777
+Mon Apr 14 05:10:44 2025 Connected to spark.
+Mon Apr 14 05:11:47 2025 Connection to spark from PID  847960
+Mon Apr 14 05:11:47 2025 Initialized gateway on port 37109
+Mon Apr 14 05:11:47 2025 Connection to spark from PID  847972
+Mon Apr 14 05:11:47 2025 Initialized gateway on port 40631
+Mon Apr 14 05:11:47 2025 Connected to spark.
+Mon Apr 14 05:11:47 2025 Connected to spark.
+Mon Apr 14 05:14:50 2025 Connection to spark from PID  848480
+Mon Apr 14 05:14:50 2025 Initialized gateway on port 40723
+Mon Apr 14 05:14:50 2025 Connection to spark from PID  848494
+Mon Apr 14 05:14:50 2025 Initialized gateway on port 39801
+Mon Apr 14 05:14:50 2025 Connection to spark from PID  848512
+Mon Apr 14 05:14:50 2025 Initialized gateway on port 38763
+Mon Apr 14 05:14:50 2025 Connection to spark from PID  848527
+Mon Apr 14 05:14:50 2025 Initialized gateway on port 35729
+Mon Apr 14 05:14:50 2025 Connection to spark from PID  848538
+Mon Apr 14 05:14:50 2025 Initialized gateway on port 36381
+Mon Apr 14 05:14:51 2025 Connected to spark.
+Mon Apr 14 05:14:51 2025 Connected to spark.
+Mon Apr 14 05:14:51 2025 Connected to spark.
+Mon Apr 14 05:14:51 2025 Connected to spark.
+Mon Apr 14 05:14:51 2025 Connected to spark.
+Mon Apr 14 05:14:52 2025 Connection to spark from PID  848823
+Mon Apr 14 05:14:52 2025 Initialized gateway on port 35017
+Mon Apr 14 05:14:53 2025 Connected to spark.
+Mon Apr 14 05:14:58 2025 Connection to spark from PID  849346
+Mon Apr 14 05:14:58 2025 Initialized gateway on port 40393
+Mon Apr 14 05:14:58 2025 Connection to spark from PID  849345
+Mon Apr 14 05:14:58 2025 Connection to spark from PID  849347
+Mon Apr 14 05:14:58 2025 Initialized gateway on port 39989
+Mon Apr 14 05:14:58 2025 Initialized gateway on port 35425
+Mon Apr 14 05:14:58 2025 Connected to spark.
+Mon Apr 14 05:14:58 2025 Connected to spark.
+Mon Apr 14 05:14:58 2025 Connected to spark.
+Mon Apr 14 05:15:00 2025 Connection to spark from PID  849584
+Mon Apr 14 05:15:00 2025 Initialized gateway on port 39845
+Mon Apr 14 05:15:00 2025 Connected to spark.
+Mon Apr 14 05:15:03 2025 Connection to spark from PID  849803
+Mon Apr 14 05:15:03 2025 Initialized gateway on port 44331
+Mon Apr 14 05:15:03 2025 Connection to spark from PID  849849
+Mon Apr 14 05:15:03 2025 Initialized gateway on port 40811
+Mon Apr 14 05:15:03 2025 Connection to spark from PID  849860
+Mon Apr 14 05:15:03 2025 Initialized gateway on port 39131
+Mon Apr 14 05:15:03 2025 Connection to spark from PID  849848
+Mon Apr 14 05:15:03 2025 Connection to spark from PID  849861
+Mon Apr 14 05:15:03 2025 Initialized gateway on port 33815
+Mon Apr 14 05:15:03 2025 Initialized gateway on port 36583
+Mon Apr 14 05:15:03 2025 Connection to spark from PID  849888
+Mon Apr 14 05:15:03 2025 Initialized gateway on port 46691
+Mon Apr 14 05:15:03 2025 Connected to spark.
+Mon Apr 14 05:15:03 2025 Connected to spark.
+Mon Apr 14 05:15:03 2025 Connected to spark.
+Mon Apr 14 05:15:04 2025 Connected to spark.
+Mon Apr 14 05:15:04 2025 Connected to spark.
+Mon Apr 14 05:15:04 2025 Connected to spark.
+Mon Apr 14 05:15:05 2025 Connection to spark from PID  850255
+Mon Apr 14 05:15:05 2025 Initialized gateway on port 44185
+Mon Apr 14 05:15:06 2025 Connected to spark.
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+Mon Apr 14 05:15:20 2025 Connection to spark from PID  850798
+Mon Apr 14 05:15:20 2025 Initialized gateway on port 44273
+Mon Apr 14 05:15:20 2025 Connected to spark.
+Mon Apr 14 05:16:26 2025 Connection to spark from PID  851261
+Mon Apr 14 05:16:26 2025 Connection to spark from PID  851273
+Mon Apr 14 05:16:26 2025 Initialized gateway on port 46321
+Mon Apr 14 05:16:26 2025 Initialized gateway on port 46369
+Mon Apr 14 05:16:26 2025 Connection to spark from PID  851293
+Mon Apr 14 05:16:26 2025 Initialized gateway on port 46289
+Mon Apr 14 05:16:26 2025 Connection to spark from PID  851336
+Mon Apr 14 05:16:26 2025 Initialized gateway on port 46541
+Mon Apr 14 05:16:26 2025 Connection to spark from PID  851353
+Mon Apr 14 05:16:26 2025 Initialized gateway on port 35369
+Mon Apr 14 05:16:26 2025 Connection to spark from PID  851337
+Mon Apr 14 05:16:26 2025 Initialized gateway on port 41515
+Mon Apr 14 05:16:26 2025 Connection to spark from PID  851335
+Mon Apr 14 05:16:26 2025 Initialized gateway on port 40831
+Mon Apr 14 05:16:27 2025 Connected to spark.
+Mon Apr 14 05:16:27 2025 Connected to spark.
+Mon Apr 14 05:16:27 2025 Connected to spark.
+Mon Apr 14 05:16:27 2025 Connected to spark.
+Mon Apr 14 05:16:27 2025 Connected to spark.
+Mon Apr 14 05:16:27 2025 Connected to spark.
+Mon Apr 14 05:16:27 2025 Connected to spark.
+Mon Apr 14 05:16:29 2025 Connection to spark from PID  851781
+Mon Apr 14 05:16:29 2025 Initialized gateway on port 42023
+Mon Apr 14 05:16:29 2025 Connection to spark from PID  851782
+Mon Apr 14 05:16:29 2025 Initialized gateway on port 45067
+Mon Apr 14 05:16:29 2025 Connection to spark from PID  851793
+Mon Apr 14 05:16:29 2025 Initialized gateway on port 36781
+Mon Apr 14 05:16:29 2025 Connected to spark.
+Mon Apr 14 05:16:29 2025 Connected to spark.
+Mon Apr 14 05:16:29 2025 Connected to spark.
+Mon Apr 14 05:16:31 2025 Connection to spark from PID  852130
+Mon Apr 14 05:16:31 2025 Initialized gateway on port 46303
+Mon Apr 14 05:16:31 2025 Connection to spark from PID  852174
+Mon Apr 14 05:16:31 2025 Initialized gateway on port 34565
+Mon Apr 14 05:16:31 2025 Connected to spark.
+Mon Apr 14 05:16:31 2025 Connected to spark.
+[IPKernelApp] ERROR | KeyboardInterrupt caught in kernel.
+Mon Apr 14 05:16:38 2025 Connection to spark from PID  852896
+Mon Apr 14 05:16:38 2025 Initialized gateway on port 40871
+Mon Apr 14 05:16:39 2025 Connected to spark.
+Mon Apr 14 05:16:41 2025 Connection to spark from PID  852998
+Mon Apr 14 05:16:41 2025 Initialized gateway on port 34109
+Mon Apr 14 05:16:41 2025 Connected to spark.
+Mon Apr 14 05:16:44 2025 Connection to spark from PID  853180
+Mon Apr 14 05:16:44 2025 Initialized gateway on port 44681
+Mon Apr 14 05:16:44 2025 Connected to spark.
+Mon Apr 14 05:17:39 2025 Connection to spark from PID  853572
+Mon Apr 14 05:17:39 2025 Initialized gateway on port 44321
+Mon Apr 14 05:17:39 2025 Connection to spark from PID  853589
+Mon Apr 14 05:17:39 2025 Initialized gateway on port 33629
+Mon Apr 14 05:17:39 2025 Connection to spark from PID  853598
+Mon Apr 14 05:17:39 2025 Connection to spark from PID  853600
+Mon Apr 14 05:17:39 2025 Initialized gateway on port 33189
+Mon Apr 14 05:17:39 2025 Initialized gateway on port 39609
+Mon Apr 14 05:17:40 2025 Connection to spark from PID  853615
+Mon Apr 14 05:17:40 2025 Initialized gateway on port 37803
+Mon Apr 14 05:17:40 2025 Connection to spark from PID  853627
+Mon Apr 14 05:17:40 2025 Initialized gateway on port 42695
+Mon Apr 14 05:17:40 2025 Connection to spark from PID  853642
+Mon Apr 14 05:17:40 2025 Initialized gateway on port 40359
+Mon Apr 14 05:17:40 2025 Connected to spark.
+Mon Apr 14 05:17:40 2025 Connected to spark.
+Mon Apr 14 05:17:40 2025 Connected to spark.
+Mon Apr 14 05:17:40 2025 Connected to spark.
+Mon Apr 14 05:17:40 2025 Connected to spark.
+Mon Apr 14 05:17:40 2025 Connected to spark.
+Mon Apr 14 05:17:40 2025 Connected to spark.
+Mon Apr 14 05:17:47 2025 Connection to spark from PID  854133
+Mon Apr 14 05:17:47 2025 Initialized gateway on port 34315
+Mon Apr 14 05:17:47 2025 Connected to spark.
+/root/.ipykernel/853615/command-994703318801387-2332427907:23: DtypeWarning: Columns (34,63) have mixed types. Specify dtype option on import or set low_memory=False.
+  df = pd.read_csv(download_url,compression='zip')
+Mon Apr 14 05:20:34 2025 Connection to spark from PID  854478
+Mon Apr 14 05:20:34 2025 Initialized gateway on port 43253
+Mon Apr 14 05:20:34 2025 Connected to spark.
+Mon Apr 14 05:20:44 2025 Connection to spark from PID  854605
+Mon Apr 14 05:20:44 2025 Initialized gateway on port 43943
+Mon Apr 14 05:20:44 2025 Connected to spark.
+Mon Apr 14 05:21:14 2025 Connection to spark from PID  854775
+Mon Apr 14 05:21:14 2025 Initialized gateway on port 41461
+Mon Apr 14 05:21:14 2025 Connection to spark from PID  854791
+Mon Apr 14 05:21:14 2025 Initialized gateway on port 42365
+Mon Apr 14 05:21:14 2025 Connected to spark.
+Mon Apr 14 05:21:15 2025 Connected to spark.
+Mon Apr 14 05:21:19 2025 Connection to spark from PID  854980
+Mon Apr 14 05:21:19 2025 Initialized gateway on port 33057
+Mon Apr 14 05:21:19 2025 Connection to spark from PID  854991
+Mon Apr 14 05:21:19 2025 Initialized gateway on port 34353
+Mon Apr 14 05:21:19 2025 Connected to spark.
+Mon Apr 14 05:21:20 2025 Connected to spark.
+Mon Apr 14 05:21:23 2025 Connection to spark from PID  855441
+Mon Apr 14 05:21:23 2025 Connection to spark from PID  855414
+Mon Apr 14 05:21:23 2025 Initialized gateway on port 36217
+Mon Apr 14 05:21:23 2025 Initialized gateway on port 38725
+Mon Apr 14 05:21:23 2025 Connection to spark from PID  855460
+Mon Apr 14 05:21:23 2025 Connection to spark from PID  855442
+Mon Apr 14 05:21:23 2025 Initialized gateway on port 42269
+Mon Apr 14 05:21:23 2025 Initialized gateway on port 42603
+Mon Apr 14 05:21:23 2025 Connection to spark from PID  855483
+Mon Apr 14 05:21:23 2025 Initialized gateway on port 39109
+Mon Apr 14 05:21:24 2025 Connection to spark from PID  855558
+Mon Apr 14 05:21:24 2025 Initialized gateway on port 39789
+Mon Apr 14 05:21:24 2025 Connected to spark.
+Mon Apr 14 05:21:24 2025 Connected to spark.
+Mon Apr 14 05:21:24 2025 Connected to spark.
+Mon Apr 14 05:21:24 2025 Connected to spark.
+Mon Apr 14 05:21:24 2025 Connected to spark.
+Mon Apr 14 05:21:24 2025 Connected to spark.
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+Mon Apr 14 05:21:26 2025 Connection to spark from PID  856038
+Mon Apr 14 05:21:26 2025 Initialized gateway on port 45307
+Mon Apr 14 05:21:26 2025 Connection to spark from PID  856015
+Mon Apr 14 05:21:26 2025 Initialized gateway on port 37993
+Mon Apr 14 05:21:26 2025 Connection to spark from PID  856088
+Mon Apr 14 05:21:26 2025 Initialized gateway on port 39503
+Mon Apr 14 05:21:26 2025 Connection to spark from PID  856051
+Mon Apr 14 05:21:26 2025 Initialized gateway on port 34031
+Mon Apr 14 05:21:26 2025 Connection to spark from PID  856097
+Mon Apr 14 05:21:26 2025 Initialized gateway on port 45935
+Mon Apr 14 05:21:26 2025 Connection to spark from PID  856073
+Mon Apr 14 05:21:26 2025 Initialized gateway on port 38043
+Mon Apr 14 05:21:26 2025 Connection to spark from PID  856137
+Mon Apr 14 05:21:26 2025 Connection to spark from PID  856130
+Mon Apr 14 05:21:26 2025 Connection to spark from PID  856117
+Mon Apr 14 05:21:26 2025 Initialized gateway on port 42477
+Mon Apr 14 05:21:26 2025 Initialized gateway on port 45589
+Mon Apr 14 05:21:26 2025 Initialized gateway on port 45929
+Mon Apr 14 05:21:27 2025 Connected to spark.
+Mon Apr 14 05:21:28 2025 Connected to spark.
+Mon Apr 14 05:21:28 2025 Connected to spark.
+Mon Apr 14 05:21:28 2025 Connected to spark.
+Mon Apr 14 05:21:28 2025 Connected to spark.
+Mon Apr 14 05:21:28 2025 Connected to spark.
+Mon Apr 14 05:21:28 2025 Connection to spark from PID  856790
+Mon Apr 14 05:21:28 2025 Connection to spark from PID  856796
+Mon Apr 14 05:21:28 2025 Initialized gateway on port 44421
+Mon Apr 14 05:21:28 2025 Connection to spark from PID  856808
+Mon Apr 14 05:21:28 2025 Initialized gateway on port 43199
+Mon Apr 14 05:21:28 2025 Initialized gateway on port 36783
+Mon Apr 14 05:21:28 2025 Connected to spark.
+Mon Apr 14 05:21:28 2025 Connected to spark.
+Mon Apr 14 05:21:28 2025 Connected to spark.
+Mon Apr 14 05:21:30 2025 Connected to spark.
+Mon Apr 14 05:21:30 2025 Connected to spark.
+Mon Apr 14 05:21:30 2025 Connected to spark.
+Mon Apr 14 05:21:30 2025 Connection to spark from PID  857341
+Mon Apr 14 05:21:30 2025 Initialized gateway on port 39229
+Mon Apr 14 05:21:30 2025 Connection to spark from PID  857353
+Mon Apr 14 05:21:31 2025 Initialized gateway on port 37543
+Mon Apr 14 05:21:31 2025 Connection to spark from PID  857342
+Mon Apr 14 05:21:31 2025 Connection to spark from PID  857356
+Mon Apr 14 05:21:31 2025 Initialized gateway on port 40265
+Mon Apr 14 05:21:31 2025 Initialized gateway on port 43419
+Mon Apr 14 05:21:32 2025 Connected to spark.
+Mon Apr 14 05:21:32 2025 Connected to spark.
+Mon Apr 14 05:21:32 2025 Connected to spark.
+Mon Apr 14 05:21:33 2025 Connected to spark.
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+Mon Apr 14 05:21:35 2025 Connection to spark from PID  858059
+Mon Apr 14 05:21:35 2025 Connection to spark from PID  858053
+Mon Apr 14 05:21:35 2025 Initialized gateway on port 35293
+Mon Apr 14 05:21:35 2025 Initialized gateway on port 45883
+Mon Apr 14 05:21:35 2025 Connection to spark from PID  858099
+Mon Apr 14 05:21:35 2025 Initialized gateway on port 39839
+Mon Apr 14 05:21:35 2025 Connection to spark from PID  858068
+Mon Apr 14 05:21:35 2025 Initialized gateway on port 34637
+Mon Apr 14 05:21:35 2025 Connection to spark from PID  858065
+Mon Apr 14 05:21:35 2025 Connection to spark from PID  858107
+Mon Apr 14 05:21:35 2025 Initialized gateway on port 38593
+Mon Apr 14 05:21:36 2025 Initialized gateway on port 35615
+Mon Apr 14 05:21:36 2025 Connection to spark from PID  858106
+Mon Apr 14 05:21:36 2025 Connection to spark from PID  858129
+Mon Apr 14 05:21:36 2025 Connection to spark from PID  858154
+Mon Apr 14 05:21:36 2025 Initialized gateway on port 43235
+Mon Apr 14 05:21:36 2025 Initialized gateway on port 33373
+Mon Apr 14 05:21:36 2025 Initialized gateway on port 33433
+Mon Apr 14 05:21:36 2025 Connection to spark from PID  858136
+Mon Apr 14 05:21:36 2025 Initialized gateway on port 35031
+Mon Apr 14 05:21:36 2025 Connection to spark from PID  858275
+Mon Apr 14 05:21:36 2025 Initialized gateway on port 41817
+Mon Apr 14 05:21:36 2025 Connection to spark from PID  858277
+Mon Apr 14 05:21:36 2025 Initialized gateway on port 38181
+Mon Apr 14 05:21:37 2025 Connected to spark.
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+Mon Apr 14 05:21:37 2025 Connected to spark.
+Mon Apr 14 05:21:37 2025 Connection to spark from PID  858697
+Mon Apr 14 05:21:37 2025 Initialized gateway on port 39419
+Mon Apr 14 05:21:37 2025 Connection to spark from PID  858718
+Mon Apr 14 05:21:37 2025 Connection to spark from PID  858717
+Mon Apr 14 05:21:37 2025 Initialized gateway on port 33849
+Mon Apr 14 05:21:37 2025 Initialized gateway on port 33457
+Mon Apr 14 05:21:37 2025 Connected to spark.
+Mon Apr 14 05:21:37 2025 Connected to spark.
+Mon Apr 14 05:21:37 2025 Connected to spark.
+Mon Apr 14 05:21:37 2025 Connected to spark.
+Mon Apr 14 05:21:38 2025 Connected to spark.
+Mon Apr 14 05:21:38 2025 Connected to spark.
+Mon Apr 14 05:21:38 2025 Connected to spark.
+Mon Apr 14 05:21:38 2025 Connected to spark.
+Mon Apr 14 05:21:38 2025 Connected to spark.
+Mon Apr 14 05:21:38 2025 Connected to spark.
+Mon Apr 14 05:21:38 2025 Connected to spark.
+Mon Apr 14 05:21:38 2025 Connected to spark.
+Mon Apr 14 05:21:38 2025 Connected to spark.
+Mon Apr 14 05:21:42 2025 Connection to spark from PID  859445
+Mon Apr 14 05:21:42 2025 Initialized gateway on port 41323
+Mon Apr 14 05:21:43 2025 Connected to spark.
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+
+KeyboardInterrupt
+
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+
+KeyboardInterrupt
+
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+
+KeyboardInterrupt
+
+Mon Apr 14 05:22:56 2025 Connection to spark from PID  861428
+Mon Apr 14 05:22:56 2025 Initialized gateway on port 39223
+Mon Apr 14 05:22:56 2025 Connection to spark from PID  861452
+Mon Apr 14 05:22:56 2025 Connection to spark from PID  861443
+Mon Apr 14 05:22:56 2025 Initialized gateway on port 41497
+Mon Apr 14 05:22:56 2025 Initialized gateway on port 40323
+Mon Apr 14 05:22:56 2025 Connection to spark from PID  861474
+Mon Apr 14 05:22:56 2025 Connection to spark from PID  861467
+Mon Apr 14 05:22:56 2025 Initialized gateway on port 38785
+Mon Apr 14 05:22:56 2025 Initialized gateway on port 42491
+Mon Apr 14 05:22:56 2025 Connection to spark from PID  861492
+Mon Apr 14 05:22:56 2025 Connection to spark from PID  861491
+Mon Apr 14 05:22:56 2025 Initialized gateway on port 41225
+Mon Apr 14 05:22:56 2025 Initialized gateway on port 45875
+Mon Apr 14 05:22:56 2025 Connected to spark.
+Mon Apr 14 05:22:57 2025 Connected to spark.
+Mon Apr 14 05:22:57 2025 Connected to spark.
+Mon Apr 14 05:22:57 2025 Connected to spark.
+Mon Apr 14 05:22:57 2025 Connected to spark.
+Mon Apr 14 05:22:57 2025 Connected to spark.
+Mon Apr 14 05:22:57 2025 Connected to spark.
+Mon Apr 14 05:22:58 2025 Connection to spark from PID  861942
+Mon Apr 14 05:22:58 2025 Initialized gateway on port 42689
+Mon Apr 14 05:22:58 2025 Connection to spark from PID  861951
+Mon Apr 14 05:22:58 2025 Initialized gateway on port 33209
+Mon Apr 14 05:22:58 2025 Connection to spark from PID  861955
+Mon Apr 14 05:22:58 2025 Initialized gateway on port 41761
+Mon Apr 14 05:22:58 2025 Connection to spark from PID  861966
+Mon Apr 14 05:22:58 2025 Initialized gateway on port 44245
+Mon Apr 14 05:22:59 2025 Connected to spark.
+Mon Apr 14 05:22:59 2025 Connected to spark.
+Mon Apr 14 05:22:59 2025 Connected to spark.
+Mon Apr 14 05:22:59 2025 Connected to spark.
+Mon Apr 14 05:23:01 2025 Connection to spark from PID  862430
+Mon Apr 14 05:23:01 2025 Initialized gateway on port 33639
+Mon Apr 14 05:23:01 2025 Connection to spark from PID  862477
+Mon Apr 14 05:23:01 2025 Connection to spark from PID  862446
+Mon Apr 14 05:23:01 2025 Connection to spark from PID  862469
+Mon Apr 14 05:23:01 2025 Connection to spark from PID  862422
+Mon Apr 14 05:23:01 2025 Initialized gateway on port 39361
+Mon Apr 14 05:23:01 2025 Initialized gateway on port 34767
+Mon Apr 14 05:23:01 2025 Initialized gateway on port 33003
+Mon Apr 14 05:23:01 2025 Initialized gateway on port 42097
+Mon Apr 14 05:23:01 2025 Connection to spark from PID  862492
+Mon Apr 14 05:23:01 2025 Initialized gateway on port 45147
+Mon Apr 14 05:23:02 2025 Connected to spark.
+Mon Apr 14 05:23:02 2025 Connected to spark.
+Mon Apr 14 05:23:02 2025 Connected to spark.
+Mon Apr 14 05:23:02 2025 Connected to spark.
+Mon Apr 14 05:23:02 2025 Connected to spark.
+Mon Apr 14 05:23:02 2025 Connected to spark.
+
+KeyboardInterrupt
+
+
+KeyboardInterrupt
+
+
+KeyboardInterrupt
+
+Mon Apr 14 05:23:09 2025 Connection to spark from PID  863434
+Mon Apr 14 05:23:09 2025 Initialized gateway on port 42719
+Mon Apr 14 05:23:09 2025 Connection to spark from PID  863449
+Mon Apr 14 05:23:09 2025 Initialized gateway on port 36797
+Mon Apr 14 05:23:09 2025 Connection to spark from PID  863481
+Mon Apr 14 05:23:09 2025 Initialized gateway on port 39257
+Mon Apr 14 05:23:09 2025 Connection to spark from PID  863521
+Mon Apr 14 05:23:09 2025 Connection to spark from PID  863522
+Mon Apr 14 05:23:09 2025 Initialized gateway on port 37807
+Mon Apr 14 05:23:09 2025 Initialized gateway on port 35883
+Mon Apr 14 05:23:09 2025 Connection to spark from PID  863506
+Mon Apr 14 05:23:09 2025 Connection to spark from PID  863526
+Mon Apr 14 05:23:09 2025 Initialized gateway on port 45483
+Mon Apr 14 05:23:09 2025 Initialized gateway on port 45717
+Mon Apr 14 05:23:09 2025 Connected to spark.
+Mon Apr 14 05:23:09 2025 Connected to spark.
+Mon Apr 14 05:23:10 2025 Connected to spark.
+Mon Apr 14 05:23:10 2025 Connected to spark.
+Mon Apr 14 05:23:10 2025 Connected to spark.
+Mon Apr 14 05:23:10 2025 Connected to spark.
+Mon Apr 14 05:23:10 2025 Connected to spark.
+
+KeyboardInterrupt
+
+Mon Apr 14 05:23:11 2025 Connection to spark from PID  864043
+Mon Apr 14 05:23:11 2025 Initialized gateway on port 43385
+Mon Apr 14 05:23:11 2025 Connection to spark from PID  864053
+Mon Apr 14 05:23:11 2025 Initialized gateway on port 38281
+Mon Apr 14 05:23:11 2025 Connection to spark from PID  864059
+Mon Apr 14 05:23:11 2025 Initialized gateway on port 34139
+Mon Apr 14 05:23:11 2025 Connected to spark.
+Mon Apr 14 05:23:12 2025 Connected to spark.
+Mon Apr 14 05:23:12 2025 Connected to spark.
+
+KeyboardInterrupt
+
+
+KeyboardInterrupt
+
+Mon Apr 14 05:28:30 2025 Connection to spark from PID  865290
+Mon Apr 14 05:28:30 2025 Initialized gateway on port 42099
+Mon Apr 14 05:28:30 2025 Connection to spark from PID  865278
+Mon Apr 14 05:28:30 2025 Initialized gateway on port 44541
+Mon Apr 14 05:28:30 2025 Connection to spark from PID  865279
+Mon Apr 14 05:28:30 2025 Initialized gateway on port 37885
+Mon Apr 14 05:28:30 2025 Connection to spark from PID  865316
+Mon Apr 14 05:28:30 2025 Initialized gateway on port 42133
+Mon Apr 14 05:28:30 2025 Connection to spark from PID  865309
+Mon Apr 14 05:28:30 2025 Initialized gateway on port 44601
+Mon Apr 14 05:28:30 2025 Connection to spark from PID  865315
+Mon Apr 14 05:28:30 2025 Initialized gateway on port 44761
+Mon Apr 14 05:28:31 2025 Connected to spark.
+Mon Apr 14 05:28:31 2025 Connected to spark.
+Mon Apr 14 05:28:31 2025 Connected to spark.
+Mon Apr 14 05:28:31 2025 Connected to spark.
+Mon Apr 14 05:28:31 2025 Connected to spark.
+Mon Apr 14 05:28:31 2025 Connected to spark.
+Mon Apr 14 05:28:34 2025 Connection to spark from PID  865764
+Mon Apr 14 05:28:34 2025 Initialized gateway on port 40449
+Mon Apr 14 05:28:35 2025 Connected to spark.
+Mon Apr 14 05:28:38 2025 Connection to spark from PID  866236
+Mon Apr 14 05:28:38 2025 Initialized gateway on port 38151
+Mon Apr 14 05:28:38 2025 Connection to spark from PID  866337
+Mon Apr 14 05:28:38 2025 Connection to spark from PID  866237
+Mon Apr 14 05:28:38 2025 Initialized gateway on port 45429
+Mon Apr 14 05:28:38 2025 Initialized gateway on port 41389
+Mon Apr 14 05:28:38 2025 Connection to spark from PID  866322
+Mon Apr 14 05:28:38 2025 Initialized gateway on port 40197
+Mon Apr 14 05:28:38 2025 Connection to spark from PID  866279
+Mon Apr 14 05:28:38 2025 Connection to spark from PID  866267
+Mon Apr 14 05:28:38 2025 Initialized gateway on port 42211
+Mon Apr 14 05:28:38 2025 Initialized gateway on port 40895
+Mon Apr 14 05:28:38 2025 Connection to spark from PID  866256
+Mon Apr 14 05:28:38 2025 Initialized gateway on port 45535
+Mon Apr 14 05:28:38 2025 Connection to spark from PID  866323
+Mon Apr 14 05:28:38 2025 Connection to spark from PID  866321
+Mon Apr 14 05:28:38 2025 Initialized gateway on port 38037
+Mon Apr 14 05:28:38 2025 Initialized gateway on port 42341
+Mon Apr 14 05:28:39 2025 Connected to spark.
+Mon Apr 14 05:28:39 2025 Connected to spark.
+Mon Apr 14 05:28:39 2025 Connected to spark.
+Mon Apr 14 05:28:39 2025 Connected to spark.
+Mon Apr 14 05:28:39 2025 Connected to spark.
+Mon Apr 14 05:28:39 2025 Connected to spark.
+Mon Apr 14 05:28:39 2025 Connected to spark.
+Mon Apr 14 05:28:39 2025 Connected to spark.
+Mon Apr 14 05:28:39 2025 Connected to spark.
+Mon Apr 14 05:28:40 2025 Connection to spark from PID  866877
+Mon Apr 14 05:28:40 2025 Initialized gateway on port 37359
+Mon Apr 14 05:28:40 2025 Connection to spark from PID  866884
+Mon Apr 14 05:28:40 2025 Initialized gateway on port 40031
+Mon Apr 14 05:28:40 2025 Connected to spark.
+Mon Apr 14 05:28:40 2025 Connected to spark.
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+
+KeyboardInterrupt
+
+Mon Apr 14 05:28:47 2025 Connection to spark from PID  867410
+Mon Apr 14 05:28:47 2025 Connection to spark from PID  867403
+Mon Apr 14 05:28:47 2025 Initialized gateway on port 36041
+Mon Apr 14 05:28:47 2025 Initialized gateway on port 34933
+Mon Apr 14 05:28:48 2025 Connected to spark.
+Mon Apr 14 05:28:48 2025 Connected to spark.
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+
+KeyboardInterrupt
+
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+Mon Apr 14 05:29:45 2025 Connection to spark from PID  868057
+Mon Apr 14 05:29:45 2025 Initialized gateway on port 33271
+Mon Apr 14 05:29:45 2025 Connection to spark from PID  868077
+Mon Apr 14 05:29:45 2025 Connection to spark from PID  868066
+Mon Apr 14 05:29:45 2025 Initialized gateway on port 34287
+Mon Apr 14 05:29:45 2025 Initialized gateway on port 41387
+Mon Apr 14 05:29:45 2025 Connection to spark from PID  868093
+Mon Apr 14 05:29:45 2025 Initialized gateway on port 36213
+Mon Apr 14 05:29:46 2025 Connected to spark.
+Mon Apr 14 05:29:46 2025 Connection to spark from PID  868120
+Mon Apr 14 05:29:46 2025 Initialized gateway on port 46001
+Mon Apr 14 05:29:46 2025 Connected to spark.
+Mon Apr 14 05:29:46 2025 Connected to spark.
+Mon Apr 14 05:29:46 2025 Connected to spark.
+Mon Apr 14 05:29:46 2025 Connected to spark.
+
+KeyboardInterrupt
+
+Mon Apr 14 05:29:56 2025 Connection to spark from PID  868770
+Mon Apr 14 05:29:56 2025 Initialized gateway on port 32973
+Mon Apr 14 05:29:56 2025 Connection to spark from PID  868767
+Mon Apr 14 05:29:56 2025 Initialized gateway on port 40573
+Mon Apr 14 05:29:56 2025 Connection to spark from PID  868782
+Mon Apr 14 05:29:56 2025 Initialized gateway on port 35743
+Mon Apr 14 05:29:56 2025 Connection to spark from PID  868814
+Mon Apr 14 05:29:56 2025 Connection to spark from PID  868823
+Mon Apr 14 05:29:56 2025 Initialized gateway on port 34531
+Mon Apr 14 05:29:56 2025 Initialized gateway on port 41093
+Mon Apr 14 05:29:56 2025 Connection to spark from PID  868832
+Mon Apr 14 05:29:56 2025 Connection to spark from PID  868841
+Mon Apr 14 05:29:56 2025 Initialized gateway on port 45665
+Mon Apr 14 05:29:56 2025 Initialized gateway on port 46799
+Mon Apr 14 05:29:56 2025 Connected to spark.
+Mon Apr 14 05:29:57 2025 Connected to spark.
+Mon Apr 14 05:29:57 2025 Connected to spark.
+Mon Apr 14 05:29:57 2025 Connected to spark.
+Mon Apr 14 05:29:57 2025 Connected to spark.
+Mon Apr 14 05:29:57 2025 Connected to spark.
+Mon Apr 14 05:29:57 2025 Connected to spark.
+Mon Apr 14 05:29:58 2025 Connection to spark from PID  869290
+Mon Apr 14 05:29:58 2025 Initialized gateway on port 33027
+Mon Apr 14 05:29:58 2025 Connection to spark from PID  869296
+Mon Apr 14 05:29:58 2025 Connection to spark from PID  869281
+Mon Apr 14 05:29:58 2025 Initialized gateway on port 43819
+Mon Apr 14 05:29:58 2025 Initialized gateway on port 34385
+Mon Apr 14 05:29:59 2025 Connected to spark.
+Mon Apr 14 05:29:59 2025 Connected to spark.
+Mon Apr 14 05:29:59 2025 Connected to spark.
+
+KeyboardInterrupt
+
+Mon Apr 14 05:30:56 2025 Connection to spark from PID  870250
+Mon Apr 14 05:30:56 2025 Initialized gateway on port 40143
+Mon Apr 14 05:30:56 2025 Connected to spark.
+Mon Apr 14 05:30:58 2025 Connection to spark from PID  870350
+Mon Apr 14 05:30:58 2025 Initialized gateway on port 46871
+Mon Apr 14 05:30:59 2025 Connected to spark.
+Mon Apr 14 05:31:49 2025 Connection to spark from PID  870594
+Mon Apr 14 05:31:49 2025 Initialized gateway on port 46035
+Mon Apr 14 05:31:49 2025 Connected to spark.
+Mon Apr 14 05:31:52 2025 Connection to spark from PID  870712
+Mon Apr 14 05:31:52 2025 Initialized gateway on port 44237
+Mon Apr 14 05:31:52 2025 Connection to spark from PID  870727
+Mon Apr 14 05:31:52 2025 Initialized gateway on port 37453
+Mon Apr 14 05:31:52 2025 Connected to spark.
+Mon Apr 14 05:31:52 2025 Connected to spark.
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+Mon Apr 14 05:32:02 2025 Connection to spark from PID  871103
+Mon Apr 14 05:32:02 2025 Initialized gateway on port 32857
+Mon Apr 14 05:32:02 2025 Connected to spark.
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+
+KeyboardInterrupt
+
+Mon Apr 14 05:33:18 2025 Connection to spark from PID  871492
+Mon Apr 14 05:33:18 2025 Initialized gateway on port 38483
+Mon Apr 14 05:33:18 2025 Connection to spark from PID  871491
+Mon Apr 14 05:33:18 2025 Initialized gateway on port 46815
+Mon Apr 14 05:33:18 2025 Connection to spark from PID  871509
+Mon Apr 14 05:33:18 2025 Initialized gateway on port 34171
+Mon Apr 14 05:33:18 2025 Connected to spark.
+Mon Apr 14 05:33:18 2025 Connected to spark.
+Mon Apr 14 05:33:18 2025 Connected to spark.
+Mon Apr 14 05:33:20 2025 Connection to spark from PID  871724
+Mon Apr 14 05:33:20 2025 Initialized gateway on port 33899
+Mon Apr 14 05:33:20 2025 Connected to spark.
+Mon Apr 14 05:36:35 2025 Connection to spark from PID  872447
+Mon Apr 14 05:36:35 2025 Connection to spark from PID  872460
+Mon Apr 14 05:36:35 2025 Initialized gateway on port 46543
+Mon Apr 14 05:36:35 2025 Initialized gateway on port 35723
+Mon Apr 14 05:36:35 2025 Connection to spark from PID  872443
+Mon Apr 14 05:36:35 2025 Initialized gateway on port 36199
+Mon Apr 14 05:36:35 2025 Connection to spark from PID  872473
+Mon Apr 14 05:36:35 2025 Initialized gateway on port 37715
+Mon Apr 14 05:36:35 2025 Connection to spark from PID  872474
+Mon Apr 14 05:36:35 2025 Initialized gateway on port 32999
+Mon Apr 14 05:36:35 2025 Connection to spark from PID  872463
+Mon Apr 14 05:36:35 2025 Connection to spark from PID  872472
+Mon Apr 14 05:36:35 2025 Initialized gateway on port 36145
+Mon Apr 14 05:36:35 2025 Initialized gateway on port 33901
+Mon Apr 14 05:36:35 2025 Connection to spark from PID  872499
+Mon Apr 14 05:36:35 2025 Initialized gateway on port 39057
+Mon Apr 14 05:36:36 2025 Connected to spark.
+Mon Apr 14 05:36:36 2025 Connected to spark.
+Mon Apr 14 05:36:36 2025 Connected to spark.
+Mon Apr 14 05:36:36 2025 Connected to spark.
+Mon Apr 14 05:36:36 2025 Connected to spark.
+Mon Apr 14 05:36:36 2025 Connected to spark.
+Mon Apr 14 05:36:36 2025 Connected to spark.
+Mon Apr 14 05:36:36 2025 Connected to spark.
+Mon Apr 14 05:36:37 2025 Connection to spark from PID  872917
+Mon Apr 14 05:36:37 2025 Initialized gateway on port 41391
+Mon Apr 14 05:36:38 2025 Connected to spark.
+Mon Apr 14 05:36:40 2025 Connection to spark from PID  873226
+Mon Apr 14 05:36:40 2025 Initialized gateway on port 46227
+Mon Apr 14 05:36:40 2025 Connection to spark from PID  873225
+Mon Apr 14 05:36:40 2025 Initialized gateway on port 46549
+Mon Apr 14 05:36:40 2025 Connection to spark from PID  873237
+Mon Apr 14 05:36:40 2025 Initialized gateway on port 36551
+Mon Apr 14 05:36:41 2025 Connected to spark.
+Mon Apr 14 05:36:41 2025 Connected to spark.
+Mon Apr 14 05:36:41 2025 Connected to spark.
+Mon Apr 14 05:36:43 2025 Connection to spark from PID  873534
+Mon Apr 14 05:36:43 2025 Initialized gateway on port 45767
+Mon Apr 14 05:36:43 2025 Connection to spark from PID  873584
+Mon Apr 14 05:36:43 2025 Initialized gateway on port 38561
+Mon Apr 14 05:36:43 2025 Connection to spark from PID  873556
+Mon Apr 14 05:36:43 2025 Initialized gateway on port 42553
+Mon Apr 14 05:36:43 2025 Connection to spark from PID  873577
+Mon Apr 14 05:36:43 2025 Initialized gateway on port 34217
+Mon Apr 14 05:36:43 2025 Connection to spark from PID  873585
+Mon Apr 14 05:36:43 2025 Initialized gateway on port 37659
+Mon Apr 14 05:36:43 2025 Connected to spark.
+Mon Apr 14 05:36:43 2025 Connected to spark.
+Mon Apr 14 05:36:43 2025 Connected to spark.
+Mon Apr 14 05:36:43 2025 Connected to spark.
+Mon Apr 14 05:36:43 2025 Connected to spark.
+Mon Apr 14 05:36:45 2025 Connection to spark from PID  874151
+Mon Apr 14 05:36:45 2025 Initialized gateway on port 38109
+Mon Apr 14 05:36:45 2025 Connected to spark.
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+
+KeyboardInterrupt
+
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+Mon Apr 14 05:38:14 2025 Connection to spark from PID  874952
+Mon Apr 14 05:38:14 2025 Initialized gateway on port 37765
+Mon Apr 14 05:38:14 2025 Connected to spark.
+Mon Apr 14 05:38:16 2025 Connection to spark from PID  875057
+Mon Apr 14 05:38:16 2025 Initialized gateway on port 46795
+Mon Apr 14 05:38:16 2025 Connected to spark.
+Mon Apr 14 05:38:19 2025 Connection to spark from PID  875162
+Mon Apr 14 05:38:19 2025 Initialized gateway on port 39981
+Mon Apr 14 05:38:19 2025 Connected to spark.
+Mon Apr 14 05:38:22 2025 Connection to spark from PID  875322
+Mon Apr 14 05:38:22 2025 Initialized gateway on port 36981
+Mon Apr 14 05:38:22 2025 Connection to spark from PID  875331
+Mon Apr 14 05:38:22 2025 Initialized gateway on port 41657
+Mon Apr 14 05:38:22 2025 Connected to spark.
+Mon Apr 14 05:38:22 2025 Connected to spark.
+Mon Apr 14 05:38:24 2025 Connection to spark from PID  875567
+Mon Apr 14 05:38:24 2025 Initialized gateway on port 38299
+Mon Apr 14 05:38:24 2025 Connection to spark from PID  875579
+Mon Apr 14 05:38:24 2025 Initialized gateway on port 46333
+Mon Apr 14 05:38:24 2025 Connection to spark from PID  875594
+Mon Apr 14 05:38:24 2025 Connection to spark from PID  875600
+Mon Apr 14 05:38:24 2025 Initialized gateway on port 41533
+Mon Apr 14 05:38:24 2025 Initialized gateway on port 44543
+Mon Apr 14 05:38:24 2025 Connected to spark.
+Mon Apr 14 05:38:25 2025 Connected to spark.
+Mon Apr 14 05:38:25 2025 Connected to spark.
+Mon Apr 14 05:38:25 2025 Connected to spark.
+Mon Apr 14 05:38:26 2025 Connection to spark from PID  875917
+Mon Apr 14 05:38:26 2025 Initialized gateway on port 40691
+Mon Apr 14 05:38:27 2025 Connection to spark from PID  875969
+Mon Apr 14 05:38:27 2025 Initialized gateway on port 39551
+Mon Apr 14 05:38:27 2025 Connected to spark.
+Mon Apr 14 05:38:27 2025 Connected to spark.
+
+KeyboardInterrupt
+
+
+KeyboardInterrupt
+
+
+KeyboardInterrupt
+
+Mon Apr 14 05:38:34 2025 Connection to spark from PID  876605
+Mon Apr 14 05:38:34 2025 Initialized gateway on port 43207
+
+KeyboardInterrupt
+
+Mon Apr 14 05:38:34 2025 Connected to spark.
+Mon Apr 14 05:38:36 2025 Connection to spark from PID  876752
+Mon Apr 14 05:38:36 2025 Initialized gateway on port 41465
+Mon Apr 14 05:38:37 2025 Connected to spark.
+Mon Apr 14 05:38:39 2025 Connection to spark from PID  876867
+Mon Apr 14 05:38:39 2025 Initialized gateway on port 45729
+Mon Apr 14 05:38:39 2025 Connected to spark.
+Mon Apr 14 05:38:42 2025 Connection to spark from PID  876990
+Mon Apr 14 05:38:42 2025 Initialized gateway on port 45731
+Mon Apr 14 05:38:42 2025 Connected to spark.
+Mon Apr 14 05:41:56 2025 Connection to spark from PID  877456
+Mon Apr 14 05:41:56 2025 Initialized gateway on port 46871
+Mon Apr 14 05:41:56 2025 Connection to spark from PID  877483
+Mon Apr 14 05:41:56 2025 Initialized gateway on port 41513
+Mon Apr 14 05:41:56 2025 Connection to spark from PID  877484
+Mon Apr 14 05:41:56 2025 Initialized gateway on port 38105
+Mon Apr 14 05:41:57 2025 Connection to spark from PID  877506
+Mon Apr 14 05:41:57 2025 Initialized gateway on port 41001
+Mon Apr 14 05:41:57 2025 Connected to spark.
+Mon Apr 14 05:41:57 2025 Connected to spark.
+Mon Apr 14 05:41:57 2025 Connected to spark.
+Mon Apr 14 05:41:57 2025 Connected to spark.
+Mon Apr 14 05:41:59 2025 Connection to spark from PID  877799
+Mon Apr 14 05:41:59 2025 Initialized gateway on port 38195
+Mon Apr 14 05:41:59 2025 Connection to spark from PID  877798
+Mon Apr 14 05:41:59 2025 Initialized gateway on port 43299
+Mon Apr 14 05:41:59 2025 Connection to spark from PID  877849
+Mon Apr 14 05:41:59 2025 Initialized gateway on port 37631
+Mon Apr 14 05:41:59 2025 Connected to spark.
+Mon Apr 14 05:41:59 2025 Connected to spark.
+Mon Apr 14 05:41:59 2025 Connected to spark.
+Mon Apr 14 05:42:01 2025 Connection to spark from PID  878168
+Mon Apr 14 05:42:01 2025 Initialized gateway on port 34727
+Mon Apr 14 05:42:01 2025 Connection to spark from PID  878192
+Mon Apr 14 05:42:01 2025 Initialized gateway on port 41247
+Mon Apr 14 05:42:01 2025 Connection to spark from PID  878205
+Mon Apr 14 05:42:01 2025 Initialized gateway on port 33239
+Mon Apr 14 05:42:01 2025 Connection to spark from PID  878204
+Mon Apr 14 05:42:01 2025 Initialized gateway on port 33839
+Mon Apr 14 05:42:02 2025 Connected to spark.
+Mon Apr 14 05:42:02 2025 Connected to spark.
+Mon Apr 14 05:42:02 2025 Connected to spark.
+Mon Apr 14 05:42:02 2025 Connected to spark.
+Mon Apr 14 05:42:06 2025 Connection to spark from PID  878558
+Mon Apr 14 05:42:06 2025 Initialized gateway on port 41681
+Mon Apr 14 05:42:07 2025 Connected to spark.
+Mon Apr 14 05:44:18 2025 Connection to spark from PID  878978
+Mon Apr 14 05:44:18 2025 Initialized gateway on port 37785
+Mon Apr 14 05:44:18 2025 Connection to spark from PID  879021
+Mon Apr 14 05:44:18 2025 Initialized gateway on port 41655
+Mon Apr 14 05:44:18 2025 Connection to spark from PID  879008
+Mon Apr 14 05:44:18 2025 Connection to spark from PID  879031
+Mon Apr 14 05:44:18 2025 Initialized gateway on port 34875
+Mon Apr 14 05:44:18 2025 Initialized gateway on port 37913
+Mon Apr 14 05:44:18 2025 Connected to spark.
+Mon Apr 14 05:44:18 2025 Connection to spark from PID  879057
+Mon Apr 14 05:44:18 2025 Initialized gateway on port 33277
+Mon Apr 14 05:44:18 2025 Connection to spark from PID  879075
+Mon Apr 14 05:44:18 2025 Initialized gateway on port 43823
+Mon Apr 14 05:44:19 2025 Connected to spark.
+Mon Apr 14 05:44:19 2025 Connected to spark.
+Mon Apr 14 05:44:19 2025 Connected to spark.
+Mon Apr 14 05:44:19 2025 Connected to spark.
+Mon Apr 14 05:44:19 2025 Connected to spark.
+Mon Apr 14 05:44:20 2025 Connection to spark from PID  879508
+Mon Apr 14 05:44:20 2025 Initialized gateway on port 33351
+Mon Apr 14 05:44:21 2025 Connection to spark from PID  879545
+Mon Apr 14 05:44:21 2025 Initialized gateway on port 43573
+Mon Apr 14 05:44:21 2025 Connection to spark from PID  879553
+Mon Apr 14 05:44:21 2025 Initialized gateway on port 38281
+Mon Apr 14 05:44:21 2025 Connection to spark from PID  879536
+Mon Apr 14 05:44:21 2025 Initialized gateway on port 39927
+Mon Apr 14 05:44:21 2025 Connection to spark from PID  879571
+Mon Apr 14 05:44:21 2025 Initialized gateway on port 46787
+Mon Apr 14 05:44:21 2025 Connection to spark from PID  879577
+Mon Apr 14 05:44:21 2025 Initialized gateway on port 34969
+Mon Apr 14 05:44:21 2025 Connected to spark.
+Mon Apr 14 05:44:21 2025 Connected to spark.
+Mon Apr 14 05:44:21 2025 Connected to spark.
+Mon Apr 14 05:44:21 2025 Connected to spark.
+Mon Apr 14 05:44:21 2025 Connected to spark.
+Mon Apr 14 05:44:22 2025 Connected to spark.
+Mon Apr 14 05:44:23 2025 Connection to spark from PID  879987
+Mon Apr 14 05:44:23 2025 Initialized gateway on port 45209
+Mon Apr 14 05:44:23 2025 Connected to spark.
+Mon Apr 14 05:44:28 2025 Connection to spark from PID  880488
+Mon Apr 14 05:44:28 2025 Initialized gateway on port 37635
+Mon Apr 14 05:44:28 2025 Connected to spark.
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+Mon Apr 14 05:44:31 2025 Connection to spark from PID  880614
+Mon Apr 14 05:44:31 2025 Initialized gateway on port 42461
+Mon Apr 14 05:44:31 2025 Connected to spark.
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+Mon Apr 14 05:44:33 2025 Connection to spark from PID  880857
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+Mon Apr 14 05:44:33 2025 Initialized gateway on port 36497
+Mon Apr 14 05:44:33 2025 Connection to spark from PID  880864
+Mon Apr 14 05:44:33 2025 Initialized gateway on port 38255
+Mon Apr 14 05:44:33 2025 Connection to spark from PID  880905
+Mon Apr 14 05:44:33 2025 Initialized gateway on port 44147
+Mon Apr 14 05:44:34 2025 Connected to spark.
+Mon Apr 14 05:44:34 2025 Connected to spark.
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+Mon Apr 14 05:44:34 2025 Connected to spark.
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+Mon Apr 14 05:45:46 2025 Connection to spark from PID  881567
+Mon Apr 14 05:45:46 2025 Initialized gateway on port 35293
+Mon Apr 14 05:45:47 2025 Connected to spark.
+Mon Apr 14 05:45:49 2025 Connection to spark from PID  881794
+Mon Apr 14 05:45:49 2025 Initialized gateway on port 42941
+Mon Apr 14 05:45:49 2025 Connection to spark from PID  881810
+Mon Apr 14 05:45:49 2025 Initialized gateway on port 35087
+Mon Apr 14 05:45:49 2025 Connection to spark from PID  881809
+Mon Apr 14 05:45:49 2025 Initialized gateway on port 34355
+Mon Apr 14 05:45:49 2025 Connection to spark from PID  881838
+Mon Apr 14 05:45:49 2025 Connection to spark from PID  881823
+Mon Apr 14 05:45:49 2025 Initialized gateway on port 43255
+Mon Apr 14 05:45:49 2025 Initialized gateway on port 45441
+Mon Apr 14 05:45:49 2025 Connection to spark from PID  881824
+Mon Apr 14 05:45:49 2025 Initialized gateway on port 34663
+Mon Apr 14 05:45:50 2025 Connected to spark.
+Mon Apr 14 05:45:50 2025 Connected to spark.
+Mon Apr 14 05:45:50 2025 Connected to spark.
+Mon Apr 14 05:45:50 2025 Connected to spark.
+Mon Apr 14 05:45:50 2025 Connected to spark.
+Mon Apr 14 05:45:50 2025 Connected to spark.
+Mon Apr 14 05:45:52 2025 Connection to spark from PID  882203
+Mon Apr 14 05:45:52 2025 Initialized gateway on port 40213
+Mon Apr 14 05:45:52 2025 Connected to spark.
+Mon Apr 14 05:45:54 2025 Connection to spark from PID  882421
+Mon Apr 14 05:45:54 2025 Initialized gateway on port 34117
+Mon Apr 14 05:45:55 2025 Connected to spark.
+Mon Apr 14 05:45:57 2025 Connection to spark from PID  882784
+Mon Apr 14 05:45:57 2025 Initialized gateway on port 46715
+Mon Apr 14 05:45:57 2025 Connection to spark from PID  882802
+Mon Apr 14 05:45:57 2025 Initialized gateway on port 41895
+Mon Apr 14 05:45:57 2025 Connection to spark from PID  882823
+Mon Apr 14 05:45:57 2025 Connection to spark from PID  882833
+Mon Apr 14 05:45:57 2025 Initialized gateway on port 40079
+Mon Apr 14 05:45:57 2025 Initialized gateway on port 45631
+Mon Apr 14 05:45:57 2025 Connection to spark from PID  882841
+Mon Apr 14 05:45:57 2025 Initialized gateway on port 37499
+
+KeyboardInterrupt
+
+Mon Apr 14 05:45:57 2025 Connection to spark from PID  882866
+Mon Apr 14 05:45:57 2025 Initialized gateway on port 36793
+Mon Apr 14 05:45:57 2025 Connected to spark.
+Mon Apr 14 05:45:57 2025 Connected to spark.
+
+KeyboardInterrupt
+
+Mon Apr 14 05:45:57 2025 Connected to spark.
+Mon Apr 14 05:45:58 2025 Connected to spark.
+Mon Apr 14 05:45:58 2025 Connected to spark.
+Mon Apr 14 05:45:58 2025 Connected to spark.
+Mon Apr 14 05:45:59 2025 Connection to spark from PID  883233
+Mon Apr 14 05:45:59 2025 Initialized gateway on port 38143
+Mon Apr 14 05:45:59 2025 Connected to spark.
+Mon Apr 14 05:46:02 2025 Connection to spark from PID  883580
+Mon Apr 14 05:46:02 2025 Initialized gateway on port 43715
+Mon Apr 14 05:46:02 2025 Connection to spark from PID  883604
+Mon Apr 14 05:46:02 2025 Initialized gateway on port 40623
+Mon Apr 14 05:46:02 2025 Connection to spark from PID  883594
+Mon Apr 14 05:46:02 2025 Connection to spark from PID  883615
+Mon Apr 14 05:46:02 2025 Initialized gateway on port 39957
+Mon Apr 14 05:46:02 2025 Initialized gateway on port 42479
+Mon Apr 14 05:46:02 2025 Connection to spark from PID  883621
+Mon Apr 14 05:46:02 2025 Initialized gateway on port 36625
+Mon Apr 14 05:46:02 2025 Connected to spark.
+Mon Apr 14 05:46:03 2025 Connected to spark.
+Mon Apr 14 05:46:03 2025 Connected to spark.
+Mon Apr 14 05:46:03 2025 Connected to spark.
+Mon Apr 14 05:46:03 2025 Connected to spark.
+Mon Apr 14 05:46:04 2025 Connection to spark from PID  884100
+Mon Apr 14 05:46:04 2025 Initialized gateway on port 40781
+Mon Apr 14 05:46:04 2025 Connection to spark from PID  884108
+Mon Apr 14 05:46:04 2025 Initialized gateway on port 39021
+Mon Apr 14 05:46:04 2025 Connection to spark from PID  884134
+Mon Apr 14 05:46:04 2025 Initialized gateway on port 45131
+Mon Apr 14 05:46:04 2025 Connection to spark from PID  884145
+Mon Apr 14 05:46:04 2025 Initialized gateway on port 32979
+Mon Apr 14 05:46:05 2025 Connection to spark from PID  884167
+Mon Apr 14 05:46:05 2025 Initialized gateway on port 37069
+Mon Apr 14 05:46:05 2025 Connected to spark.
+Mon Apr 14 05:46:05 2025 Connected to spark.
+Mon Apr 14 05:46:05 2025 Connected to spark.
+Mon Apr 14 05:46:05 2025 Connected to spark.
+Mon Apr 14 05:46:05 2025 Connected to spark.
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+Mon Apr 14 05:46:12 2025 Connection to spark from PID  884843
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+Mon Apr 14 05:46:12 2025 Initialized gateway on port 43389
+Mon Apr 14 05:46:12 2025 Connection to spark from PID  884849
+Mon Apr 14 05:46:12 2025 Initialized gateway on port 36879
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+Mon Apr 14 05:46:12 2025 Connected to spark.
+Mon Apr 14 05:46:12 2025 Connected to spark.
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+
+KeyboardInterrupt
+
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+
+KeyboardInterrupt
+
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+Mon Apr 14 05:47:22 2025 Connection to spark from PID  885438
+Mon Apr 14 05:47:22 2025 Initialized gateway on port 33443
+Mon Apr 14 05:47:23 2025 Connected to spark.
+Mon Apr 14 05:47:25 2025 Connection to spark from PID  885554
+Mon Apr 14 05:47:25 2025 Initialized gateway on port 39813
+Mon Apr 14 05:47:25 2025 Connection to spark from PID  885569
+Mon Apr 14 05:47:25 2025 Initialized gateway on port 43967
+Mon Apr 14 05:47:25 2025 Connected to spark.
+Mon Apr 14 05:47:25 2025 Connected to spark.
+Mon Apr 14 05:47:28 2025 Connection to spark from PID  885927
+Mon Apr 14 05:47:28 2025 Connection to spark from PID  885904
+Mon Apr 14 05:47:28 2025 Connection to spark from PID  885903
+Mon Apr 14 05:47:28 2025 Initialized gateway on port 38627
+Mon Apr 14 05:47:28 2025 Connection to spark from PID  885889
+Mon Apr 14 05:47:28 2025 Initialized gateway on port 44081
+Mon Apr 14 05:47:28 2025 Initialized gateway on port 40603
+Mon Apr 14 05:47:28 2025 Initialized gateway on port 33769
+Mon Apr 14 05:47:28 2025 Connection to spark from PID  885931
+Mon Apr 14 05:47:28 2025 Connection to spark from PID  885933
+Mon Apr 14 05:47:28 2025 Initialized gateway on port 34999
+Mon Apr 14 05:47:28 2025 Initialized gateway on port 43189
+Mon Apr 14 05:47:28 2025 Connection to spark from PID  885949
+Mon Apr 14 05:47:28 2025 Initialized gateway on port 39657
+Mon Apr 14 05:47:29 2025 Connected to spark.
+Mon Apr 14 05:47:29 2025 Connected to spark.
+Mon Apr 14 05:47:29 2025 Connected to spark.
+Mon Apr 14 05:47:29 2025 Connected to spark.
+Mon Apr 14 05:47:29 2025 Connected to spark.
+Mon Apr 14 05:47:29 2025 Connected to spark.
+Mon Apr 14 05:47:29 2025 Connected to spark.
+Mon Apr 14 05:47:33 2025 Connection to spark from PID  886578
+Mon Apr 14 05:47:33 2025 Connection to spark from PID  886589
+Mon Apr 14 05:47:33 2025 Initialized gateway on port 34473
+Mon Apr 14 05:47:33 2025 Initialized gateway on port 46661
+Mon Apr 14 05:47:33 2025 Connection to spark from PID  886587
+Mon Apr 14 05:47:33 2025 Initialized gateway on port 45863
+Mon Apr 14 05:47:33 2025 Connected to spark.
+Mon Apr 14 05:47:33 2025 Connected to spark.
+Mon Apr 14 05:47:34 2025 Connected to spark.
+Mon Apr 14 05:50:44 2025 Connection to spark from PID  887692
+Mon Apr 14 05:50:44 2025 Initialized gateway on port 35589
+Mon Apr 14 05:50:45 2025 Connection to spark from PID  887699
+Mon Apr 14 05:50:45 2025 Initialized gateway on port 38197
+Mon Apr 14 05:50:45 2025 Connection to spark from PID  887698
+Mon Apr 14 05:50:45 2025 Initialized gateway on port 36013
+Mon Apr 14 05:50:45 2025 Connection to spark from PID  887719
+Mon Apr 14 05:50:45 2025 Initialized gateway on port 35595
+Mon Apr 14 05:50:45 2025 Connected to spark.
+Mon Apr 14 05:50:45 2025 Connected to spark.
+Mon Apr 14 05:50:45 2025 Connected to spark.
+Mon Apr 14 05:50:45 2025 Connected to spark.
+Mon Apr 14 05:50:47 2025 Connection to spark from PID  888035
+Mon Apr 14 05:50:47 2025 Initialized gateway on port 35263
+Mon Apr 14 05:50:48 2025 Connection to spark from PID  888054
+Mon Apr 14 05:50:48 2025 Initialized gateway on port 44973
+Mon Apr 14 05:50:48 2025 Connected to spark.
+Mon Apr 14 05:50:48 2025 Connected to spark.
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+Mon Apr 14 05:52:41 2025 Connection to spark from PID  888805
+Mon Apr 14 05:52:41 2025 Initialized gateway on port 45985
+Mon Apr 14 05:52:41 2025 Connection to spark from PID  888814
+Mon Apr 14 05:52:41 2025 Initialized gateway on port 34591
+Mon Apr 14 05:52:41 2025 Connected to spark.
+Mon Apr 14 05:52:41 2025 Connected to spark.
+Mon Apr 14 05:52:43 2025 Connection to spark from PID  889022
+Mon Apr 14 05:52:43 2025 Initialized gateway on port 46423
+Mon Apr 14 05:52:43 2025 Connection to spark from PID  889028
+Mon Apr 14 05:52:43 2025 Initialized gateway on port 41117
+Mon Apr 14 05:52:43 2025 Connection to spark from PID  889043
+Mon Apr 14 05:52:43 2025 Initialized gateway on port 40535
+Mon Apr 14 05:52:44 2025 Connected to spark.
+Mon Apr 14 05:52:44 2025 Connected to spark.
+Mon Apr 14 05:52:44 2025 Connected to spark.
+Mon Apr 14 05:52:49 2025 Connection to spark from PID  889422
+Mon Apr 14 05:52:49 2025 Initialized gateway on port 41591
+Mon Apr 14 05:52:49 2025 Connection to spark from PID  889439
+Mon Apr 14 05:52:49 2025 Initialized gateway on port 37597
+Mon Apr 14 05:52:49 2025 Connection to spark from PID  889441
+Mon Apr 14 05:52:49 2025 Initialized gateway on port 42229
+Mon Apr 14 05:52:49 2025 Connection to spark from PID  889440
+Mon Apr 14 05:52:49 2025 Connection to spark from PID  889464
+Mon Apr 14 05:52:49 2025 Initialized gateway on port 34913
+Mon Apr 14 05:52:49 2025 Initialized gateway on port 43621
+Mon Apr 14 05:52:49 2025 Connection to spark from PID  889477
+Mon Apr 14 05:52:49 2025 Initialized gateway on port 33053
+Mon Apr 14 05:52:49 2025 Connected to spark.
+Mon Apr 14 05:52:49 2025 Connected to spark.
+Mon Apr 14 05:52:49 2025 Connected to spark.
+Mon Apr 14 05:52:49 2025 Connected to spark.
+Mon Apr 14 05:52:49 2025 Connected to spark.
+Mon Apr 14 05:52:49 2025 Connected to spark.
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+Mon Apr 14 05:52:54 2025 Connection to spark from PID  890210
+Mon Apr 14 05:52:54 2025 Initialized gateway on port 40463
+Mon Apr 14 05:52:54 2025 Connected to spark.
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+
+KeyboardInterrupt
+
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+
+KeyboardInterrupt
+
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+Mon Apr 14 05:54:08 2025 Connection to spark from PID  890913
+Mon Apr 14 05:54:08 2025 Initialized gateway on port 36617
+Mon Apr 14 05:54:08 2025 Connection to spark from PID  890892
+Mon Apr 14 05:54:08 2025 Connection to spark from PID  890906
+Mon Apr 14 05:54:08 2025 Connection to spark from PID  890919
+Mon Apr 14 05:54:08 2025 Initialized gateway on port 45729
+Mon Apr 14 05:54:08 2025 Initialized gateway on port 44689
+Mon Apr 14 05:54:08 2025 Initialized gateway on port 32825
+Mon Apr 14 05:54:08 2025 Connection to spark from PID  890907
+Mon Apr 14 05:54:08 2025 Connection to spark from PID  890952
+Mon Apr 14 05:54:08 2025 Connection to spark from PID  890978
+Mon Apr 14 05:54:08 2025 Initialized gateway on port 35913
+Mon Apr 14 05:54:08 2025 Initialized gateway on port 33313
+Mon Apr 14 05:54:08 2025 Initialized gateway on port 35407
+Mon Apr 14 05:54:08 2025 Connection to spark from PID  890954
+Mon Apr 14 05:54:08 2025 Connection to spark from PID  890987
+Mon Apr 14 05:54:08 2025 Initialized gateway on port 45685
+Mon Apr 14 05:54:08 2025 Initialized gateway on port 33065
+Mon Apr 14 05:54:08 2025 Connection to spark from PID  890998
+Mon Apr 14 05:54:08 2025 Initialized gateway on port 43761
+Mon Apr 14 05:54:08 2025 Connection to spark from PID  890988
+Mon Apr 14 05:54:08 2025 Initialized gateway on port 38701
+Mon Apr 14 05:54:09 2025 Connected to spark.
+Mon Apr 14 05:54:09 2025 Connected to spark.
+Mon Apr 14 05:54:09 2025 Connected to spark.
+Mon Apr 14 05:54:09 2025 Connected to spark.
+Mon Apr 14 05:54:09 2025 Connected to spark.
+Mon Apr 14 05:54:09 2025 Connected to spark.
+Mon Apr 14 05:54:09 2025 Connected to spark.
+Mon Apr 14 05:54:09 2025 Connected to spark.
+Mon Apr 14 05:54:09 2025 Connected to spark.
+Mon Apr 14 05:54:09 2025 Connected to spark.
+Mon Apr 14 05:54:09 2025 Connected to spark.
+Mon Apr 14 05:54:10 2025 Connection to spark from PID  891626
+Mon Apr 14 05:54:10 2025 Initialized gateway on port 35439
+Mon Apr 14 05:54:10 2025 Connection to spark from PID  891616
+Mon Apr 14 05:54:10 2025 Initialized gateway on port 40973
+Mon Apr 14 05:54:10 2025 Connection to spark from PID  891650
+Mon Apr 14 05:54:10 2025 Initialized gateway on port 40371
+Mon Apr 14 05:54:10 2025 Connection to spark from PID  891656
+Mon Apr 14 05:54:10 2025 Initialized gateway on port 38459
+Mon Apr 14 05:54:10 2025 Connected to spark.
+Mon Apr 14 05:54:10 2025 Connected to spark.
+Mon Apr 14 05:54:11 2025 Connected to spark.
+Mon Apr 14 05:54:11 2025 Connected to spark.
+
+KeyboardInterrupt
+
+
+KeyboardInterrupt
+
+Mon Apr 14 05:59:20 2025 Connection to spark from PID  893070
+Mon Apr 14 05:59:20 2025 Initialized gateway on port 46059
+Mon Apr 14 05:59:20 2025 Connection to spark from PID  893071
+Mon Apr 14 05:59:20 2025 Initialized gateway on port 41607
+Mon Apr 14 05:59:20 2025 Connection to spark from PID  893082
+Mon Apr 14 05:59:20 2025 Initialized gateway on port 46145
+Mon Apr 14 05:59:21 2025 Connected to spark.
+Mon Apr 14 05:59:21 2025 Connection to spark from PID  893307
+Mon Apr 14 05:59:21 2025 Initialized gateway on port 42267
+Mon Apr 14 05:59:21 2025 Connection to spark from PID  893316
+Mon Apr 14 05:59:21 2025 Initialized gateway on port 40945
+Mon Apr 14 05:59:21 2025 Connected to spark.
+Mon Apr 14 05:59:21 2025 Connected to spark.
+Mon Apr 14 05:59:21 2025 Connected to spark.
+Mon Apr 14 05:59:21 2025 Connected to spark.
+Mon Apr 14 05:59:23 2025 Connection to spark from PID  893769
+Mon Apr 14 05:59:23 2025 Initialized gateway on port 40815
+Mon Apr 14 05:59:23 2025 Connection to spark from PID  893789
+Mon Apr 14 05:59:23 2025 Initialized gateway on port 43729
+Mon Apr 14 05:59:23 2025 Connection to spark from PID  893804
+Mon Apr 14 05:59:23 2025 Initialized gateway on port 40135
+Mon Apr 14 05:59:23 2025 Connection to spark from PID  893828
+Mon Apr 14 05:59:23 2025 Connection to spark from PID  893836
+Mon Apr 14 05:59:23 2025 Initialized gateway on port 35155
+Mon Apr 14 05:59:23 2025 Initialized gateway on port 42337
+Mon Apr 14 05:59:23 2025 Connection to spark from PID  893829
+Mon Apr 14 05:59:23 2025 Initialized gateway on port 39881
+Mon Apr 14 05:59:23 2025 Connection to spark from PID  893846
+Mon Apr 14 05:59:23 2025 Initialized gateway on port 35341
+Mon Apr 14 05:59:24 2025 Connected to spark.
+Mon Apr 14 05:59:24 2025 Connected to spark.
+Mon Apr 14 05:59:24 2025 Connected to spark.
+Mon Apr 14 05:59:24 2025 Connected to spark.
+Mon Apr 14 05:59:24 2025 Connected to spark.
+Mon Apr 14 05:59:24 2025 Connected to spark.
+Mon Apr 14 05:59:24 2025 Connected to spark.
+Mon Apr 14 05:59:26 2025 Connection to spark from PID  894315
+Mon Apr 14 05:59:26 2025 Initialized gateway on port 37707
+Mon Apr 14 05:59:26 2025 Connection to spark from PID  894322
+Mon Apr 14 05:59:26 2025 Initialized gateway on port 35577
+Mon Apr 14 05:59:26 2025 Connection to spark from PID  894332
+Mon Apr 14 05:59:26 2025 Initialized gateway on port 34745
+Mon Apr 14 05:59:26 2025 Connected to spark.
+Mon Apr 14 05:59:26 2025 Connected to spark.
+Mon Apr 14 05:59:26 2025 Connected to spark.
+Mon Apr 14 05:59:28 2025 Connection to spark from PID  894702
+Mon Apr 14 05:59:28 2025 Initialized gateway on port 45057
+Mon Apr 14 05:59:28 2025 Connected to spark.
+Mon Apr 14 05:59:33 2025 Connection to spark from PID  894946
+Mon Apr 14 05:59:33 2025 Initialized gateway on port 37947
+Mon Apr 14 05:59:33 2025 Connection to spark from PID  894940
+Mon Apr 14 05:59:33 2025 Initialized gateway on port 34333
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+Mon Apr 14 05:59:34 2025 Connected to spark.
+Mon Apr 14 05:59:34 2025 Connected to spark.
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+
+KeyboardInterrupt
+
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+/databricks/spark/python/pyspark/sql/dataframe.py:159: UserWarning: DataFrame constructor is internal. Do not directly use it.
+  warnings.warn("DataFrame constructor is internal. Do not directly use it.")
+
+KeyboardInterrupt
+

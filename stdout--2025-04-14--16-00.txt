@@ -1,0 +1,559 @@
+NOTE: When using the `ipython kernel` entry point, Ctrl-C will not work.
+
+To exit, you will have to explicitly quit this process, by either sending
+"quit" from a client, or using Ctrl-\ in UNIX-like environments.
+
+To read more about this, see https://github.com/ipython/ipython/issues/2049
+
+
+To connect another client to this kernel, use:
+    --existing /databricks/kernel-connections/8525912aa01edd499080fe7803fe681936282b5f634966a8a76420838c270fe8.json
+Security - Post Deployment Job - Auto Loaders failure Count : 11
+2025-04-14T15:15:11.582+0000: [GC (System.gc()) [PSYoungGen: 6915268K->91602K(11930624K)] 9586435K->2762769K(38988800K), 0.0534819 secs] [Times: user=0.25 sys=0.00, real=0.05 secs] 
+2025-04-14T15:15:11.636+0000: [Full GC (System.gc()) [PSYoungGen: 91602K->0K(11930624K)] [ParOldGen: 2671166K->2653798K(27058176K)] 2762769K->2653798K(38988800K), [Metaspace: 439516K->439457K(503808K)], 1.7577773 secs] [Times: user=17.48 sys=0.05, real=1.76 secs] 
+NOTE: When using the `ipython kernel` entry point, Ctrl-C will not work.
+
+To exit, you will have to explicitly quit this process, by either sending
+"quit" from a client, or using Ctrl-\ in UNIX-like environments.
+
+To read more about this, see https://github.com/ipython/ipython/issues/2049
+
+
+To connect another client to this kernel, use:
+    --existing /databricks/kernel-connections/9b5128b899eaae7543e91791bb96f714a32a5899e0d87f2b319d97ffa5280cdb.json
+NOTE: When using the `ipython kernel` entry point, Ctrl-C will not work.
+
+To exit, you will have to explicitly quit this process, by either sending
+"quit" from a client, or using Ctrl-\ in UNIX-like environments.
+
+To read more about this, see https://github.com/ipython/ipython/issues/2049
+
+
+To connect another client to this kernel, use:
+    --existing /databricks/kernel-connections/dd21241471931abf5d1f099155a4624f66dae2d8634e89d866243f9b6e39f3c4.json
+Security - Post Deployment Job - Auto Loaders failure Count : 7
+Connection unsuccessful after 3 attempts. Displaying Errors:
+Failure - (MaxRetryError("HTTPSConnectionPool(host='10.0.11.42', port=60080): Max retries exceeded with url: /aternity.odata/latest/CONNECTION_TEST?$format=json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f8caf1150c0>: Failed to establish a new connection: [Errno 111] Connection refused'))"),) @ 2025-04-14 15:31:00.111884
+Response from Server - No Response. Request timed out after 20 seconds
+NOTE: When using the `ipython kernel` entry point, Ctrl-C will not work.
+
+To exit, you will have to explicitly quit this process, by either sending
+"quit" from a client, or using Ctrl-\ in UNIX-like environments.
+
+To read more about this, see https://github.com/ipython/ipython/issues/2049
+
+
+To connect another client to this kernel, use:
+    --existing /databricks/kernel-connections/04fca7dc09970e13ecb2c046f4ce23e8948c1ab9d26b20c20e3ae367d1a88bb3.json
+NOTE: When using the `ipython kernel` entry point, Ctrl-C will not work.
+
+To exit, you will have to explicitly quit this process, by either sending
+"quit" from a client, or using Ctrl-\ in UNIX-like environments.
+
+To read more about this, see https://github.com/ipython/ipython/issues/2049
+
+
+To connect another client to this kernel, use:
+    --existing /databricks/kernel-connections/f783f9ffa8af5eeaab0b38e7309cfa296a0f211ff0d33c04c719c35933c11acd.json
+NOTE: When using the `ipython kernel` entry point, Ctrl-C will not work.
+
+To exit, you will have to explicitly quit this process, by either sending
+"quit" from a client, or using Ctrl-\ in UNIX-like environments.
+
+To read more about this, see https://github.com/ipython/ipython/issues/2049
+
+
+To connect another client to this kernel, use:
+    --existing /databricks/kernel-connections/d7e9a6cf4045e9e0ec2ec974cbdc1fa059630742a2fa6fa98b1a2684be451217.json
+2025-04-14T15:40:03.708+0000: [GC (Allocation Failure) [PSYoungGen: 10286072K->178474K(11884544K)] 12939870K->2832272K(38942720K), 0.0741092 secs] [Times: user=0.34 sys=0.00, real=0.08 secs] 
+NOTE: When using the `ipython kernel` entry point, Ctrl-C will not work.
+
+To exit, you will have to explicitly quit this process, by either sending
+"quit" from a client, or using Ctrl-\ in UNIX-like environments.
+
+To read more about this, see https://github.com/ipython/ipython/issues/2049
+
+
+To connect another client to this kernel, use:
+    --existing /databricks/kernel-connections/cdb9fc2c9e32fafcb57bceb4d917e726c9c821b120780aeb18b3094267739424.json
+NOTE: When using the `ipython kernel` entry point, Ctrl-C will not work.
+
+To exit, you will have to explicitly quit this process, by either sending
+"quit" from a client, or using Ctrl-\ in UNIX-like environments.
+
+To read more about this, see https://github.com/ipython/ipython/issues/2049
+
+
+To connect another client to this kernel, use:
+    --existing /databricks/kernel-connections/2917466c0ee6f6a3f1867ae9961d047f57d9fc62041d35798cde4f9fc0d7c80b.json
+NOTE: When using the `ipython kernel` entry point, Ctrl-C will not work.
+
+To exit, you will have to explicitly quit this process, by either sending
+"quit" from a client, or using Ctrl-\ in UNIX-like environments.
+
+To read more about this, see https://github.com/ipython/ipython/issues/2049
+
+
+To connect another client to this kernel, use:
+    --existing /databricks/kernel-connections/59d3cf8487df60bcd161ce2434a89dd846bdf17c0b68b115c6f06b35d53d8424.json
+NOTE: When using the `ipython kernel` entry point, Ctrl-C will not work.
+
+To exit, you will have to explicitly quit this process, by either sending
+"quit" from a client, or using Ctrl-\ in UNIX-like environments.
+
+To read more about this, see https://github.com/ipython/ipython/issues/2049
+
+
+To connect another client to this kernel, use:
+    --existing /databricks/kernel-connections/5e35b64a299947f3885e4257c710fac3308bbb4049cd31100e90b56a39f06625.json
+NOTE: When using the `ipython kernel` entry point, Ctrl-C will not work.
+
+To exit, you will have to explicitly quit this process, by either sending
+"quit" from a client, or using Ctrl-\ in UNIX-like environments.
+
+To read more about this, see https://github.com/ipython/ipython/issues/2049
+
+
+To connect another client to this kernel, use:
+    --existing /databricks/kernel-connections/a5dc077e9b64d495a6ee93b91c081d64a40a126bed2e760265064c7116471512.json
+Response Write Attempt #0
+NOTE: When using the `ipython kernel` entry point, Ctrl-C will not work.
+
+To exit, you will have to explicitly quit this process, by either sending
+"quit" from a client, or using Ctrl-\ in UNIX-like environments.
+
+To read more about this, see https://github.com/ipython/ipython/issues/2049
+
+
+To connect another client to this kernel, use:
+    --existing /databricks/kernel-connections/d57f5aa09df252d741638efd0dec301ffd08f1d5d99f4bdb5d360617f2f277cd.json
+Response Write Attempt #0
+NOTE: When using the `ipython kernel` entry point, Ctrl-C will not work.
+
+To exit, you will have to explicitly quit this process, by either sending
+"quit" from a client, or using Ctrl-\ in UNIX-like environments.
+
+To read more about this, see https://github.com/ipython/ipython/issues/2049
+
+
+To connect another client to this kernel, use:
+    --existing /databricks/kernel-connections/5887298c7ea0a8b28da7389560f0d9113bb195abb01d03a65530ecb3a1882d1a.json
+Response Write Attempt #0
+5fce7a43-cbd0-4f02-ae2c-2e1fa616fb0f
+Initial Status : Succeeded
+main while loop: 5fce7a43-cbd0-4f02-ae2c-2e1fa616fb0f has status of Succeeded
+37f142ac-7ab5-4b19-976c-aa9669b54eb5
+Initial Status : Succeeded
+main while loop: 37f142ac-7ab5-4b19-976c-aa9669b54eb5 has status of Succeeded
+0069d15b-49e0-41cb-abd8-775b9eb2eb61
+Initial Status : Succeeded
+main while loop: 0069d15b-49e0-41cb-abd8-775b9eb2eb61 has status of Succeeded
+c6802d70-4c9e-4152-bccf-e38f8193fde7
+Initial Status : Succeeded
+main while loop: c6802d70-4c9e-4152-bccf-e38f8193fde7 has status of Succeeded
+3e1005ee-0b0f-4605-a4f6-737ee49e3978
+Initial Status : Succeeded
+main while loop: 3e1005ee-0b0f-4605-a4f6-737ee49e3978 has status of Succeeded
+1814c60f-3dce-4009-ba17-45f6eb4bd309
+Initial Status : Succeeded
+main while loop: 1814c60f-3dce-4009-ba17-45f6eb4bd309 has status of Succeeded
+6f630611-1ccb-40a7-a1b7-4ba6c7b75b7f
+Initial Status : Succeeded
+main while loop: 6f630611-1ccb-40a7-a1b7-4ba6c7b75b7f has status of Succeeded
+24958c40-f051-42d4-b60d-1b1e956bac39
+Initial Status : Succeeded
+main while loop: 24958c40-f051-42d4-b60d-1b1e956bac39 has status of Succeeded
+422905cd-9843-4a79-9099-4a226e39a999
+Initial Status : Succeeded
+main while loop: 422905cd-9843-4a79-9099-4a226e39a999 has status of Succeeded
+efd623cd-272b-40e8-9927-aa6469920f9e
+Initial Status : Succeeded
+main while loop: efd623cd-272b-40e8-9927-aa6469920f9e has status of Succeeded
+9698b94c-1a53-4014-868e-c016b2193faf
+Initial Status : Succeeded
+main while loop: 9698b94c-1a53-4014-868e-c016b2193faf has status of Succeeded
+6ef1ab15-ea0f-418e-93d6-cfe85028d620
+Initial Status : Succeeded
+main while loop: 6ef1ab15-ea0f-418e-93d6-cfe85028d620 has status of Succeeded
+da1740cd-0d14-4398-bdb9-3d759aecf24c
+Initial Status : Succeeded
+main while loop: da1740cd-0d14-4398-bdb9-3d759aecf24c has status of Succeeded
+be1d2a09-3eb8-4dda-9df5-6daad9f7c411
+Initial Status : Succeeded
+main while loop: be1d2a09-3eb8-4dda-9df5-6daad9f7c411 has status of Succeeded
+e386203b-638d-47b6-a4b1-41f4ec6422f5
+Initial Status : Succeeded
+main while loop: e386203b-638d-47b6-a4b1-41f4ec6422f5 has status of Succeeded
+6ada1246-2c1a-47bc-9f6c-93a76e7b4260
+Initial Status : Succeeded
+main while loop: 6ada1246-2c1a-47bc-9f6c-93a76e7b4260 has status of Succeeded
+28a8a789-dc4e-4691-a70b-c8e477759c7b
+Initial Status : Succeeded
+main while loop: 28a8a789-dc4e-4691-a70b-c8e477759c7b has status of Succeeded
+d3eb4f35-5e46-4909-8283-0e95df318adf
+Initial Status : Succeeded
+main while loop: d3eb4f35-5e46-4909-8283-0e95df318adf has status of Succeeded
+4a01c8b9-97de-4ef0-9ac3-d6cfe004270e
+Initial Status : Succeeded
+main while loop: 4a01c8b9-97de-4ef0-9ac3-d6cfe004270e has status of Succeeded
+cc3737cb-02c2-4b09-889f-71c2e038409f
+Initial Status : Succeeded
+main while loop: cc3737cb-02c2-4b09-889f-71c2e038409f has status of Succeeded
+23968ba4-bbbc-4023-b862-fb76e346eac3
+Initial Status : Succeeded
+main while loop: 23968ba4-bbbc-4023-b862-fb76e346eac3 has status of Succeeded
+6c537ec0-4ff5-4374-b6ee-afa1a0d0ec66
+Initial Status : Succeeded
+main while loop: 6c537ec0-4ff5-4374-b6ee-afa1a0d0ec66 has status of Succeeded
+cb49c14b-c4aa-4b79-b97c-c2034bb5f5d9
+Initial Status : Succeeded
+main while loop: cb49c14b-c4aa-4b79-b97c-c2034bb5f5d9 has status of Succeeded
+8711cd8d-170b-4110-bc9f-5a83b6faea04
+Initial Status : Succeeded
+main while loop: 8711cd8d-170b-4110-bc9f-5a83b6faea04 has status of Succeeded
+a3b80a2a-82ff-4ef2-9037-9da6a4e40686
+Initial Status : Succeeded
+main while loop: a3b80a2a-82ff-4ef2-9037-9da6a4e40686 has status of Succeeded
+61b2b876-493a-447e-835e-5717ec91da06
+Initial Status : Succeeded
+main while loop: 61b2b876-493a-447e-835e-5717ec91da06 has status of Succeeded
+8b1548c4-9c43-44c8-ba4e-762df8746507
+Initial Status : Succeeded
+main while loop: 8b1548c4-9c43-44c8-ba4e-762df8746507 has status of Succeeded
+b0460617-d5db-4e5f-885e-5ed70b8e2db9
+Initial Status : Succeeded
+main while loop: b0460617-d5db-4e5f-885e-5ed70b8e2db9 has status of Succeeded
+4585514a-e196-4d92-9df6-078da153e8b9
+Initial Status : Succeeded
+main while loop: 4585514a-e196-4d92-9df6-078da153e8b9 has status of Succeeded
+NOTE: When using the `ipython kernel` entry point, Ctrl-C will not work.
+
+To exit, you will have to explicitly quit this process, by either sending
+"quit" from a client, or using Ctrl-\ in UNIX-like environments.
+
+To read more about this, see https://github.com/ipython/ipython/issues/2049
+
+
+To connect another client to this kernel, use:
+    --existing /databricks/kernel-connections/4836b29151897098453b9f292a4d3db4608a7104fffc33278a729d3329a01ab0.json
+1f80b749-de29-4fcb-b9ab-7529afb2482a
+Initial Status : Succeeded
+main while loop: 1f80b749-de29-4fcb-b9ab-7529afb2482a has status of Succeeded
+fdd0920a-0d87-405a-9b63-e05f2149cd91
+Initial Status : Succeeded
+main while loop: fdd0920a-0d87-405a-9b63-e05f2149cd91 has status of Succeeded
+2a3c380a-0049-49f3-a9e2-2a4fb3dd19e4
+Initial Status : Succeeded
+main while loop: 2a3c380a-0049-49f3-a9e2-2a4fb3dd19e4 has status of Succeeded
+cadd27ba-7567-4385-b435-9355c39e2621
+Initial Status : Succeeded
+main while loop: cadd27ba-7567-4385-b435-9355c39e2621 has status of Succeeded
+d4a2b8d1-06a9-4ed2-b0c4-d460ce63a9fd
+Initial Status : Succeeded
+main while loop: d4a2b8d1-06a9-4ed2-b0c4-d460ce63a9fd has status of Succeeded
+ebc3e29f-5b0a-46b1-81a8-bca7b6f3fef2
+Initial Status : Succeeded
+main while loop: ebc3e29f-5b0a-46b1-81a8-bca7b6f3fef2 has status of Succeeded
+d6092556-026f-4771-96f7-4a48822b1fd7
+Initial Status : Succeeded
+main while loop: d6092556-026f-4771-96f7-4a48822b1fd7 has status of Succeeded
+Response Write Attempt #0
+Response Write Attempt #0
+073b700e-d67d-4c44-964e-fb4a3c6a776b
+Initial Status : Succeeded
+main while loop: 073b700e-d67d-4c44-964e-fb4a3c6a776b has status of Succeeded
+bd70dbea-b244-49da-9217-ea0601ae15af
+Initial Status : Succeeded
+main while loop: bd70dbea-b244-49da-9217-ea0601ae15af has status of Succeeded
+7452ac45-b679-4b5c-b105-841842f6f468
+Initial Status : Succeeded
+main while loop: 7452ac45-b679-4b5c-b105-841842f6f468 has status of Succeeded
+NOTE: When using the `ipython kernel` entry point, Ctrl-C will not work.
+
+To exit, you will have to explicitly quit this process, by either sending
+"quit" from a client, or using Ctrl-\ in UNIX-like environments.
+
+To read more about this, see https://github.com/ipython/ipython/issues/2049
+
+
+To connect another client to this kernel, use:
+    --existing /databricks/kernel-connections/060e5aa51b6f9d3a3f81454d809173ba3094d53fbdc95adad96de49df2f0733c.json
+ac664462-7010-40a4-b1b3-319a5e1745f5
+Initial Status : Succeeded
+main while loop: ac664462-7010-40a4-b1b3-319a5e1745f5 has status of Succeeded
+2652c25f-ea49-4587-a8fa-8e58d14aa880
+Initial Status : Succeeded
+main while loop: 2652c25f-ea49-4587-a8fa-8e58d14aa880 has status of Succeeded
+a9961271-01f4-4900-8554-4b56fad99fb8
+Initial Status : Succeeded
+main while loop: a9961271-01f4-4900-8554-4b56fad99fb8 has status of Succeeded
+a0fa50bb-8403-4a8c-b317-230edf687430
+Initial Status : Succeeded
+main while loop: a0fa50bb-8403-4a8c-b317-230edf687430 has status of Succeeded
+f6d0b62e-bd31-4fde-906e-f7e5391ea155
+Initial Status : Succeeded
+main while loop: f6d0b62e-bd31-4fde-906e-f7e5391ea155 has status of Succeeded
+dadc9712-f862-4279-b38c-08ab810d5ed6
+Initial Status : Succeeded
+main while loop: dadc9712-f862-4279-b38c-08ab810d5ed6 has status of Succeeded
+953883b8-f6fc-4bff-953a-6c4ef323811a
+Initial Status : Succeeded
+main while loop: 953883b8-f6fc-4bff-953a-6c4ef323811a has status of Succeeded
+cf0d543e-b39a-4bc3-aadd-cf8465669234
+Initial Status : Succeeded
+main while loop: cf0d543e-b39a-4bc3-aadd-cf8465669234 has status of Succeeded
+54725a2e-515c-494c-af5a-4190f998e74b
+Initial Status : Succeeded
+main while loop: 54725a2e-515c-494c-af5a-4190f998e74b has status of Succeeded
+1434d943-2f44-4d4f-a05a-6afa788da511
+Initial Status : Succeeded
+main while loop: 1434d943-2f44-4d4f-a05a-6afa788da511 has status of Succeeded
+93f10ce2-a058-4ba6-a8ce-5f332783de6c
+Initial Status : Succeeded
+main while loop: 93f10ce2-a058-4ba6-a8ce-5f332783de6c has status of Succeeded
+3632d40c-cac7-4a28-9318-f755b04b8ae3
+Initial Status : Succeeded
+main while loop: 3632d40c-cac7-4a28-9318-f755b04b8ae3 has status of Succeeded
+398311de-566b-459a-b146-45a17f2991bf
+Initial Status : Succeeded
+main while loop: 398311de-566b-459a-b146-45a17f2991bf has status of Succeeded
+b7864519-a8c9-42fc-b399-5209e7535dd5
+Initial Status : Succeeded
+main while loop: b7864519-a8c9-42fc-b399-5209e7535dd5 has status of Succeeded
+a1946548-74e2-4c38-8788-31ca03b7a7f9
+Initial Status : Succeeded
+main while loop: a1946548-74e2-4c38-8788-31ca03b7a7f9 has status of Succeeded
+ac63efef-6361-4a82-8acf-9499e6baabea
+Initial Status : Succeeded
+main while loop: ac63efef-6361-4a82-8acf-9499e6baabea has status of Succeeded
+770b2bff-ddd5-4a13-b42f-f0f08dd94885
+Initial Status : Succeeded
+main while loop: 770b2bff-ddd5-4a13-b42f-f0f08dd94885 has status of Succeeded
+Response Write Attempt #0
+cd9ab81f-4ec3-4610-bc46-f023bf8d532b
+Initial Status : Succeeded
+main while loop: cd9ab81f-4ec3-4610-bc46-f023bf8d532b has status of Succeeded
+9f119766-cc1f-4173-9727-e26f01c96243
+Initial Status : Succeeded
+main while loop: 9f119766-cc1f-4173-9727-e26f01c96243 has status of Succeeded
+7e9f3744-19ea-4cb4-b7e1-a95ce239200a
+Initial Status : Succeeded
+main while loop: 7e9f3744-19ea-4cb4-b7e1-a95ce239200a has status of Succeeded
+3988286c-6bd4-4e28-b429-7c605838af50
+Initial Status : Succeeded
+main while loop: 3988286c-6bd4-4e28-b429-7c605838af50 has status of Succeeded
+36982b79-06b8-438b-82d7-3f9fc89a882c
+Initial Status : Succeeded
+main while loop: 36982b79-06b8-438b-82d7-3f9fc89a882c has status of Succeeded
+94665649-99ce-4079-894b-95d280869b4b
+Initial Status : Succeeded
+main while loop: 94665649-99ce-4079-894b-95d280869b4b has status of Succeeded
+7d402695-b004-422d-b641-b045ea65b822
+Initial Status : Succeeded
+main while loop: 7d402695-b004-422d-b641-b045ea65b822 has status of Succeeded
+Response Write Attempt #0
+f8f91658-4bcf-45dd-884c-f61b767c5b8a
+Initial Status : Succeeded
+main while loop: f8f91658-4bcf-45dd-884c-f61b767c5b8a has status of Succeeded
+65043cd8-03e4-4bc3-9d34-1bcebebfe917
+Initial Status : Succeeded
+main while loop: 65043cd8-03e4-4bc3-9d34-1bcebebfe917 has status of Succeeded
+13178f58-7fba-4606-a78c-5c5777ce973a
+Initial Status : Succeeded
+main while loop: 13178f58-7fba-4606-a78c-5c5777ce973a has status of Succeeded
+17a417e3-2866-4fd1-9da5-f50ddd7cd0de
+Initial Status : Succeeded
+main while loop: 17a417e3-2866-4fd1-9da5-f50ddd7cd0de has status of Succeeded
+79c04876-2bf5-48e2-bd48-a5f46669c022
+Initial Status : Succeeded
+main while loop: 79c04876-2bf5-48e2-bd48-a5f46669c022 has status of Succeeded
+1487a48b-65db-491f-ae2f-27bdeaaf4def
+Initial Status : Succeeded
+main while loop: 1487a48b-65db-491f-ae2f-27bdeaaf4def has status of Succeeded
+d4517ed6-afc5-406e-86e8-a4899debf015
+Initial Status : Succeeded
+main while loop: d4517ed6-afc5-406e-86e8-a4899debf015 has status of Succeeded
+78f2d1cb-8c84-41ee-8b1b-d856d3b8c3e2
+Initial Status : Succeeded
+main while loop: 78f2d1cb-8c84-41ee-8b1b-d856d3b8c3e2 has status of Succeeded
+0dbca010-473e-443c-9e77-50c188520504
+Initial Status : Succeeded
+main while loop: 0dbca010-473e-443c-9e77-50c188520504 has status of Succeeded
+d633cda0-e0aa-43ca-a910-032b3274e564
+Initial Status : Succeeded
+main while loop: d633cda0-e0aa-43ca-a910-032b3274e564 has status of Succeeded
+b8bd5f26-2da7-477b-8e52-5b3c0aaab65b
+Initial Status : Succeeded
+main while loop: b8bd5f26-2da7-477b-8e52-5b3c0aaab65b has status of Succeeded
+d215e390-ab37-4876-898f-297909f60ff2
+Initial Status : Succeeded
+main while loop: d215e390-ab37-4876-898f-297909f60ff2 has status of Succeeded
+f544d081-e67e-49c5-8d83-c9ab7d8cff10
+Initial Status : Succeeded
+main while loop: f544d081-e67e-49c5-8d83-c9ab7d8cff10 has status of Succeeded
+c6d9cc9c-8d43-451c-a41f-0135712af348
+Initial Status : Succeeded
+main while loop: c6d9cc9c-8d43-451c-a41f-0135712af348 has status of Succeeded
+4a9d34c8-83b4-4980-b52f-f28f4fec56f5
+Initial Status : Succeeded
+main while loop: 4a9d34c8-83b4-4980-b52f-f28f4fec56f5 has status of Succeeded
+d6233573-167c-4374-bde6-41c997bc1242
+Initial Status : Succeeded
+main while loop: d6233573-167c-4374-bde6-41c997bc1242 has status of Succeeded
+307924f7-372a-41a4-91bb-7782d87d6d6e
+Initial Status : Succeeded
+main while loop: 307924f7-372a-41a4-91bb-7782d87d6d6e has status of Succeeded
+aa131a52-920e-4f05-a4a4-6710965a010f
+Initial Status : Succeeded
+main while loop: aa131a52-920e-4f05-a4a4-6710965a010f has status of Succeeded
+96feff74-0e9b-4abe-9d65-5529be2eecf2
+Initial Status : Succeeded
+main while loop: 96feff74-0e9b-4abe-9d65-5529be2eecf2 has status of Succeeded
+ef106b49-6b9b-4132-b5bd-d16d2adf606e
+Initial Status : Succeeded
+main while loop: ef106b49-6b9b-4132-b5bd-d16d2adf606e has status of Succeeded
+f3058317-814f-4df3-91bf-975db5686a56
+Initial Status : Succeeded
+main while loop: f3058317-814f-4df3-91bf-975db5686a56 has status of Succeeded
+c87ddf5d-e7e8-4849-91ce-cd19c9febc18
+Initial Status : Succeeded
+main while loop: c87ddf5d-e7e8-4849-91ce-cd19c9febc18 has status of Succeeded
+39601651-9251-4d95-8c38-a85e7098192b
+Initial Status : Succeeded
+main while loop: 39601651-9251-4d95-8c38-a85e7098192b has status of Succeeded
+413ef178-e4c6-4343-9528-797364e96251
+Initial Status : Succeeded
+main while loop: 413ef178-e4c6-4343-9528-797364e96251 has status of Succeeded
+9fc8419e-9270-4ce7-a808-2fa752fae370
+Initial Status : Succeeded
+main while loop: 9fc8419e-9270-4ce7-a808-2fa752fae370 has status of Succeeded
+6a45dd72-968b-4e9f-bd56-f4f02b4243b7
+Initial Status : Succeeded
+main while loop: 6a45dd72-968b-4e9f-bd56-f4f02b4243b7 has status of Succeeded
+f0534748-7fa7-4b93-ae95-2650e220a13c
+Initial Status : Succeeded
+main while loop: f0534748-7fa7-4b93-ae95-2650e220a13c has status of Succeeded
+d6083bd8-d861-406a-8668-2a5acabc8e27
+Initial Status : Succeeded
+main while loop: d6083bd8-d861-406a-8668-2a5acabc8e27 has status of Succeeded
+c17ca34c-35db-4cdc-833a-db2763c5e5fe
+Initial Status : Succeeded
+main while loop: c17ca34c-35db-4cdc-833a-db2763c5e5fe has status of Succeeded
+77e6ed03-742f-4c1c-b596-9f91be4e6c27
+Initial Status : Succeeded
+main while loop: 77e6ed03-742f-4c1c-b596-9f91be4e6c27 has status of Succeeded
+120a2aaf-b6f3-45de-878d-4cb54447e24f
+Initial Status : Succeeded
+main while loop: 120a2aaf-b6f3-45de-878d-4cb54447e24f has status of Succeeded
+d589a784-229f-4bee-a3e6-155c6a29f3d7
+Initial Status : Succeeded
+main while loop: d589a784-229f-4bee-a3e6-155c6a29f3d7 has status of Succeeded
+c8263167-d1a4-477e-a975-2ec73d28f914
+Initial Status : Succeeded
+main while loop: c8263167-d1a4-477e-a975-2ec73d28f914 has status of Succeeded
+d4f4f98d-4fc2-40ff-9c7d-75331006f611
+Initial Status : Succeeded
+main while loop: d4f4f98d-4fc2-40ff-9c7d-75331006f611 has status of Succeeded
+18aaf2f0-87d0-4b36-a13a-6710a98d2787
+Initial Status : Succeeded
+main while loop: 18aaf2f0-87d0-4b36-a13a-6710a98d2787 has status of Succeeded
+e7d6a588-3f69-443d-a62d-ef637436574c
+Initial Status : Succeeded
+main while loop: e7d6a588-3f69-443d-a62d-ef637436574c has status of Succeeded
+Response Write Attempt #0
+['5fce7a43-cbd0-4f02-ae2c-2e1fa616fb0f', '37f142ac-7ab5-4b19-976c-aa9669b54eb5', '0069d15b-49e0-41cb-abd8-775b9eb2eb61', 'c6802d70-4c9e-4152-bccf-e38f8193fde7', '3e1005ee-0b0f-4605-a4f6-737ee49e3978', '1814c60f-3dce-4009-ba17-45f6eb4bd309', '6f630611-1ccb-40a7-a1b7-4ba6c7b75b7f', '24958c40-f051-42d4-b60d-1b1e956bac39', '422905cd-9843-4a79-9099-4a226e39a999', 'efd623cd-272b-40e8-9927-aa6469920f9e', '9698b94c-1a53-4014-868e-c016b2193faf', '6ef1ab15-ea0f-418e-93d6-cfe85028d620', 'da1740cd-0d14-4398-bdb9-3d759aecf24c', 'be1d2a09-3eb8-4dda-9df5-6daad9f7c411', 'e386203b-638d-47b6-a4b1-41f4ec6422f5', '6ada1246-2c1a-47bc-9f6c-93a76e7b4260', '28a8a789-dc4e-4691-a70b-c8e477759c7b', 'd3eb4f35-5e46-4909-8283-0e95df318adf', '4a01c8b9-97de-4ef0-9ac3-d6cfe004270e', 'cc3737cb-02c2-4b09-889f-71c2e038409f', '23968ba4-bbbc-4023-b862-fb76e346eac3', '6c537ec0-4ff5-4374-b6ee-afa1a0d0ec66', 'cb49c14b-c4aa-4b79-b97c-c2034bb5f5d9', '8711cd8d-170b-4110-bc9f-5a83b6faea04', 'a3b80a2a-82ff-4ef2-9037-9da6a4e40686', '61b2b876-493a-447e-835e-5717ec91da06', '8b1548c4-9c43-44c8-ba4e-762df8746507', 'b0460617-d5db-4e5f-885e-5ed70b8e2db9', '4585514a-e196-4d92-9df6-078da153e8b9', '1f80b749-de29-4fcb-b9ab-7529afb2482a', 'fdd0920a-0d87-405a-9b63-e05f2149cd91', '2a3c380a-0049-49f3-a9e2-2a4fb3dd19e4', 'cadd27ba-7567-4385-b435-9355c39e2621', 'd4a2b8d1-06a9-4ed2-b0c4-d460ce63a9fd', 'ebc3e29f-5b0a-46b1-81a8-bca7b6f3fef2', 'd6092556-026f-4771-96f7-4a48822b1fd7', '073b700e-d67d-4c44-964e-fb4a3c6a776b', 'bd70dbea-b244-49da-9217-ea0601ae15af', '7452ac45-b679-4b5c-b105-841842f6f468', 'ac664462-7010-40a4-b1b3-319a5e1745f5', '2652c25f-ea49-4587-a8fa-8e58d14aa880', 'a9961271-01f4-4900-8554-4b56fad99fb8', 'a0fa50bb-8403-4a8c-b317-230edf687430', 'f6d0b62e-bd31-4fde-906e-f7e5391ea155', 'dadc9712-f862-4279-b38c-08ab810d5ed6', '953883b8-f6fc-4bff-953a-6c4ef323811a', 'cf0d543e-b39a-4bc3-aadd-cf8465669234', '54725a2e-515c-494c-af5a-4190f998e74b', '1434d943-2f44-4d4f-a05a-6afa788da511', '93f10ce2-a058-4ba6-a8ce-5f332783de6c', '3632d40c-cac7-4a28-9318-f755b04b8ae3', '398311de-566b-459a-b146-45a17f2991bf', 'b7864519-a8c9-42fc-b399-5209e7535dd5', 'a1946548-74e2-4c38-8788-31ca03b7a7f9', 'ac63efef-6361-4a82-8acf-9499e6baabea', '770b2bff-ddd5-4a13-b42f-f0f08dd94885', 'cd9ab81f-4ec3-4610-bc46-f023bf8d532b', '9f119766-cc1f-4173-9727-e26f01c96243', '7e9f3744-19ea-4cb4-b7e1-a95ce239200a', '3988286c-6bd4-4e28-b429-7c605838af50', '36982b79-06b8-438b-82d7-3f9fc89a882c', '94665649-99ce-4079-894b-95d280869b4b', '7d402695-b004-422d-b641-b045ea65b822', 'f8f91658-4bcf-45dd-884c-f61b767c5b8a', '65043cd8-03e4-4bc3-9d34-1bcebebfe917', '13178f58-7fba-4606-a78c-5c5777ce973a', '17a417e3-2866-4fd1-9da5-f50ddd7cd0de', '79c04876-2bf5-48e2-bd48-a5f46669c022', '1487a48b-65db-491f-ae2f-27bdeaaf4def', 'd4517ed6-afc5-406e-86e8-a4899debf015', '78f2d1cb-8c84-41ee-8b1b-d856d3b8c3e2', '0dbca010-473e-443c-9e77-50c188520504', 'd633cda0-e0aa-43ca-a910-032b3274e564', 'b8bd5f26-2da7-477b-8e52-5b3c0aaab65b', 'd215e390-ab37-4876-898f-297909f60ff2', 'f544d081-e67e-49c5-8d83-c9ab7d8cff10', 'c6d9cc9c-8d43-451c-a41f-0135712af348', '4a9d34c8-83b4-4980-b52f-f28f4fec56f5', 'd6233573-167c-4374-bde6-41c997bc1242', '307924f7-372a-41a4-91bb-7782d87d6d6e', 'aa131a52-920e-4f05-a4a4-6710965a010f', '96feff74-0e9b-4abe-9d65-5529be2eecf2', 'ef106b49-6b9b-4132-b5bd-d16d2adf606e', 'f3058317-814f-4df3-91bf-975db5686a56', 'c87ddf5d-e7e8-4849-91ce-cd19c9febc18', '39601651-9251-4d95-8c38-a85e7098192b', '413ef178-e4c6-4343-9528-797364e96251', '9fc8419e-9270-4ce7-a808-2fa752fae370', '6a45dd72-968b-4e9f-bd56-f4f02b4243b7', 'f0534748-7fa7-4b93-ae95-2650e220a13c', 'd6083bd8-d861-406a-8668-2a5acabc8e27', 'c17ca34c-35db-4cdc-833a-db2763c5e5fe', '77e6ed03-742f-4c1c-b596-9f91be4e6c27', '120a2aaf-b6f3-45de-878d-4cb54447e24f', 'd589a784-229f-4bee-a3e6-155c6a29f3d7', 'c8263167-d1a4-477e-a975-2ec73d28f914', 'd4f4f98d-4fc2-40ff-9c7d-75331006f611', '18aaf2f0-87d0-4b36-a13a-6710a98d2787', 'e7d6a588-3f69-443d-a62d-ef637436574c']
+2025-04-14T15:45:11.582+0000: [GC (System.gc()) [PSYoungGen: 7203465K->131598K(12057088K)] 9857264K->2879436K(39115264K), 0.0784861 secs] [Times: user=0.47 sys=0.00, real=0.08 secs] 
+2025-04-14T15:45:11.661+0000: [Full GC (System.gc()) [PSYoungGen: 131598K->0K(12057088K)] [ParOldGen: 2747838K->1910809K(27058176K)] 2879436K->1910809K(39115264K), [Metaspace: 439838K->439514K(503808K)], 1.2412968 secs] [Times: user=11.33 sys=0.01, real=1.24 secs] 
+NOTE: When using the `ipython kernel` entry point, Ctrl-C will not work.
+
+To exit, you will have to explicitly quit this process, by either sending
+"quit" from a client, or using Ctrl-\ in UNIX-like environments.
+
+To read more about this, see https://github.com/ipython/ipython/issues/2049
+
+
+To connect another client to this kernel, use:
+    --existing /databricks/kernel-connections/f20987cbf6fad8c09561f8035ffac5e7cbdc3aa837274aa84a4cede3f14b2186.json
+Response Write Attempt #0
+NOTE: When using the `ipython kernel` entry point, Ctrl-C will not work.
+
+To exit, you will have to explicitly quit this process, by either sending
+"quit" from a client, or using Ctrl-\ in UNIX-like environments.
+
+To read more about this, see https://github.com/ipython/ipython/issues/2049
+
+
+To connect another client to this kernel, use:
+    --existing /databricks/kernel-connections/982f40bf9eafdb0f17e31be7006d4c3380ee4b9d672b90f60a59b91efac520fa.json
+Response Write Attempt #0
+NOTE: When using the `ipython kernel` entry point, Ctrl-C will not work.
+
+To exit, you will have to explicitly quit this process, by either sending
+"quit" from a client, or using Ctrl-\ in UNIX-like environments.
+
+To read more about this, see https://github.com/ipython/ipython/issues/2049
+
+
+To connect another client to this kernel, use:
+    --existing /databricks/kernel-connections/097143d59c4079c967821ff7faee35c21ab2d870b3d5597d787740ba7f430c61.json
+NOTE: When using the `ipython kernel` entry point, Ctrl-C will not work.
+
+To exit, you will have to explicitly quit this process, by either sending
+"quit" from a client, or using Ctrl-\ in UNIX-like environments.
+
+To read more about this, see https://github.com/ipython/ipython/issues/2049
+
+
+To connect another client to this kernel, use:
+    --existing /databricks/kernel-connections/0381da1bc20726b68c259a041b15db4ee4459b2db2166e54d6bf50ea815df881.json
+NOTE: When using the `ipython kernel` entry point, Ctrl-C will not work.
+
+To exit, you will have to explicitly quit this process, by either sending
+"quit" from a client, or using Ctrl-\ in UNIX-like environments.
+
+To read more about this, see https://github.com/ipython/ipython/issues/2049
+
+
+To connect another client to this kernel, use:
+    --existing /databricks/kernel-connections/f7a894206bc36c87f5b99499da35c6d0347dbc12a20a33a188f93039187f729c.json
+NOTE: When using the `ipython kernel` entry point, Ctrl-C will not work.
+
+To exit, you will have to explicitly quit this process, by either sending
+"quit" from a client, or using Ctrl-\ in UNIX-like environments.
+
+To read more about this, see https://github.com/ipython/ipython/issues/2049
+
+
+To connect another client to this kernel, use:
+    --existing /databricks/kernel-connections/4d525c4fc68c33e5cda38c17bf86f7eea075c66be7af059d7f6f5b5a215da6f8.json
+Response Write Attempt #0
+NOTE: When using the `ipython kernel` entry point, Ctrl-C will not work.
+
+To exit, you will have to explicitly quit this process, by either sending
+"quit" from a client, or using Ctrl-\ in UNIX-like environments.
+
+To read more about this, see https://github.com/ipython/ipython/issues/2049
+
+
+To connect another client to this kernel, use:
+    --existing /databricks/kernel-connections/a16c1096dce3bab5b939f67d5e43be16bf52c366be97be78dd6dcce35a0e7bb2.json
+NOTE: When using the `ipython kernel` entry point, Ctrl-C will not work.
+
+To exit, you will have to explicitly quit this process, by either sending
+"quit" from a client, or using Ctrl-\ in UNIX-like environments.
+
+To read more about this, see https://github.com/ipython/ipython/issues/2049
+
+
+To connect another client to this kernel, use:
+    --existing /databricks/kernel-connections/1f152bdf984f1d887c713268610f7f8eac3d58d84f36bfc396a71a990edbd7ff.json
+NOTE: When using the `ipython kernel` entry point, Ctrl-C will not work.
+
+To exit, you will have to explicitly quit this process, by either sending
+"quit" from a client, or using Ctrl-\ in UNIX-like environments.
+
+To read more about this, see https://github.com/ipython/ipython/issues/2049
+
+
+To connect another client to this kernel, use:
+    --existing /databricks/kernel-connections/247cfc64898139857cacf0a5a2c778ca6a82ad62f241be1ea4510d9ccc53eb55.json
