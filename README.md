@@ -315,11 +315,7 @@ def get_service_client_sp(tenant_id, service_principal_id, service_principal_key
     credential = ClientSecretCredential(tenant_id, service_principal_id, service_principal_key)    
     return BlobServiceClient(account_url=f"https://{blob_storage_name}.blob.core.usgovcloudapi.net",credential=credential)  
 
-def get_blob_client_sp(tenant_id,service_principal_id,service_principal_key,blob_storage_name,container_name, blob_name): 
-  service_client = get_service_client_sp(tenant_id,service_principal_id,service_principal_key,blob_storage_name)
-  return BlobClient(
-        service_client.url,
-        container_name = container_name, 
-        blob_name = blob_name,
-        credential=service_client.credential)
-    
+•	spark.databricks.driver.hardKillUnresponsive.timeout 600
+•	spark.driver.extraJavaOptions -XX:-UseParallelGC -XX:+UseG1GC
+•	spark.executor.extraJavaOptions -XX:-UseParallelGC -XX:+UseG1GC
+
