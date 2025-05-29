@@ -66,256 +66,32 @@ Use of Microsoft trademarks or logos in modified versions of this project must n
 Any use of third-party trademarks or logos are subject to those third-party's policies.
 
 
-
-{"reportName":"DeviceInstallStatusByApp","filter":'(ApplicationId eq ' + f"'{app_id}'" + ')'}
-      url = f"https://graph.microsoft.us/beta/deviceManagement/reports/exportJobs/"   
-
-body['filter'] = '(ApplicationId eq ' + f"'{app_id}'" + ')'
-    url = f"https://graph.microsoft.us/beta/deviceManagement/reports/getDeviceInstallStatusReport" 
-
-
-    df = spark.read \
-          .format("com.databricks.spark.sqldw") \
-          .option("url", "jdbc:sqlserver://synwseitaasdatateam.sql.azuresynapse.usgovcloudapi.net:1433;database=synwsdbdatateam;encrypt=true;trustServerCertificate=true;hostNameInCertificate=*.sql.azuresynapse.usgovcloudapi.net;loginTimeout=30") \
-          .option("tempDir", "wasbs://" + data_lake_container + "@" + data_lake_endpoint + "/tempDirs") \
-          .option("forwardSparkAzureStorageCredentials", "true") \
-          .option("enableServicePrincipalAuth", "true") \
-          .option("dbTable", "darpan.dateDim") \
-          .option("tempDir", "wasbs://" + data_lake_container + "@" + data_lake_endpoint + "/tempDirs") \
-          .load()  
-display(df)   
-
-
-
-df.write \
-  .format("com.databricks.spark.sqldw") \
-  .mode("append") \
-  .option("url", jdbc_connection_string + ";encrypt=true;trustServerCertificate=true;hostNameInCertificate=*.sql.azuresynapse.usgovcloudapi.net;loginTimeout=30") \
-  .option("forwardSparkAzureStorageCredentials", "true") \
-  .option("enableServicePrincipalAuth", "true") \
-  .option("dbTable", destination_database_name + "." + destination_table_name) \
-  .option("tempDir", "wasbs://" + data_lake_container + "@" + data_lake_endpoint + "/tempDirs") \
-  .option("tableOptions","HEAP,DISTRIBUTION = ROUND_ROBIN") \
-  .save()
-
-
-  # Defining a separate set of service principal credentials for Azure Synapse Analytics (If not defined, the connector will use the Azure storage account credentials)  
-spark.conf.set("spark.databricks.sqldw.jdbc.service.principal.client.id", service_principal_id)  
-spark.conf.set("spark.databricks.sqldw.jdbc.service.principal.client.secret", service_principal_key)  
-
-
-org.apache.spark.SparkException: [SPARK_JOB_CANCELLED] Job 3357 cancelled because Task 159619 in Stage 7066 exceeded the maximum allowed ratio of input to output records (1 to 18033699, max allowed 1 to 10000); this limit can be modified with configuration parameter spark.databricks.queryWatchdog.outputRatioThreshold
-
-
-data_lake_container = "deltalake"
-data_lake_name = data_lake_url[len(data_lake_url[0:data_lake_url.index('.')])-data_lake_url[0:data_lake_url.index('.')][::-1].index('/') :data_lake_url.index('.')]
-data_lake_endpoint = data_lake_name + ".blob.core.usgovcloudapi.net"
-
-
-def get_from_type_v3(source_name,spark,jdbc_connection_string):  
-    
-    import adal  
-
-    # Set url & credentials
-    jdbc_url = jdbc_connection_string  + ";encrypt=true;trustServerCertificate=true;hostNameInCertificate=*.sql.azuresynapse.usgovcloudapi.net;loginTimeout=30"
-
-    # Truncate QA table in Synapse
-    query = f""" (SELECT distinct fromType FROM etl.fromSourceTypeLup WHERE fromSource = '{source_name}')"""
-
-    # Create a connection object and pass the properties object
-    resource_app_id_url = "https://database.usgovcloudapi.net/"
-    authority = "https://login.microsoftonline.us/" + tenant_id
-
-    context = adal.AuthenticationContext(authority)
-    token = context.acquire_token_with_client_credentials(resource_app_id_url, service_principal_id, service_principal_key)
-    access_token = token["accessToken"]
-  
-    df_from_type = spark.read \
-             .format("com.microsoft.sqlserver.jdbc.spark") \
-             .option("url", jdbc_url) \
-             .option("query",query) \
-             .option("accessToken", access_token) \
-             .load()
-    from_type = df_from_type.collect()[0][0]
-    return from_type
-
-
-
-
-
-
-
-
-
-
-service_principal_id  = dbutils.secrets.get(scope = "key-vault-managed", key = "service-principal-id")
-service_principal_key = dbutils.secrets.get(scope = "key-vault-managed", key = "service-principal-key")
-tenant_id             = dbutils.secrets.get(scope = "key-vault-managed", key = "tenant-id")
-data_lake_url         = dbutils.secrets.get(scope = "key-vault-managed", key = "data-lake-url")
-
-data_lake_name        = data_lake_url[len(data_lake_url[0:data_lake_url.index('.')])-data_lake_url[0:data_lake_url.index('.')][::-1].index('/') :data_lake_url.index('.')]
-data_lake_endpoint    = data_lake_name + ".blob.core.usgovcloudapi.net"
-
-
-
-#---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------#
-# Get From Type from Synapse
-def get_from_type(source_name,spark,jdbc_connection_string,jdbc_connection_Properties):  
-  query = f""" (SELECT fromType FROM etl.fromSourceTypeLup WHERE fromSource = '{source_name}') as tmp"""
-  df_from_type = spark.read.jdbc(url=jdbc_connection_string, table=query, properties=jdbc_connection_Properties)
-  from_type = df_from_type.collect()[0][0]
-  return from_type
-
-#---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------#
-# Get From Type from Synapse v2
-def get_from_type_v2(source_name,spark,jdbc_connection_string):  
-    
-    import adal  
-
-    # Set url & credentials
-    jdbc_url = jdbc_connection_string  + ";encrypt=true;trustServerCertificate=true;hostNameInCertificate=*.sql.azuresynapse.usgovcloudapi.net;loginTimeout=30"
-
-    # Truncate QA table in Synapse
-    query = f""" (SELECT distinct fromType FROM etl.fromSourceTypeLup WHERE fromSource = '{source_name}')"""
-
-    # Create a connection object and pass the properties object
-    resource_app_id_url = "https://database.usgovcloudapi.net/"
-    authority = "https://login.microsoftonline.us/" + tenant_id
-
-    context = adal.AuthenticationContext(authority)
-    token = context.acquire_token_with_client_credentials(resource_app_id_url, service_principal_id, service_principal_key)
-    access_token = token["accessToken"]
-  
-    df_from_type = spark.read \
-             .format("com.microsoft.sqlserver.jdbc.spark") \
-             .option("url", jdbc_url) \
-             .option("query",query) \
-             .option("accessToken", access_token) \
-             .load()
-    from_type = df_from_type.collect()[0][0]
-    return from_type
-    #from_type = df_from_type.first()['fromType']
-    #return from_type  
-    
-#---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------#
-# Get From Type from Synapse v2
-def get_from_type_v3(source_name,spark,jdbc_connection_string):  
-    query = f""" (SELECT distinct fromType FROM etl.fromSourceTypeLup WHERE fromSource = '{source_name}')"""
-    df_from_type = spark.read.format("com.databricks.spark.sqldw") \
-                          .option("url", jdbc_connection_string + ";encrypt=true;trustServerCertificate=true;hostNameInCertificate=*.sql.azuresynapse.usgovcloudapi.net;loginTimeout=30") \
-                          .option("forwardSparkAzureStorageCredentials", "true") \
-                          .option("enableServicePrincipalAuth", "true") \
-                          .option("query",query) \
-                          .option("tempDir", "wasbs://deltalake@" + data_lake_endpoint + "/tempDirs") \
-                          .load()
- 
-    from_type = df_from_type.first()['fromType']
-    return from_type  
-
-from databricks.sdk.runtime import *
-
-
-def get_dbutils(spark):
-        try:
-            from pyspark.dbutils import dbutils
-            dbutils = dbutils(spark)
-        except ImportError:
-            import IPython
-            dbutils = IPython.get_ipython().user_ns["dbutils"]
-        return dbutils
-
-dbutils = get_dbutils(spark)
-
-
-from pyspark.sql import SparkSession
-from pyspark.dbutils import DBUtils
-
-spark = SparkSession.builder.getOrCreate()
-dbutils = DBUtils(spark)
-
-
-SELECT top 1000 b.*,
-JSON_VALUE(b.[value], '$.SensitiveInfoTypeId') as SensitiveInfoTypeId,
-JSON_VALUE(b.[value], '$.Count') as Count,
-JSON_VALUE(b.[value], '$.Confidence') as Confidence,
-JSON_VALUE(b.[value], '$.ClassifierType') as ClassifierType,
-JSON_VALUE(b.[value], '$.UniqueCount') as UniqueCount
-FROM [dlp].[purview] a       
-CROSS APPLY OPENJSON('['+ REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(SensitiveInfoTypeData,' ',''),'"@',''),'{','{"'),'=','"="'),';','";"'),'}"','"}'),'=',':'),'[',''),']',''),';',',') +']') b 
-WHERE SensitiveInfoTypeData IS NOT NULL
-
-
-SELECT
-      top 1000
-      b.*,
-      JSON_VALUE(b.[value], '$.SensitiveInfoTypeId')
-FROM schema.table a
-      CROSS APPLY OPENJSON('['+ REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(SensitiveInfoTypeData,' ',''),'"@',''),'{','{"'),'=','"="'),';','";"'),'}"','"}'),'=',':'),'[',''),']',''),';',',') +']') b
-WHERE SensitiveInfoTypeData IS NOT NULL
-
-
-https://martinschoombee.com/2022/03/08/working-with-oauth-2-0-apis-in-azure-data-factory-refreshing-tokens/
-
-
-
-
-from azure.identity import ClientSecretCredential
-from azure.storage.blob import (BlobServiceClient, BlobClient, ContainerClient, 
-                                BlobSasPermissions, generate_blob_sas, 
-                                generate_container_sas, ContainerSasPermissions)
-def get_container_client(tenant_id,service_principal_id,service_principal_key,blob_storage_name,container_name,file_name,connection_string):
-    service_client = get_service_client(connection_string)
-    
-    token_credential = ClientSecretCredential(
-        tenant_id=tenant_id,
-        client_id=service_principal_id,
-        client_secret=service_principal_key
-    )
-    return BlobClient(
-        service_client.url,
-        container_name = container_name, 
-        blob_name = file_name,credential=token_credential)
-
-
-response_blob_client = get_container_client(tenant_id,service_principal_id,service_principal_key,blob_storage_name,container_name,response_file_name,blob_storage_connection_string) 
-#response_blob_client = get_blob_client(container_name, response_file_name, blob_storage_connection_string, blob_storage_access_key)
-error_blob_client = get_container_client(tenant_id,service_principal_id,service_principal_key,blob_storage_name,container_name,error_file_name,blob_storage_connection_string) 
-#error_blob_client = get_blob_client(container_name, error_file_name, blob_storage_connection_string, blob_storage_access_key) 
-
-
-
-
-def get_container_client_v1(tenant_id,service_principal_id,service_principal_key,blob_storage_name,container_name,blob_name): 
-  
-  # Authenticate using the Azure AD service principal
-  credential = ClientSecretCredential(tenant_id,service_principal_id,service_principal_key)
-  # Create a BlobServiceClient using the Azure AD credential
-  blob_service_client = BlobServiceClient(
-      account_url=f"https://{blob_storage_name}.blob.core.usgovcloudapi.net",
-      credential=credential
-  )
-  # Get a client for the specific container
-  container_client = blob_service_client.get_container_client(container_name)
-  return container_client.get_blob_client(blob_name)
-
-
-# Set Spark Hadoop configurations for Azure Blob Storage using Service Principal
-spark.conf.set("fs.azure.account.auth.type." + data_lake_name + ".dfs.core.usgovcloudapi.net", "OAuth")
-spark.conf.set("fs.azure.account.oauth.provider.type." + data_lake_name + ".dfs.core.usgovcloudapi.net", "org.apache.hadoop.fs.azurebfs.oauth2.ClientCredsTokenProvider")
-spark.conf.set("fs.azure.account.oauth2.client.id." + data_lake_name + ".dfs.core.usgovcloudapi.net", service_principal_id)
-spark.conf.set("fs.azure.account.oauth2.client.secret." + data_lake_name + ".dfs.core.usgovcloudapi.net", service_principal_key)
-spark.conf.set("fs.azure.account.oauth2.client.endpoint." + data_lake_name + ".dfs.core.usgovcloudapi.net",  "https://login.microsoftonline.us/" + tenant_id + "/oauth2/token")
-
-#print(sc._jsc.hadoopConfiguration().get( "fs.azure.account.key." + data_lake_name + ".blob.core.usgovcloudapi.net"))
-
-
-
-def get_service_client_sp(tenant_id, service_principal_id, service_principal_key, blob_storage_name):
-    # Authenticate using the Azure AD service principal
-    credential = ClientSecretCredential(tenant_id, service_principal_id, service_principal_key)    
-    return BlobServiceClient(account_url=f"https://{blob_storage_name}.blob.core.usgovcloudapi.net",credential=credential)  
-
-•	spark.databricks.driver.hardKillUnresponsive.timeout 600
-•	spark.driver.extraJavaOptions -XX:-UseParallelGC -XX:+UseG1GC
-•	spark.executor.extraJavaOptions -XX:-UseParallelGC -XX:+UseG1GC
-
+CREATE PROC [etl].[usp_Insert_NNMIFileList] @BatchID [nvarchar](100),@JSON [NVARCHAR](max) AS
+begin
+
+
+	TRUNCATE table stage.NNMIFileList
+	INSERT INTO stage.NNMIFileList (
+		BatchID , 
+		Filelist ,
+		FileName ,
+		FileType  
+		)
+
+		SELECT @BatchID
+		,FileList
+		,FileName
+		,FileType
+
+		FROM OPENJSON(@JSON)
+			WITH (
+				Filelist NVARCHAR(MAX) '$' as JSON
+				) J1
+			OUTER APPLY OPENJSON (j1.FileList)
+				WITH (
+					FileName NVARCHAR(MAX) '$.name'
+					,Filetype VARCHAR (500) '$.type'
+					) j2
+
+
+END
