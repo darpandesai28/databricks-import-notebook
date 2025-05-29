@@ -95,3 +95,10 @@ begin
 
 
 END
+CREATE TABLE [stage].[NNMIFileList]
+(
+	[BatchID] [varchar](100) NULL,
+	[Filelist] [nvarchar](max) NULL,
+	[FileName] [nvarchar](max) NULL,
+	[FileType] [nvarchar](100) NULL
+)
