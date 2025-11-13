@@ -64,3 +64,48 @@ trademarks or logos is subject to and must follow
 [Microsoft's Trademark & Brand Guidelines](https://www.microsoft.com/en-us/legal/intellectualproperty/trademarks/usage/general).
 Use of Microsoft trademarks or logos in modified versions of this project must not cause confusion or imply Microsoft sponsorship.
 Any use of third-party trademarks or logos are subject to those third-party's policies.
+
+Declare @JSONFileNameUrl NVARCHAR(max) ='https://saeitaasdatateam.blob.core.usgovcloudapi.net/zz-for-darpan/final_assessment_20251111_165815.json'
+TRUNCATE TABLE stage.ImpPolicyStateJSONData
+
+SET @SQL='COPY INTO stage.ImpPolicyStateJSONData(JSONData)
+FROM '''+@JSONFileNameUrl+'''
+WITH 
+(
+FILE_TYPE = ''CSV''
+,fieldterminator =''0x0b''
+,fieldquote = ''0x0b''
+,rowterminator = ''0x0c''  /* Override This if a Json document and not single object */
+,CREDENTIAL=(IDENTITY= ''Managed Identity'')
+)
+'
+
+EXEC sp_executesql @SQL
+
+SELECT
+    JSON_VALUE(JSONData, '$.Id') AS Id,
+    JSON_VALUE(b.[value],'$.Finding') AS Finding,
+	JSON_VALUE(b.[value],'$.RiskLevel') AS RiskLevel,
+	JSON_VALUE(b.[value],'$.Determination') AS Determination,
+    JSON_VALUE(b.[value],'$.LineNumber') AS LineNumber,
+	JSON_VALUE(b.[value],'$.FilePath') AS FilePath,
+	JSON_VALUE(b.[value],'$.Prompt') AS Prompt,
+	JSON_QUERY(b.[value],'$.AgentsInvolved') AS AgentsInvolved,
+	JSON_VALUE(JSONData, '$.RiskLevel') AS OverallRiskLevel,
+	c.Determination,
+	--JSON_VALUE(cast(c.Determination as Nvarchar(max)),'$."OVERALL SECURITY POSTURE ANALYSIS"') AS OverallSecurityPostureAnalysis,
+	--JSON_VALUE(cast(c.Determination as Nvarchar(max)),'$."CRITICAL VULNERABILITY IMPACT ASSESSMENT"') AS OverallSecurityPostureAnalysis,
+	--JSON_VALUE(c.Determination,'$."PRIORITIZED REMEDIATION ROADMAP"') AS OverallSecurityPostureAnalysis,
+	--JSON_VALUE(c.Determination,'$."PRODUCTION DEPLOYMENT RECOMMENDATION"') AS OverallSecurityPostureAnalysis,
+	--JSON_VALUE(c.Determination,'$."RESOURCE ALLOCATION STRATEGY"') AS OverallSecurityPostureAnalysis,
+	--JSON_VALUE(c.Determination,'$."EXECUTIVE SUMMARY WITH KEY METRICS"') AS OverallSecurityPostureAnalysis,
+	JSON_VALUE(JSONData, '$.ProcessedAt') AS ProcessedAt
+--Select d.*
+FROM stage.ImpPolicyStateJSONData 
+CROSS APPLY OPENJSON(JSONData, '$.Vulnerabilities') b
+--CROSS APPLY OPENJSON(JSONData)
+CROSS APPLY 
+    OPENJSON(JSONData) 
+WITH (
+        Determination NVARCHAR(MAX) '$.Determination'
+    ) AS c
