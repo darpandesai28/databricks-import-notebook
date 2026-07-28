@@ -109,3 +109,21 @@ CROSS APPLY
 WITH (
         Determination NVARCHAR(MAX) '$.Determination'
     ) AS c
+
+
+	Begin A365 ActiveUserLicense Workflow
+Begin A365 OfficeActivation Workflow
+Begin A365 Workflow
+Begin ACAS Nessus Scans Workflow
+Begin ACAS Scans Workflow
+Begin ACAS Tenable Scans Workflow
+Begin ADOC RFC Active Workflow
+Begin ADOC RFC Archive Workflow
+Begin ADOC SIR Workflow
+Begin AFC User Workflow
+Begin Append Blob Archival
+Begin Append Blob Archival_Databricks
+Begin Append Blob Archival_Databricks_New_Version
+Begin Append Blob Archival_Databricks_v1
+Begin AVD Log Workflow Adhoc
+Begin Call Session Workflow
