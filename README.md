@@ -110,20 +110,30 @@ WITH (
         Determination NVARCHAR(MAX) '$.Determination'
     ) AS c
 
-
-	Begin A365 ActiveUserLicense Workflow
-Begin A365 OfficeActivation Workflow
-Begin A365 Workflow
-Begin ACAS Nessus Scans Workflow
-Begin ACAS Scans Workflow
-Begin ACAS Tenable Scans Workflow
-Begin ADOC RFC Active Workflow
-Begin ADOC RFC Archive Workflow
-Begin ADOC SIR Workflow
-Begin AFC User Workflow
-Begin Append Blob Archival
-Begin Append Blob Archival_Databricks
-Begin Append Blob Archival_Databricks_New_Version
-Begin Append Blob Archival_Databricks_v1
-Begin AVD Log Workflow Adhoc
-Begin Call Session Workflow
+1. Begin A365 ActiveUserLicense Workflow
+2. Begin A365 OfficeActivation Workflow
+3. Begin A365 Workflow
+4. Begin ACAS Nessus Scans Workflow
+5. Begin ACAS Scans Workflow
+6. Begin ACAS Tenable Scans Workflow
+7. Begin ADOC RFC Active Workflow
+8. Begin ADOC RFC Archive Workflow
+9. Begin ADOC SIR Workflow
+10. Begin AFC User Workflow
+11. Begin Append Blob Archival
+12. Begin Append Blob Archival_Databricks
+13. Begin Append Blob Archival_Databricks_New_Version
+14. Begin Append Blob Archival_Databricks_v1
+15. Begin AVD Log Workflow Adhoc
+16. Begin Call Session Workflow
+17. Begin Device Management Workflow
+18. Begin Diagnostic Data Workflow
+19. Begin Download Call Sessions
+20. Begin Ingest GFEBS
+21. Begin MDE Workflow
+22. Begin Metric Pull Data
+23. Begin OrgHierarchy Workflow
+24. Begin Policy Workflow
+25. Begin Power BI 4h Workflow
+26. Begin Survey Workflow
+27. Begin Teams Workflow
