@@ -65,51 +65,6 @@ trademarks or logos is subject to and must follow
 Use of Microsoft trademarks or logos in modified versions of this project must not cause confusion or imply Microsoft sponsorship.
 Any use of third-party trademarks or logos are subject to those third-party's policies.
 
-Declare @JSONFileNameUrl NVARCHAR(max) ='https://saeitaasdatateam.blob.core.usgovcloudapi.net/zz-for-darpan/final_assessment_20251111_165815.json'
-TRUNCATE TABLE stage.ImpPolicyStateJSONData
-
-SET @SQL='COPY INTO stage.ImpPolicyStateJSONData(JSONData)
-FROM '''+@JSONFileNameUrl+'''
-WITH 
-(
-FILE_TYPE = ''CSV''
-,fieldterminator =''0x0b''
-,fieldquote = ''0x0b''
-,rowterminator = ''0x0c''  /* Override This if a Json document and not single object */
-,CREDENTIAL=(IDENTITY= ''Managed Identity'')
-)
-'
-
-EXEC sp_executesql @SQL
-
-SELECT
-    JSON_VALUE(JSONData, '$.Id') AS Id,
-    JSON_VALUE(b.[value],'$.Finding') AS Finding,
-	JSON_VALUE(b.[value],'$.RiskLevel') AS RiskLevel,
-	JSON_VALUE(b.[value],'$.Determination') AS Determination,
-    JSON_VALUE(b.[value],'$.LineNumber') AS LineNumber,
-	JSON_VALUE(b.[value],'$.FilePath') AS FilePath,
-	JSON_VALUE(b.[value],'$.Prompt') AS Prompt,
-	JSON_QUERY(b.[value],'$.AgentsInvolved') AS AgentsInvolved,
-	JSON_VALUE(JSONData, '$.RiskLevel') AS OverallRiskLevel,
-	c.Determination,
-	--JSON_VALUE(cast(c.Determination as Nvarchar(max)),'$."OVERALL SECURITY POSTURE ANALYSIS"') AS OverallSecurityPostureAnalysis,
-	--JSON_VALUE(cast(c.Determination as Nvarchar(max)),'$."CRITICAL VULNERABILITY IMPACT ASSESSMENT"') AS OverallSecurityPostureAnalysis,
-	--JSON_VALUE(c.Determination,'$."PRIORITIZED REMEDIATION ROADMAP"') AS OverallSecurityPostureAnalysis,
-	--JSON_VALUE(c.Determination,'$."PRODUCTION DEPLOYMENT RECOMMENDATION"') AS OverallSecurityPostureAnalysis,
-	--JSON_VALUE(c.Determination,'$."RESOURCE ALLOCATION STRATEGY"') AS OverallSecurityPostureAnalysis,
-	--JSON_VALUE(c.Determination,'$."EXECUTIVE SUMMARY WITH KEY METRICS"') AS OverallSecurityPostureAnalysis,
-	JSON_VALUE(JSONData, '$.ProcessedAt') AS ProcessedAt
---Select d.*
-FROM stage.ImpPolicyStateJSONData 
-CROSS APPLY OPENJSON(JSONData, '$.Vulnerabilities') b
---CROSS APPLY OPENJSON(JSONData)
-CROSS APPLY 
-    OPENJSON(JSONData) 
-WITH (
-        Determination NVARCHAR(MAX) '$.Determination'
-    ) AS c
-
 1. Begin A365 ActiveUserLicense Workflow
 2. Begin A365 OfficeActivation Workflow
 3. Begin A365 Workflow
@@ -135,10 +90,23 @@ WITH (
 23. Begin OrgHierarchy Workflow
 24. Begin Policy Workflow
 25. Begin Power BI 4h Workflow
-26. Begin Survey Workflow
-27. Begin Teams Workflow
-28. Begin Shutdown All Environments
-Begin Spectrum Workflow
-Begin STACO Workflow
-Begin Start All Environments
-Begin Survey Workflow
+26. Begin Prod Data Copy Workflow_Old_Databricks
+27. Begin Purview Endpoint Workload Activities Workflow
+28. Begin Purview Exchange Workload Activities Workflow
+29. Begin Purview OneDrive Workload Activities Workflow
+30. Begin Purview PowerBI Workload Activities Workflow
+31. Begin Purview SharePoint Workload Activities Workflow
+32. Begin Purview Workload Activities Workflow
+33. Begin Purview Workload Activities Workflow_old
+34. Begin QA Workflow
+35. Begin RCC-C Incident Workflow
+36. Begin RCC-C Request Workflow
+37. Begin Restart Databricks Environment
+38. Begin Security Incident Update Workflow
+39. Begin ServiceNow Workflow
+40. Begin Shutdown All Environments
+41. Begin Spectrum Workflow
+42. Begin STACO Workflow
+43. Begin Start All Environments
+44. Begin Survey Workflow
+45. Begin Teams Workflow
