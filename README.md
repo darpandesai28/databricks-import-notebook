@@ -137,3 +137,8 @@ WITH (
 25. Begin Power BI 4h Workflow
 26. Begin Survey Workflow
 27. Begin Teams Workflow
+28. Begin Shutdown All Environments
+Begin Spectrum Workflow
+Begin STACO Workflow
+Begin Start All Environments
+Begin Survey Workflow
